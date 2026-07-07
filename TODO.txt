@@ -1,0 +1,10 @@
+FOR GENERALIZATION:
+
+1 - Create `class TheHive_CS_Bench_BASE: zm_WorkbenchModular` into "./zmWorkbench_Integration" OT
+2 - MOVE "Tecnic_Bench\Scripts\4_World\Classes\Recipes\TH_Pack_zm_WorkbenchModular.c" to "./zmWorkbench_Integration"
+3 - CNG: Control in TH_Pack_zm_WorkbenchModular.c, from TheHive_CS_TB_Bench_BASE to TheHive_CS_Bench_BASE
+4 - Make all "_BASE" benches inherit from `TheHive_CS_Bench_BASE`
+5 - Move "Scripts\4_World\Entities\items\holograms\TheHive_CS_TB_Hologram.c" to ./zmWorkbench_Integration
+6 - create method to retrieve item .rvmat and assign it to HOLOGRAM_MATERIAL_GREEN and HOLOGRAM_MATERIAL_RED
+
+FOR SPECIFIC BRANCHES
