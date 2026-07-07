@@ -18,7 +18,8 @@ class CfgPatches
 			"zm_Sewing",
 			"zm_Soldering",
 			"zm_Vice",
-			"zm_Welding"
+			"zm_Welding",
+			"TheHive_zmWorkbench_Integration_Scripts"
 		};
 	};
 };

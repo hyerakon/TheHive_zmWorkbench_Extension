@@ -1,5 +1,5 @@
 // Scripts/4_World/Entities/Hologram/TheHive_CS_TB_Hologram.c
-/*
+
 modded class Hologram
 {	
     // Procedural hologram colors (like RaG)
@@ -49,7 +49,7 @@ modded class Hologram
         }
         return false;
     }
-    
+    /*
     protected void ApplyWorkbenchHologramVisual()
     {
         if (!m_Projection) return;
@@ -81,6 +81,45 @@ modded class Hologram
             {
                 m_Projection.SetObjectTexture(idx, texture);
                 m_Projection.SetObjectMaterial(idx, material);
+            }
+        }
+    }*/
+
+    protected void ApplyWorkbenchHologramVisual()
+    {
+        if (!m_Projection)
+            return;
+
+        string texture;
+
+        if (IsColliding())
+            texture = HOLOGRAM_RED;
+        else
+            texture = HOLOGRAM_GREEN;
+
+        string type = m_Projection.GetType();
+
+        array<string> hidden_selections = new array<string>;
+        array<string> hidden_materials = new array<string>;
+
+        GetGame().ConfigGetTextArray("CfgVehicles " + type + " hiddenSelections", hidden_selections);
+        GetGame().ConfigGetTextArray("CfgVehicles " + type + " hiddenSelectionsMaterials", hidden_materials);
+
+        for (int i = 0; i < hidden_selections.Count(); i++)
+        {
+            string selection = hidden_selections.Get(i);
+            int idx = m_Projection.GetHiddenSelectionIndex(selection);
+
+            if (idx < 0)
+                continue;
+
+            // Colore ologramma procedurale
+            m_Projection.SetObjectTexture(idx, texture);
+
+            // Materiale originale dell'oggetto, stesso indice della selection
+            if (i < hidden_materials.Count() && hidden_materials.Get(i) != "")
+            {
+                m_Projection.SetObjectMaterial(idx, hidden_materials.Get(i));
             }
         }
     }
@@ -124,7 +163,7 @@ modded class Hologram
         
         super.RefreshVisual();
     }
-    /*
+    
     override void EvaluateCollision(ItemBase action_item = null)
     {	
         // Disable collision check for workbench kit placement
@@ -136,22 +175,6 @@ modded class Hologram
             
         super.EvaluateCollision(action_item);
     }
-    
-}
-*/
 
-modded class Hologram
-{
-    override string GetProjectionName(ItemBase item)
-    {
-        TheHive_CS_TB_KitBox_BASE kit = TheHive_CS_TB_KitBox_BASE.Cast(item);
-        if (kit)
-        {
-            string holo = kit.TheHive_CS_TB_Kit_Holo();
-            Print("[TB HOLOGRAM] Kit=" + item.GetType() + " Projection=" + holo);
-            return holo;
-        }
+};
 
-        return super.GetProjectionName(item);
-    }
-}

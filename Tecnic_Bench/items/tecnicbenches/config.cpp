@@ -17,6 +17,7 @@ class CfgPatches
 			"DZ_Scripts",
 			"WorkbenchMod",
 			"zm_Workbench"
+
 		};
 	};
 };
@@ -25,10 +26,10 @@ class CfgVehicles
 {
 	
     class zm_WorkbenchPublic;
-	class zm_WorkbenchModular;
+	class TheHive_CS_Bench_BASE;
 
 
-	class TheHive_CS_TB_Bench_BASE: zm_WorkbenchModular
+	class TheHive_CS_TB_Bench_BASE: TheHive_CS_Bench_BASE
 	{
 		scope=0;
 		displayName="$STR_TheHive_CS_TB_Bench_BASE";
@@ -39,7 +40,7 @@ class CfgVehicles
 		physLayer="item_large";
 		itemBehaviour=2;
 		simulation="inventoryItem";
-		rotationFlags=16;
+		rotationFlags=32;
 		slopeTolerance=0.40000001;
 		yawPitchRollLimit[]={45,45,45};
 		carveNavmesh=1;

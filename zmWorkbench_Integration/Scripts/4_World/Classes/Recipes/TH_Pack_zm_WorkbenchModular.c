@@ -9,7 +9,7 @@ modded class Pack_zm_WorkbenchModular extends RecipeBase
 		
 		// Custom empty check - ignore internal storage containers but check if they're empty
 		zm_WorkbenchBase workbench = zm_WorkbenchBase.Cast(ingredients[0]);
-		if (!workbench || workbench.IsKindOf("TheHive_CS_TB_Bench_BASE"))
+		if (!workbench || workbench.IsKindOf("TheHive_CS_Bench_BASE"))
 			return false;
 		
 		return IsWorkbenchEmpty(workbench);
