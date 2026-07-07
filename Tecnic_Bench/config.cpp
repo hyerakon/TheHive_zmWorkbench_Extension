@@ -69,6 +69,7 @@ class CfgMods
 class CfgVehicles
 {
 	class Container_Base;
+	class Inventory_Base;
 
 	class WoodenCrate: Container_Base
 	{

@@ -39,7 +39,7 @@ class CfgVehicles
 		physLayer="item_large";
 		itemBehaviour=2;
 		simulation="inventoryItem";
-		rotationFlags=0;
+		rotationFlags=16;
 		slopeTolerance=0.40000001;
 		yawPitchRollLimit[]={45,45,45};
 		carveNavmesh=1;
