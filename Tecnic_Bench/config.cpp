@@ -77,6 +77,14 @@ class CfgVehicles
 			"TH_TB_WoodenCase"
 		};
 	};
+
+	class Pliers: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_TB_Pliers"
+		};
+	};
 };
 
 class CfgSlots
@@ -86,6 +94,13 @@ class CfgSlots
 		name = "TH_TB_WoodenCase";
 		displayName = "$STR_Slot_TH_TB_WoodenCase";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	class Slot_TH_TB_Pliers
+	{
+		name = "TH_TB_Pliers";
+		displayName = "$STR_Slot_TH_TB_Pliers";
+		ghostIcon = "set:dayz_inventory image:missing";
 	};
 };
 

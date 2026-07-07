@@ -81,7 +81,7 @@ class CfgVehicles
 			"WB_Hatchet",
 			"WB_Crowbar",
 			"WB_Hammer",
-			"WB_BaseballBat",
+			"TH_TB_Pliers",
 			"WB_Screwdriver1",
 			"WB_Screwdriver2",
 			"WB_Spraycan1",
@@ -97,8 +97,8 @@ class CfgVehicles
 			"Material_L3_WoodenPlanks",
 			"Material_WoodenLogs",
 			"Material_L1_WoodenLogs",
-			"Material_L2_WoodenLogs",
-			"Material_L3_WoodenLogs",
+			"Material_L1_Nails",
+			"MetalWire",
 			"TH_TB_WoodenCase" 
 		};
 	
@@ -229,7 +229,7 @@ class CfgVehicles
 					"WB_Hatchet",
 					"WB_Crowbar",
 					"WB_Hammer",
-					"WB_BaseballBat",
+					"TH_TB_Pliers",
 					"WB_Screwdriver1",
 					"WB_Screwdriver2"
 				};
@@ -278,8 +278,8 @@ class CfgVehicles
 					"Material_L3_WoodenPlanks",
 					"Material_WoodenLogs",
 					"Material_L1_WoodenLogs",
-					"Material_L2_WoodenLogs",
-					"Material_L3_WoodenLogs"
+					"Material_L1_Nails",
+					"MetalWire"
 				};
 				icon="set:dayz_inventory image:plates";
 			};
@@ -388,7 +388,7 @@ class CfgVehicles
 			"WB_Hatchet",
 			"WB_Crowbar",
 			"WB_Hammer",
-			"WB_BaseballBat",
+			"TH_TB_Pliers",
 			"WB_Screwdriver1",
 			"WB_Screwdriver2",
 			"WB_Spraycan1",
@@ -404,8 +404,8 @@ class CfgVehicles
 			"Material_L3_WoodenPlanks",
 			"Material_WoodenLogs",
 			"Material_L1_WoodenLogs",
-			"Material_L2_WoodenLogs",
-			"Material_L3_WoodenLogs",
+			"Material_L1_Nails",
+			"MetalWire",
 			"TH_TB_WoodenCase" 
 		};
 		hiddenSelections[]=
@@ -562,8 +562,8 @@ class CfgVehicles
 					"Material_L3_WoodenPlanks",
 					"Material_WoodenLogs",
 					"Material_L1_WoodenLogs",
-					"Material_L2_WoodenLogs",
-					"Material_L3_WoodenLogs"
+					"Material_L1_Nails",
+					"MetalWire"
 				};
 				icon="set:dayz_inventory image:plates";
 			};
