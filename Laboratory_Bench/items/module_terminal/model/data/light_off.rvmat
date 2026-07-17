@@ -1,0 +1,20 @@
+// Schermo spento - sostituisci il percorso della texture con quello reale della tua mod.
+ambient[] = {0.55,0.55,0.55,1};
+diffuse[] = {0.65,0.65,0.65,1};
+forcedDiffuse[] = {0,0,0,0};
+
+// Nessuna emissione luminosa.
+emmisive[] = {0,0,0,1};
+
+specular[] = {0.08,0.08,0.08,1};
+specularPower = 24;
+
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+
+class Stage0
+{
+    texture = "TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TH_CS_LB_TerminalMonitor_LightOff.paa";
+    uvSource = "tex";
+    filter = "Anizotropic";
+};

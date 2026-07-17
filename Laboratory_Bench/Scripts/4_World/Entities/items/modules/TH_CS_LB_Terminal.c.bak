@@ -1,0 +1,249 @@
+// TH_CS_LB_Terminal - Terminal module
+
+class TH_CS_LB_Terminal: Inventory_Base
+{
+    protected ref array<ScriptCaller> m_SyncCallbacks;
+    
+    // Workbench light
+    protected bool m_LightOn;
+    protected bool m_LightVisualOn;          // Tracks actual visual state (for detecting changes)
+    protected PointLightBase m_Light;
+    protected EffectSound m_LightSound;
+
+    // Light flicker effect (like real fluorescent tubes)
+    protected bool m_LightFlickering;
+    protected int m_FlickerCount;
+    protected ref Timer m_FlickerTimer;
+    static const int FLICKER_STEPS = 6;           // Number of flicker on/off cycles
+    static const float FLICKER_INTERVAL = 0.08;   // Time between flicker steps (seconds)
+
+    void TH_CS_LB_Terminal()
+    {
+        m_LightOn = false;
+        //m_LightVisualOn = false;
+        //m_LightFlickering = false;
+        //m_FlickerCount = 0;
+        //m_FlickerTimer = new Timer();
+
+        RegisterNetSyncVariableBool("m_LightOn");
+        m_SyncCallbacks = new array<ScriptCaller>();
+    }
+
+    void ~TH_CS_LB_Terminal() {
+              
+        // Note: We can't save here reliably as GetGame() may be null during shutdown
+        // Saving is handled by MissionServer.OnMissionFinish() before destruction
+                
+        // Clean up light and flicker timer
+        if (m_FlickerTimer) {
+            m_FlickerTimer.Stop();
+            m_FlickerTimer = null;
+        }
+        if (GetGame()) {
+            TurnOffLight();
+        }
+        // Clean up power check timer
+        //if (m_PowerCheckTimer) {
+        //    m_PowerCheckTimer.Stop();
+        //    m_PowerCheckTimer = null;
+        //}
+    }
+
+    void TurnOnLight() {
+        if (m_LightOn) return;
+
+        // Server is authoritative for the power requirement. The light needs battery power
+        // (or a generator / public unlimited power) to be able to switch on at all.
+        // HasEnoughPower() already returns true for public workbenches, when the power
+        // system is disabled, and when a generator supplies power.
+        //if (GetGame().IsServer()) {
+        //    if (!HasEnoughPower(WorkbenchConstants.POWER_DRAIN_LIGHT)) {
+        //        WBDebug("[WorkbenchMod] TurnOnLight: Not enough power to run the light - staying off");
+        //        return;
+        //    }
+        //}
+
+        m_LightOn = true;
+        SetSynchDirty();
+
+        // Begin draining battery power while the light is on (server only).
+        //StartLightDrain();
+
+        // Trigger visual update (which will start flicker on client)
+        if (!GetGame().IsDedicatedServer()) {
+            UpdateLightVisual();
+        }
+    }
+
+    void TurnOffLight() 
+    {
+        // Stop any flicker in progress
+        if (m_LightFlickering) {
+            m_LightFlickering = false;
+            if (m_FlickerTimer) m_FlickerTimer.Stop();
+        }
+        
+        if (!m_LightOn) return;
+        
+        m_LightOn = false;
+        SetSynchDirty();
+
+        // Stop draining battery power now that the light is off (server only).
+        //StopLightDrain();
+        
+        // Visual updates happen in UpdateLightVisual() called from OnVariablesSynchronized
+        // For local player (listen server or offline), also update immediately
+        if (!GetGame().IsDedicatedServer()) {
+            UpdateLightVisual();
+        }
+    }
+
+    // Start the fluorescent tube flicker effect
+    protected void StartLightFlicker() {
+        if (m_LightFlickering) return;
+        
+        m_LightFlickering = true;
+        m_FlickerCount = 0;
+        
+        WBDebug("[TH_CS_LB_Terminal] Starting light flicker effect");
+        
+        // Play the turn-on sound at start
+        PlaySoundSet(m_LightSound, "Flashlight_TurnOn_SoundSet", 0, 0);
+        
+        // Start flicker timer
+        if (!m_FlickerTimer) {
+            m_FlickerTimer = new Timer();
+        }
+        m_FlickerTimer.Run(FLICKER_INTERVAL, this, "OnFlickerStep", null, true);
+    }
+
+    // Called each flicker step
+    protected void OnFlickerStep() {
+        if (!m_LightFlickering) {
+            if (m_FlickerTimer) m_FlickerTimer.Stop();
+            return;
+        }
+        
+        int idx = GetHiddenSelectionIndex("Display");
+        bool lightOn = (m_FlickerCount % 2 == 0); // Alternate on/off
+        
+        // Flicker the material
+        if (idx >= 0) {
+            if (lightOn) {
+                SetObjectMaterial(idx, "TheHive_zmWorkbench_Extension\\Laboratory_Bench\\items\\module_terminal\\model\\data\\light_on.rvmat");
+            } else {
+                SetObjectMaterial(idx, "TheHive_zmWorkbench_Extension\\Laboratory_Bench\\items\\module_terminal\\model\\data\\light_off.rvmat");
+            }
+        }
+        
+        // Flicker the point light
+        if (lightOn) {
+            if (!m_Light) {
+                m_Light = PointLightBase.Cast(ScriptedLightBase.CreateLight(ZM_WorkbenchLight, "0 0 0"));
+                if (m_Light) {
+                    m_Light.AttachOnMemoryPoint(this, "beamstart");
+                }
+            }
+            if (m_Light) m_Light.SetEnabled(true);
+        } else {
+            if (m_Light) m_Light.SetEnabled(false);
+        }
+        
+        m_FlickerCount++;
+        
+        // After all flicker steps, stabilize the light ON
+        if (m_FlickerCount >= FLICKER_STEPS) {
+            m_FlickerTimer.Stop();
+            m_LightFlickering = false;
+            m_LightVisualOn = true;  // Mark visual as on
+            
+            WBDebug("[TH_CS_LB_Terminal] Flicker complete - light now stable ON");
+            
+            // Ensure light stays on
+            if (idx >= 0) {
+                SetObjectMaterial(idx, "TheHive_zmWorkbench_Extension\\Laboratory_Bench\\items\\module_terminal\\model\\data\\light_on.rvmat");
+            }
+            if (!m_Light) {
+                m_Light = PointLightBase.Cast(ScriptedLightBase.CreateLight(ZM_WorkbenchLight, "0 0 0"));
+                if (m_Light) {
+                    m_Light.AttachOnMemoryPoint(this, "beamstart");
+                }
+            }
+            if (m_Light) m_Light.SetEnabled(true);
+        }
+    }
+
+    protected void UpdateLightVisual() 
+    {
+        if (GetGame().IsDedicatedServer()) return;
+        
+        // Detect state change: light just turned ON
+        if (m_LightOn && !m_LightVisualOn && !m_LightFlickering) {
+            // Start flicker effect instead of turning on immediately
+            StartLightFlicker();
+            return;
+        }
+        
+        // If flickering, don't interfere
+        if (m_LightFlickering) return;
+        
+        int idx = GetHiddenSelectionIndex("Display");
+        WBDebug("[TH_CS_LB_Terminal] UpdateLightVisual - tube index: " + idx.ToString() + " m_LightOn: " + m_LightOn.ToString() + " class: " + ClassName() + " type: " + GetType());
+        
+        if (m_LightOn) {
+            if (!m_Light) {
+                m_Light = PointLightBase.Cast(ScriptedLightBase.CreateLight(ZM_WorkbenchLight, "0 0 0"));
+                if (m_Light) {
+                    m_Light.AttachOnMemoryPoint(this, "beamstart");
+                    m_Light.SetEnabled(true);
+                }
+            }
+            // Set glowing material
+            if (idx >= 0) {
+                WBDebug("[TH_CS_LB_Terminal] Setting LIGHT_ON material for " + GetType());
+                SetObjectMaterial(idx, "TheHive_zmWorkbench_Extension\\Laboratory_Bench\\items\\module_terminal\\model\\data\\light_on.rvmat");
+            }
+            m_LightVisualOn = true;
+        } else {
+            if (m_Light) {
+                m_Light.SetEnabled(false);
+                m_Light.Destroy();
+                m_Light = null;
+                // Play sound when light turns off
+                PlaySoundSet(m_LightSound, "Flashlight_TurnOff_SoundSet", 0, 0);
+            }
+            // Set non-glowing material
+            if (idx >= 0) {
+                WBDebug("[TH_CS_LB_Terminal] Setting LIGHT_OFF material for " + GetType());
+                SetObjectMaterial(idx, "TheHive_zmWorkbench_Extension\\Laboratory_Bench\\items\\module_terminal\\model\\data\\light_off.rvmat");
+            }
+            m_LightVisualOn = false;
+        }
+    }
+    
+    override void EEHitBy(TotalDamageResult damageResult, int damageType, EntityAI source, int component, string dmgZone, string ammo, vector modelPos, float speedCoef)
+    {
+        // Do nothing - cancel all damage
+    }
+
+    override void SetActions() 
+    {
+        super.SetActions();
+        AddAction(ActionToggleTerminalMonitor);
+    };
+
+    bool IsLightOn() 
+    {
+        return m_LightOn;
+    }
+
+    void ToggleLight() 
+    {
+        if (m_LightOn) {
+            TurnOffLight();
+        } else {
+            TurnOnLight();
+        }
+    }
+}
+

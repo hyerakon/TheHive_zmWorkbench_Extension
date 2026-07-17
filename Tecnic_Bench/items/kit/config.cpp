@@ -9,7 +9,7 @@ class CfgPatches
         {
 			"DZ_Scripts",
 			"DZ_Data",
-            "TheHive_zmWorkbench_Extension_Script",
+            "TheHive_zmWorkbench_Extension_TB_Script",
             "TheHive_CS_TB_Script"
         };
     };

@@ -1,0 +1,21 @@
+// Schermo acceso - sostituisci il percorso della texture con quello reale della tua mod.
+ambient[] = {0.8,0.8,0.8,1};
+diffuse[] = {0.8,0.8,0.8,1};
+forcedDiffuse[] = {0,0,0,0};
+
+// Luminosita propria dello schermo. Aumenta gradualmente se serve,
+// evitando valori eccessivi che bruciano l'immagine in HDR.
+emmisive[] = {1,1,1,1};
+
+specular[] = {0.15,0.15,0.15,1};
+specularPower = 32;
+
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+
+class Stage0
+{
+    texture = "TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TH_CS_LB_TerminalMonitor_LightOn.paa";
+    uvSource = "tex";
+    filter = "Anizotropic";
+};

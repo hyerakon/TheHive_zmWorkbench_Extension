@@ -7,7 +7,6 @@ class CfgPatches
 			"TheHive_CS_TB_Bench",
             "TheHive_CS_TB_Bench_Public",
             "TheHive_CS_TB_Bench_Locked"
-
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -17,7 +16,6 @@ class CfgPatches
 			"DZ_Scripts",
 			"WorkbenchMod",
 			"zm_Workbench"
-
 		};
 	};
 };

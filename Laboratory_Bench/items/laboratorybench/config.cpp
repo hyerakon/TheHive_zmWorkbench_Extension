@@ -17,7 +17,6 @@ class CfgPatches
 			"DZ_Scripts",
 			"WorkbenchMod",
 			"zm_Workbench"
-
 		};
 	};
 };

@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TheHive_zmWorkbench_Extension_Script
+	class TheHive_zmWorkbench_Extension_TB_Script
 	{
 		units[] = {};
 		weapons[] = {};
@@ -25,7 +25,7 @@ class CfgPatches
 };
 class CfgMods
 {
-	class TheHive_zmWorkbench_Extension
+	class TheHive_zmWorkbench_Extension_TB
 	{
 		dir = "TheHive_zmWorkbench_Extension\Tecnic_Bench";
 		picture = "";
