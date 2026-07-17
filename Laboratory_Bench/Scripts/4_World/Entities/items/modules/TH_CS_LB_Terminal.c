@@ -1,3 +1,5 @@
+// Laboratory_Bench\Scripts\4_World\Entities\items\modules\TH_CS_LB_Terminal.c
+
 class TH_CS_LB_Terminal : Inventory_Base
 {
     protected bool m_LightOn;

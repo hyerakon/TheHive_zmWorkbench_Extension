@@ -1,3 +1,5 @@
+// Laboratory_Bench\Scripts\4_World\Classes\UserActionsComponent\Actions\ActionToggleTerminalMonitor.c
+
 class ActionToggleTerminalMonitor : ActionInteractBase
 {
     void ActionToggleTerminalMonitor()
@@ -22,6 +24,8 @@ class ActionToggleTerminalMonitor : ActionInteractBase
 
         if (!terminal)
             return false;
+
+        // AGGIUNGERE LA CONDIZIONE SUL LAVORO O SUL AVER COMPLETATO UNA QUEST DI ACCESSO AL LABORATORIO
 
         return true;
     }
