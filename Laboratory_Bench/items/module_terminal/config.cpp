@@ -90,5 +90,69 @@ class CfgVehicles
 				};
 			};
 		};
+
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=1000;
+					healthLevels[] =
+					{
+						{
+							1,
+							{
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat"
+							}
+						},
+						{
+							0.69999999,
+							{
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat"
+							}
+						},
+						{
+							0.5,
+							{
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat"
+							}
+						},
+						{
+							0.30000001,
+							{
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat"
+							}
+						},
+						{
+							0,
+							{
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_destruct.rvmat"
+							}
+						}
+					};
+				
+				};
+			};
+			class GlobalArmor
+			{
+				class FragGrenade
+				{
+					class Health
+					{
+						damage=8;
+					};
+					class Blood
+					{
+						damage=8;
+					};
+					class Shock
+					{
+						damage=8;
+					};
+				};
+			};
+		};
+
 	};
 };

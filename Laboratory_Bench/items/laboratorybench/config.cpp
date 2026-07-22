@@ -33,7 +33,6 @@ class CfgVehicles
 		scope=0;
 		displayName="$STR_TheHive_CS_LB_Bench_BASE";
 		descriptionShort="$STR_TheHive_CS_LB_Bench_BASE_desc";
-		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TheHive_CS_LB_Workbench.p3d";
 		weight=50000;
 		itemSize[]={10,10};
 		physLayer="item_large";
@@ -61,45 +60,66 @@ class CfgVehicles
 		};
 		attachments[] = 
 		{ 
-			"drillpress",
-			"grinder",
-			"vice",
-			"soldering",
-			"welding",
-			"sewing",
+			"terminal",
 			"workbenchstorage",
 			"workbenchoutput",
-			"WB_Battery1",
-			"WB_Battery2",
-			"WB_Battery3",
-			"WB_Battery4",
-			"WB_Axe",
-			"WB_Pickaxe",
-			"WB_Sledgehammer",
-			"WB_Shovel",
-			"WB_Handsaw",
-			"WB_Hatchet",
-			"WB_Crowbar",
-			"WB_Hammer",
-			"TH_TB_Pliers",
-			"WB_Screwdriver1",
-			"WB_Screwdriver2",
-			"WB_Spraycan1",
-			"WB_Spraycan2",
-			"WB_Spraycan3",
-			"WB_Spraycan4",
-			"WB_Spraycan5",
-			"WB_Spraycan6",
-			"WB_Spraycan7",
-			"Material_MetalSheets",
-			"Material_L3_MetalSheets",
-			"Material_WoodenPlanks",
-			"Material_L3_WoodenPlanks",
-			"Material_WoodenLogs",
-			"Material_L1_WoodenLogs",
-			"Material_L1_Nails",
-			"MetalWire",
-			"TH_TB_WoodenCase" 
+			"TH_LB_Syringe1",
+			"TH_LB_Syringe2",
+			"TH_LB_Syringe3",
+			"TH_LB_Syringe4",
+			"TH_LB_Pills1",
+            "TH_LB_Pills2",
+            "TH_LB_Pills3",
+            "TH_LB_Pills4",
+            "TH_LB_Pills5",
+            "TH_LB_Pills6",
+            "TH_LB_Pills7",
+            "TH_LB_Pills8",
+			"TH_LB_Disinfectants1",
+			"TH_LB_Disinfectants2",
+			"TH_LB_Disinfectants3",
+			"TH_LB_Disinfectants4",
+			"TH_LB_Bandages1",
+            "TH_LB_Bandages2",
+            "TH_LB_Bandages3",
+            "TH_LB_Bandages4",
+			"TH_LB_BloodSupplies1",
+            "TH_LB_BloodSupplies2",
+            "TH_LB_BloodSupplies3",
+            "TH_LB_BloodSupplies4",
+			"TH_LB_Ampoules1",
+			"TH_LB_Ampoules2",
+			"TH_LB_Ampoules3",
+			"TH_LB_Ampoules4",
+			"TH_LB_Ampoules5",
+			"TH_LB_Ampoules6",
+			"TH_LB_Ampoules7",
+			"TH_LB_Ampoules8",
+			"TH_LB_Ampoules9",
+			"TH_LB_Ampoules10",
+			"TH_LB_Ampoules11",
+			"TH_LB_Ampoules12",
+			"TH_LB_Ampoules13",
+			"TH_LB_Ampoules14",
+			"TH_LB_Ampoules15",
+			"TH_LB_Ampoules16",
+			"TH_LB_Ampoules17",
+			"TH_LB_Ampoules18",
+			"TH_LB_Ampoules19",
+			"TH_LB_Ampoules20",
+			"TH_LB_Ampoules21",
+			"TH_LB_Ampoules22",
+			"TH_LB_Ampoules23",
+			"TH_LB_Ampoules24",
+			"TH_LB_Ampoules25",
+			"TH_LB_Ampoules26",
+			"TH_LB_Ampoules27",
+			"TH_LB_Ampoules28",
+			"TH_LB_Ampoules29",
+			"TH_LB_Ampoules30",
+			"TH_LB_Ampoules31",
+			"TH_LB_Ampoules32",
+			"TH_LB_FirstAidKit" 
 		};
 	
 		class DamageSystem
@@ -215,39 +235,46 @@ class CfgVehicles
 				};
 				icon="set:dayz_inventory image:battery";
 			};
-			class tools
+			class supplies
 			{
-				name="$STR_AttachmentsProps_Tools";
-				description="$STR_AttachmentsProps_Tools_desc";
+				name="$STR_AttachmentsProps_Supplies";
+				description="$STR_AttachmentsProps_Supplies_desc";
 				attachmentSlots[]=
 				{
-					"WB_Axe",
-					"WB_Pickaxe",
-					"WB_Sledgehammer",
-					"WB_Shovel",
-					"WB_Handsaw",
-					"WB_Hatchet",
-					"WB_Crowbar",
-					"WB_Hammer",
-					"TH_TB_Pliers",
-					"WB_Screwdriver1",
-					"WB_Screwdriver2"
+					"TH_LB_Disinfectants1",
+					"TH_LB_Disinfectants2",
+					"TH_LB_Disinfectants3",
+					"TH_LB_Disinfectants4",
+					"TH_LB_Bandages1",
+					"TH_LB_Bandages2",
+					"TH_LB_Bandages3",
+					"TH_LB_Bandages4",
+					"TH_LB_Pills1",
+					"TH_LB_Pills2",
+					"TH_LB_Pills3",
+					"TH_LB_Pills4",
+					"TH_LB_Pills5",
+					"TH_LB_Pills6",
+					"TH_LB_Pills7",
+					"TH_LB_Pills8"
+					
 				};
 				icon="set:workbench_icons image:cat_tools";
 			};
-			class spraycans
+			class bloodsupplies
 			{
-				name="$STR_AttachmentsProps_Spraycans";
-				description="$STR_AttachmentsProps_Spraycans_desc";
+				name="$STR_AttachmentsProps_BloodSupplies";
+				description="$STR_AttachmentsProps_BloodSupplies_desc";
 				attachmentSlots[]=
 				{
-					"WB_Spraycan1",
-					"WB_Spraycan2",
-					"WB_Spraycan3",
-					"WB_Spraycan4",
-					"WB_Spraycan5",
-					"WB_Spraycan6",
-					"WB_Spraycan7"
+					"TH_LB_Syringe1",
+					"TH_LB_Syringe2",
+					"TH_LB_Syringe3",
+					"TH_LB_Syringe4",
+					"TH_LB_BloodSupplies1",
+					"TH_LB_BloodSupplies2",
+					"TH_LB_BloodSupplies3",
+					"TH_LB_BloodSupplies4"
 				};
 				icon="set:workbench_icons image:icon_spraycan";
 			};
@@ -257,29 +284,48 @@ class CfgVehicles
 				description="$STR_AttachmentsProps_Modules_desc";
 				attachmentSlots[]=
 				{
-					"drillpress",
-					"grinder",
-					"vice",
-					"soldering",
-					"welding",
-					"sewing"
+					"terminal"
 				};
 				icon="set:workbench_icons image:cat_modules";
 			};
-			class materials
+			class medicines
 			{
-				name="$STR_AttachmentsProps_Materials";
-				description="$STR_AttachmentsProps_Materials_desc";
+				name="$STR_AttachmentsProps_Medicines";
+				description="$STR_AttachmentsProps_Medicines_desc";
 				attachmentSlots[]=
 				{
-					"Material_MetalSheets",
-					"Material_L3_MetalSheets",
-					"Material_WoodenPlanks",
-					"Material_L3_WoodenPlanks",
-					"Material_WoodenLogs",
-					"Material_L1_WoodenLogs",
-					"Material_L1_Nails",
-					"MetalWire"
+					"TH_LB_Ampoules1",
+					"TH_LB_Ampoules2",
+					"TH_LB_Ampoules3",
+					"TH_LB_Ampoules4",
+					"TH_LB_Ampoules5",
+					"TH_LB_Ampoules6",
+					"TH_LB_Ampoules7",
+					"TH_LB_Ampoules8",
+					"TH_LB_Ampoules9",
+					"TH_LB_Ampoules10",
+					"TH_LB_Ampoules11",
+					"TH_LB_Ampoules12",
+					"TH_LB_Ampoules13",
+					"TH_LB_Ampoules14",
+					"TH_LB_Ampoules15",
+					"TH_LB_Ampoules16",
+					"TH_LB_Ampoules17",
+					"TH_LB_Ampoules18",
+					"TH_LB_Ampoules19",
+					"TH_LB_Ampoules20",
+					"TH_LB_Ampoules21",
+					"TH_LB_Ampoules22",
+					"TH_LB_Ampoules23",
+					"TH_LB_Ampoules24",
+					"TH_LB_Ampoules25",
+					"TH_LB_Ampoules26",
+					"TH_LB_Ampoules27",
+					"TH_LB_Ampoules28",
+					"TH_LB_Ampoules29",
+					"TH_LB_Ampoules30",
+					"TH_LB_Ampoules31",
+					"TH_LB_Ampoules32"
 				};
 				icon="set:dayz_inventory image:plates";
 			};
@@ -303,13 +349,13 @@ class CfgVehicles
 				};
 				icon="set:workbench_icons image:cat_output";
 			};
-			class WoodenStorage
+			class FirstAidKitStorage
 			{
-				name="$STR_AttachmentsProps_WoodenStorage";
-				description="$STR_AttachmentsProps_WoodenStorage_desc";
+				name="$STR_AttachmentsProps_FirstAidKitStorage";
+				description="$STR_AttachmentsProps_FirstAidKitStorage_desc";
 				attachmentSlots[]=
 				{
-					"TH_TB_WoodenCase"
+					"TH_LB_FirstAidKit"
 				};
 				icon="set:dayz_inventory image:woodcrate";
 			};
@@ -356,58 +402,26 @@ class CfgVehicles
 			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
 		};
 	};
+	
 	class TheHive_CS_LB_Bench_Public: zm_WorkbenchPublic
 	{
 		scope=1;
 		displayName="$STR_TheHive_CS_LB_Bench_Public";
 		descriptionShort="$STR_TheHive_CS_LB_Bench_Public_desc";
 		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TheHive_CS_LB_Workbench.p3d";
-		weight=100000;
-		itemSize[]={15,15};
+		weight=50000;
+		itemSize[]={10,10};
 		physLayer="item_large";
 		itemBehaviour=2;
-		attachments[] = 
-		{ 
-			"drillpress",
-			"grinder",
-			"vice",
-			"soldering",
-			"welding",
-			"sewing",
-			"workbenchstorage",
-			"workbenchoutput",
-			"WB_Battery1",
-			"WB_Battery2",
-			"WB_Battery3",
-			"WB_Battery4",
-			"WB_Axe",
-			"WB_Pickaxe",
-			"WB_Sledgehammer",
-			"WB_Shovel",
-			"WB_Handsaw",
-			"WB_Hatchet",
-			"WB_Crowbar",
-			"WB_Hammer",
-			"TH_TB_Pliers",
-			"WB_Screwdriver1",
-			"WB_Screwdriver2",
-			"WB_Spraycan1",
-			"WB_Spraycan2",
-			"WB_Spraycan3",
-			"WB_Spraycan4",
-			"WB_Spraycan5",
-			"WB_Spraycan6",
-			"WB_Spraycan7",
-			"Material_MetalSheets",
-			"Material_L3_MetalSheets",
-			"Material_WoodenPlanks",
-			"Material_L3_WoodenPlanks",
-			"Material_WoodenLogs",
-			"Material_L1_WoodenLogs",
-			"Material_L1_Nails",
-			"MetalWire",
-			"TH_TB_WoodenCase" 
-		};
+		simulation="inventoryItem";
+		rotationFlags=2;
+		slopeTolerance=0.40000001;
+		yawPitchRollLimit[]={45,45,45};
+		carveNavmesh=1;
+		heavyItem=1;
+		hologramMaterial="barrel";
+		hologramMaterialPath="dz\gear\containers\data";
+		actionTargetsCursor[]= {};
 		hiddenSelections[]=
 		{
 			"Workbench"
@@ -418,9 +432,72 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+			""
 		};
-
+		attachments[] = 
+		{ 
+			"terminal",
+			"workbenchstorage",
+			"workbenchoutput",
+			"TH_LB_Syringe1",
+			"TH_LB_Syringe2",
+			"TH_LB_Syringe3",
+			"TH_LB_Syringe4",
+			"TH_LB_Pills1",
+            "TH_LB_Pills2",
+            "TH_LB_Pills3",
+            "TH_LB_Pills4",
+            "TH_LB_Pills5",
+            "TH_LB_Pills6",
+            "TH_LB_Pills7",
+            "TH_LB_Pills8",
+			"TH_LB_Disinfectants1",
+			"TH_LB_Disinfectants2",
+			"TH_LB_Disinfectants3",
+			"TH_LB_Disinfectants4",
+			"TH_LB_Bandages1",
+            "TH_LB_Bandages2",
+            "TH_LB_Bandages3",
+            "TH_LB_Bandages4",
+			"TH_LB_BloodSupplies1",
+            "TH_LB_BloodSupplies2",
+            "TH_LB_BloodSupplies3",
+            "TH_LB_BloodSupplies4",
+			"TH_LB_Ampoules1",
+			"TH_LB_Ampoules2",
+			"TH_LB_Ampoules3",
+			"TH_LB_Ampoules4",
+			"TH_LB_Ampoules5",
+			"TH_LB_Ampoules6",
+			"TH_LB_Ampoules7",
+			"TH_LB_Ampoules8",
+			"TH_LB_Ampoules9",
+			"TH_LB_Ampoules10",
+			"TH_LB_Ampoules11",
+			"TH_LB_Ampoules12",
+			"TH_LB_Ampoules13",
+			"TH_LB_Ampoules14",
+			"TH_LB_Ampoules15",
+			"TH_LB_Ampoules16",
+			"TH_LB_Ampoules17",
+			"TH_LB_Ampoules18",
+			"TH_LB_Ampoules19",
+			"TH_LB_Ampoules20",
+			"TH_LB_Ampoules21",
+			"TH_LB_Ampoules22",
+			"TH_LB_Ampoules23",
+			"TH_LB_Ampoules24",
+			"TH_LB_Ampoules25",
+			"TH_LB_Ampoules26",
+			"TH_LB_Ampoules27",
+			"TH_LB_Ampoules28",
+			"TH_LB_Ampoules29",
+			"TH_LB_Ampoules30",
+			"TH_LB_Ampoules31",
+			"TH_LB_Ampoules32",
+			"TH_LB_FirstAidKit" 
+		};
+	
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -515,7 +592,7 @@ class CfgVehicles
 		};
 		class Cargo
 		{
-			itemsCargoSize[]={10,50};
+			itemsCargoSize[]={10,15};
 			openable=0;
 			allowOwnedCargoManipulation=1;
 		};
@@ -523,8 +600,8 @@ class CfgVehicles
 		{
 			class power
 			{
-				name="Power";
-				description="Battery slots for power supply";
+				name="$STR_AttachmentsProps_Power";
+				description="$STR_AttachmentsProps_Power_desc";
 				attachmentSlots[]=
 				{
 					"WB_Battery1",
@@ -534,36 +611,97 @@ class CfgVehicles
 				};
 				icon="set:dayz_inventory image:battery";
 			};
-			class spraycans
+			class supplies
 			{
-				name="$STR_AttachmentsProps_Spraycans";
-				description="$STR_AttachmentsProps_Spraycans_desc";
+				name="$STR_AttachmentsProps_Supplies";
+				description="$STR_AttachmentsProps_Supplies_desc";
 				attachmentSlots[]=
 				{
-					"WB_Spraycan1",
-					"WB_Spraycan2",
-					"WB_Spraycan3",
-					"WB_Spraycan4",
-					"WB_Spraycan5",
-					"WB_Spraycan6",
-					"WB_Spraycan7"
+					"TH_LB_Disinfectants1",
+					"TH_LB_Disinfectants2",
+					"TH_LB_Disinfectants3",
+					"TH_LB_Disinfectants4",
+					"TH_LB_Bandages1",
+					"TH_LB_Bandages2",
+					"TH_LB_Bandages3",
+					"TH_LB_Bandages4",
+					"TH_LB_Pills1",
+					"TH_LB_Pills2",
+					"TH_LB_Pills3",
+					"TH_LB_Pills4",
+					"TH_LB_Pills5",
+					"TH_LB_Pills6",
+					"TH_LB_Pills7",
+					"TH_LB_Pills8"
+					
+				};
+				icon="set:workbench_icons image:cat_tools";
+			};
+			class bloodsupplies
+			{
+				name="$STR_AttachmentsProps_BloodSupplies";
+				description="$STR_AttachmentsProps_BloodSupplies_desc";
+				attachmentSlots[]=
+				{
+					"TH_LB_Syringe1",
+					"TH_LB_Syringe2",
+					"TH_LB_Syringe3",
+					"TH_LB_Syringe4",
+					"TH_LB_BloodSupplies1",
+					"TH_LB_BloodSupplies2",
+					"TH_LB_BloodSupplies3",
+					"TH_LB_BloodSupplies4"
 				};
 				icon="set:workbench_icons image:icon_spraycan";
 			};
-			class materials
+			class modules
 			{
-				name="$STR_AttachmentsProps_Materials";
-				description="$STR_AttachmentsProps_Materials_desc";
+				name="$STR_AttachmentsProps_Modules";
+				description="$STR_AttachmentsProps_Modules_desc";
 				attachmentSlots[]=
 				{
-					"Material_MetalSheets",
-					"Material_L3_MetalSheets",
-					"Material_WoodenPlanks",
-					"Material_L3_WoodenPlanks",
-					"Material_WoodenLogs",
-					"Material_L1_WoodenLogs",
-					"Material_L1_Nails",
-					"MetalWire"
+					"terminal"
+				};
+				icon="set:workbench_icons image:cat_modules";
+			};
+			class medicines
+			{
+				name="$STR_AttachmentsProps_Medicines";
+				description="$STR_AttachmentsProps_Medicines_desc";
+				attachmentSlots[]=
+				{
+					"TH_LB_Ampoules1",
+					"TH_LB_Ampoules2",
+					"TH_LB_Ampoules3",
+					"TH_LB_Ampoules4",
+					"TH_LB_Ampoules5",
+					"TH_LB_Ampoules6",
+					"TH_LB_Ampoules7",
+					"TH_LB_Ampoules8",
+					"TH_LB_Ampoules9",
+					"TH_LB_Ampoules10",
+					"TH_LB_Ampoules11",
+					"TH_LB_Ampoules12",
+					"TH_LB_Ampoules13",
+					"TH_LB_Ampoules14",
+					"TH_LB_Ampoules15",
+					"TH_LB_Ampoules16",
+					"TH_LB_Ampoules17",
+					"TH_LB_Ampoules18",
+					"TH_LB_Ampoules19",
+					"TH_LB_Ampoules20",
+					"TH_LB_Ampoules21",
+					"TH_LB_Ampoules22",
+					"TH_LB_Ampoules23",
+					"TH_LB_Ampoules24",
+					"TH_LB_Ampoules25",
+					"TH_LB_Ampoules26",
+					"TH_LB_Ampoules27",
+					"TH_LB_Ampoules28",
+					"TH_LB_Ampoules29",
+					"TH_LB_Ampoules30",
+					"TH_LB_Ampoules31",
+					"TH_LB_Ampoules32"
 				};
 				icon="set:dayz_inventory image:plates";
 			};
@@ -587,16 +725,17 @@ class CfgVehicles
 				};
 				icon="set:workbench_icons image:cat_output";
 			};
-			class WoodenStorage
+			class FirstAidKitStorage
 			{
-				name="$STR_AttachmentsProps_WoodenStorage";
-				description="$STR_AttachmentsProps_WoodenStorage_desc";
+				name="$STR_AttachmentsProps_FirstAidKitStorage";
+				description="$STR_AttachmentsProps_FirstAidKitStorage_desc";
 				attachmentSlots[]=
 				{
-					"TH_TB_WoodenCase"
+					"TH_LB_FirstAidKit"
 				};
 				icon="set:dayz_inventory image:woodcrate";
 			};
+			
 		};
 	
 	};

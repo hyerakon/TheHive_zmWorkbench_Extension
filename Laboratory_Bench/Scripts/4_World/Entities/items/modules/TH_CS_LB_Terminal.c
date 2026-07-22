@@ -92,9 +92,4 @@ class TH_CS_LB_Terminal : Inventory_Base
             Print("[TH_CS_LB_Terminal] Display spento");
         }
     }
-
-    override void EEHitBy(TotalDamageResult damageResult, int damageType, EntityAI source, int component, string dmgZone, string ammo, vector modelPos, float speedCoef)
-    {
-        // Nessun danno.
-    }
 }
