@@ -103,31 +103,51 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat"
+								"",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Display.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Keyboard.rvmat",
+								""
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat"
+								"",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Display.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Keyboard.rvmat",
+								""
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat"
+								"",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Display_damage.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Keyboard_damage.rvmat",
+								""
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat"
+								"",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_damage.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Display_damage.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Keyboard_damage.rvmat",
+								""
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_destruct.rvmat"
+								"",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Chassis_destruct.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Display_destruct.rvmat",
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_terminal\model\data\TheHive_CS_LB_Terminal_Keyboard_destruct.rvmat",
+								""
 							}
 						}
 					};

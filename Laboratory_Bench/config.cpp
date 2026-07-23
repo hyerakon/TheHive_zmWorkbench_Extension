@@ -354,6 +354,20 @@ class CfgSlots
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
 
+	class Slot_TH_LB_WaveGenerator
+	{
+		name = "wavegenerator";
+		displayName = "$STR_Slot_TH_LB_WaveGenerator";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	class Slot_TH_LB_MortarPestle
+	{
+		name = "mortarpestle";
+		displayName = "$STR_Slot_TH_LB_MortarPestle";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
 	// MEDICAL SLOTS
 	class Slot_TH_LB_Pills1
 	{
@@ -739,6 +753,20 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "terminal";
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Terminal_Proxy.p3d";
+		
+	};
+	class ProxyTH_LB_WaveGenerator_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "wavegenerator";
+		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_WaveGenerator_Proxy.p3d";
+		
+	};
+	class ProxyTH_LB_Mortarpestle_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "mortarpestle";
+		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Mortarpestle_Proxy.p3d";
 		
 	};
 

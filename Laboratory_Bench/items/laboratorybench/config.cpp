@@ -61,6 +61,8 @@ class CfgVehicles
 		attachments[] = 
 		{ 
 			"terminal",
+			"wavegenerator",
+			"mortarpestle",
 			"workbenchstorage",
 			"workbenchoutput",
 			"TH_LB_Syringe1",
@@ -284,7 +286,9 @@ class CfgVehicles
 				description="$STR_AttachmentsProps_Modules_desc";
 				attachmentSlots[]=
 				{
-					"terminal"
+					"terminal",
+					"wavegenerator",
+					"mortarpestle"
 				};
 				icon="set:workbench_icons image:cat_modules";
 			};
@@ -437,6 +441,8 @@ class CfgVehicles
 		attachments[] = 
 		{ 
 			"terminal",
+			"wavegenerator",
+			"mortarpestle",
 			"workbenchstorage",
 			"workbenchoutput",
 			"TH_LB_Syringe1",
@@ -660,7 +666,9 @@ class CfgVehicles
 				description="$STR_AttachmentsProps_Modules_desc";
 				attachmentSlots[]=
 				{
-					"terminal"
+					"terminal",
+					"wavegenerator",
+					"mortarpestle"
 				};
 				icon="set:workbench_icons image:cat_modules";
 			};

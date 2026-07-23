@@ -1,0 +1,1 @@
+class TH_CS_LB_MortarPestle: Inventory_Base {};
