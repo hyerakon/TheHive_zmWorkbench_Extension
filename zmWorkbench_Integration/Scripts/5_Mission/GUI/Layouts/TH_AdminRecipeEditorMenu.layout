@@ -1,0 +1,1730 @@
+FrameWidgetClass AdminRecipeEditor {
+ ignorepointer 0
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 0
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0.9
+   position 0.00019 -0.0003
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   mode blend
+  }
+  PanelWidgetClass MainPanel {
+   visible 1
+   clipchildren 1
+   color 0.05 0.05 0.05 0.98
+   position 0 0
+   size 1560 1040
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 100
+   style blank
+   {
+    ImageWidgetClass MainPanelBG {
+     ignorepointer 1
+     color 0.1137 0.1137 0.1137 1
+     position 8.3915 12.8986
+     size 1543.27991 1013.78003
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+    }
+    PanelWidgetClass LeftBox {
+     visible 1
+     clipchildren 1
+     color 0.1 0.1 0.1 1
+     position 10 45
+     size 320 980
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass LeftBoxBorder {
+       ignorepointer 1
+       color 0.3294 0.3294 0.3294 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass LeftBoxTitle {
+       ignorepointer 1
+       position 5 5
+       size 310 26
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "RECIPES"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.75 0.3 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass LabelCategory {
+       ignorepointer 1
+       position 8 38
+       size 65 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Category:"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.7 0.7 0.7 1
+       "exact text" 1
+       "exact text size" 11
+       "text halign" left
+       "text valign" center
+      }
+      XComboBoxWidgetClass CategoryFilter {
+       position 75 38
+       size 235 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+      }
+      TextWidgetClass LabelSubcategory {
+       ignorepointer 1
+       position 8 66
+       size 65 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Subcat:"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.7 0.7 0.7 1
+       "exact text" 1
+       "exact text size" 11
+       "text halign" left
+       "text valign" center
+      }
+      XComboBoxWidgetClass SubcategoryFilter {
+       position 75 66
+       size 235 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Default
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+      }
+      FrameWidgetClass SearchHintFrame {
+       ignorepointer 1
+       position 8.69312 94.289
+       size 303.07202 25.2181
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        TextWidgetClass SearchHint {
+         ignorepointer 1
+         position 1.04108 0.56349
+         size 302 26
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+         style Normal
+         text "  Search recipes..."
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0.4 0.4 0.4 1
+         "outline color" 0.0902 0.0902 0.0902 1
+         "exact text" 1
+         "exact text size" 11
+         "text halign" left
+         "text valign" center
+        }
+        EditBoxWidgetClass SearchBox {
+         position 0.6278 -0.18498
+         size 302 26
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style Editor
+         text ""
+         "exact text" 1
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 1 1 1 1
+         "text valign" center
+        }
+       }
+      }
+      TextListboxWidgetClass RecipeList {
+       visible 1
+       clipchildren 1
+       ignorepointer 0
+       position 8 128
+       size 302 640
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scaled 1
+       style Editor
+       font "gui/fonts/sansserif"
+       "text color" 1 1 1 1
+      }
+      PanelWidgetClass ResultPreviewBox {
+       visible 1
+       color 0.08 0.08 0.08 1
+       position 8 774
+       size 302 150
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass ResultPreviewBorder {
+         ignorepointer 1
+         color 0.2588 0.2588 0.2588 1
+         position 0 0
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+        }
+        ItemPreviewWidgetClass RecipePreview {
+         position 91 5
+         size 120 120
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 200
+        }
+        TextWidgetClass RecipePreviewLabel {
+         ignorepointer 1
+         position 4 128
+         size 294 18
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "Result preview"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0.8 0.8 0.8 1
+         "exact text" 1
+         "exact text size" 10
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass NewRecipeButton {
+       position 8 935
+       size 95 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "New"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.3 1 0.3 1
+      }
+      ButtonWidgetClass DuplicateButton {
+       position 110 935
+       size 100 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Duplicate"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.9 0.3 1
+      }
+      ButtonWidgetClass DeleteButton {
+       position 217 935
+       size 95 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Delete"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 0.3 0.3 1
+      }
+     }
+    }
+    PanelWidgetClass CenterBox {
+     visible 1
+     clipchildren 1
+     color 0 0 0 1
+     position 340 45
+     size 820 980
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Outline
+     {
+      ImageWidgetClass CenterBoxBorder {
+       ignorepointer 1
+       color 0.3294 0.3294 0.3294 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass CenterBoxTitle {
+       ignorepointer 1
+       position 5 5
+       size 810 26
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "RECIPE DETAILS"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.9 0.3 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      FrameWidgetClass EditContent {
+       visible 1
+       ignorepointer 0
+       position 8 38
+       size 802 835
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        PanelWidgetClass BasicInfoSection {
+         color 0.08 0.08 0.08 1
+         position 0 0
+         size 790 160
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass SectionBasic {
+           ignorepointer 1
+           position 5 2
+           size 780 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Basic Info"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.8 0.7 0.4 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          TextWidgetClass LabelID {
+           ignorepointer 1
+           position 8 28
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "ID:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditID {
+           position 100 28
+           size 65 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelDisplayName {
+           ignorepointer 1
+           position 175 28
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Name:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditDisplayName {
+           position 265 28
+           size 515 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelCategoryEdit {
+           ignorepointer 1
+           position 8 56
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Category:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditCategory {
+           position 100 56
+           size 200 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelSubcategoryEdit {
+           ignorepointer 1
+           position 310 56
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Subcat:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditSubcategory {
+           position 400 56
+           size 380 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelDescription {
+           ignorepointer 1
+           position 8 84
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Desc:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditDescription {
+           position 100 84
+           size 680 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelCraftTime {
+           ignorepointer 1
+           position 8 112
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Time (s):"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditCraftTime {
+           position 100 112
+           size 65 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelPower {
+           ignorepointer 1
+           position 175 112
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Power:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditPower {
+           position 265 112
+           size 65 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Editor
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckAllowPublic {
+           position 350 111.41901
+           size 168.15102 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Public Recipe"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelAttachments {
+           ignorepointer 1
+           position 8 136
+           size 85 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Modules:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          CheckBoxWidgetClass CheckDrillpress {
+           position 100 136
+           size 116.823 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Drill Press"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckGrinder {
+           position 217.67201 136.28999
+           size 95 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Grinder"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckVice {
+           position 313.09601 136.28999
+           size 75 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Vice"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckSoldering {
+           position 389.19101 136.302
+           size 95 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Solder"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckWelding {
+           position 485.76602 136.592
+           size 101.844 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Welding"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckSewing {
+           position 588.71704 136.593
+           size 95.1019 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Sewing"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckTerminal {
+           position 588.71704 136.593
+           size 95.1019 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Terminal"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckWaveGenerator {
+           position 588.71704 136.593
+           size 95.1019 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Wave Generator"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          CheckBoxWidgetClass CheckMortarPestle {
+           position 588.71704 136.593
+           size 95.1019 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Mortar"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+         }
+        }
+        PanelWidgetClass RequiredSection {
+         color 0.08 0.06 0.04 1
+         position 0 165
+         size 530 210
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass RequiredBorder {
+           ignorepointer 1
+           color 0.2588 0.2588 0.2588 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+          }
+          TextWidgetClass SectionRequired {
+           ignorepointer 1
+           position 5 2
+           size 420 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Required Items"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.9 0.7 0.3 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          ButtonWidgetClass AddRequiredItemBtn {
+           position 430 2
+           size 90 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "+ Add"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.3 0.9 0.3 1
+          }
+          ScrollWidgetClass RequiredItemsScroll {
+           color 0.05 0.05 0.05 1
+           position 5 28
+           size 518 155
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            GridSpacerWidgetClass RequiredItemsGrid {
+             position 0 0
+             size 520 5000
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             "Size To Content V" 1
+             Columns 1
+            }
+           }
+          }
+          TextWidgetClass HintRequired {
+           ignorepointer 1
+           position 5 186
+           size 518 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Use '+ Add' button to add items from picker"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.4 0.4 0.4 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass AlternativesSection {
+         color 0.06 0.04 0.02 1
+         position 535 165
+         size 255 210
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass AltsBorder {
+           ignorepointer 1
+           color 0.2588 0.2588 0.2588 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+          }
+          TextWidgetClass SectionAltsTitle {
+           ignorepointer 1
+           position 5 2
+           size 175 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Alternatives (click a required item to manage)"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.9 0.5 0.2 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          ButtonWidgetClass AltRemoveAllBtn {
+           position 190 2
+           size 55 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Clear"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 0.3 0.3 1
+          }
+          ScrollWidgetClass AltsScroll {
+           color 0.05 0.05 0.05 1
+           position 5 26
+           size 243 155
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            GridSpacerWidgetClass AltsGrid {
+             position 0 0
+             size 230 5000
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             "Size To Content V" 1
+             Columns 1
+            }
+           }
+          }
+          TextWidgetClass AltHintText {
+           ignorepointer 1
+           position 5 186
+           size 243 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Select a required item above, then use '+ Alt' to add alternatives"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.4 0.4 0.4 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass ResultSection {
+         color 0.04 0.08 0.04 1
+         position 0 380
+         size 790 175
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass ResultBorder {
+           ignorepointer 1
+           color 0.2588 0.2588 0.2588 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+          }
+          TextWidgetClass SectionResult {
+           ignorepointer 1
+           position 5 2
+           size 680 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Result Items"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.3 0.9 0.3 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          ButtonWidgetClass AddResultItemBtn {
+           position 690 2
+           size 90 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "+ Add"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.3 0.9 0.3 1
+          }
+          ScrollWidgetClass ResultItemsScroll {
+           color 0.05 0.05 0.05 1
+           position 5 28
+           size 778 120
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            GridSpacerWidgetClass ResultItemsGrid {
+             position 0 0
+             size 760 5000
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             "Size To Content V" 1
+             Columns 1
+            }
+           }
+          }
+          TextWidgetClass HintResult {
+           ignorepointer 1
+           position 5 150
+           size 778 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Use '+ Add' button to add items from picker"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.4 0.4 0.4 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass VariantsSection {
+         color 0.04 0.04 0.08 1
+         position 0 560
+         size 530 225
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass VariantsBorder {
+           ignorepointer 1
+           color 0.2588 0.2588 0.2588 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+          }
+          TextWidgetClass SectionVariants {
+           ignorepointer 1
+           position 5 2
+           size 420 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Variants (optional)"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.9 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          ButtonWidgetClass AddVariantItemBtn {
+           position 430 2
+           size 90 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "+ Add"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.3 0.9 0.3 1
+          }
+          CheckBoxWidgetClass CheckAutoVariants {
+           position 5 28
+           size 160 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text " Auto-variants"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          TextWidgetClass LabelExclude {
+           ignorepointer 1
+           position 170 28
+           size 70 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Exclude:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditExcludeVariants {
+           position 245 28
+           size 270 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+          ScrollWidgetClass VariantItemsScroll {
+           color 0.05 0.05 0.05 1
+           position 5 55
+           size 518 140
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            GridSpacerWidgetClass VariantItemsGrid {
+             position 0 0
+             size 520 5000
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             "Size To Content V" 1
+             Columns 1
+            }
+           }
+          }
+          TextWidgetClass HintVariants {
+           ignorepointer 1
+           position 5 199
+           size 518 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Use '+ Add' or '+ Variant' to add variant items"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.4 0.4 0.4 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass VariantExtrasSection {
+         color 0.06 0.04 0.08 1
+         position 535 560
+         size 255 225
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass VariantExtrasBorder {
+           ignorepointer 1
+           color 0.2588 0.2588 0.2588 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+          }
+          TextWidgetClass SectionVariantExtrasTitle {
+           ignorepointer 1
+           position 5 2
+           size 175 22
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Variant Extra Items (click a variant to manage)"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.7 0.5 0.9 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" left
+           "text valign" center
+          }
+          ButtonWidgetClass VariantExtrasClearBtn {
+           position 190 2
+           size 55 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Clear"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 0.3 0.3 1
+          }
+          TextWidgetClass VariantPreviewLabel {
+           ignorepointer 1
+           position 5 25
+           size 60 20
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Preview:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+          EditBoxWidgetClass EditVariantPreviewClassname {
+           position 70 25
+           size 118 18
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+           "text size" 8
+          }
+          ButtonWidgetClass SetVariantPreviewBtn {
+           position 191 25
+           size 54 18
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Set"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.3 0.7 1 1
+           "text size" 8
+          }
+          ScrollWidgetClass VariantExtrasScroll {
+           color 0.05 0.05 0.05 1
+           position 5 45
+           size 243 150
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            GridSpacerWidgetClass VariantExtrasGrid {
+             position 0 0
+             size 230 5000
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             "Size To Content V" 1
+             Columns 1
+            }
+           }
+          }
+          TextWidgetClass VariantExtrasHint {
+           ignorepointer 1
+           position 5 197
+           size 243 15
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Select a variant above, then use '+ Extra' to add extra required items"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.4 0.4 0.4 1
+           "exact text" 1
+           "exact text size" 9
+           "text halign" left
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass SoundSection {
+         color 0.06 0.06 0.06 1
+         position 0 790
+         size 790 45
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass LabelCraftSound {
+           ignorepointer 1
+           position 5 10
+           size 85 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "Sound:"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.6 0.6 0.6 1
+           "exact text" 1
+           "exact text size" 11
+           "text halign" right
+           "text valign" center
+          }
+          EditBoxWidgetClass EditCraftSound {
+           position 95 10
+           size 685 24
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           "exact text" 1
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PreviewSection {
+       color 0.06 0.06 0.06 1
+       position 0 840
+       size 790 45
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        TextWidgetClass LabelPreviewClassname {
+         ignorepointer 1
+         position 5 10
+         size 85 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "Preview:"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0.6 0.6 0.6 1
+         "exact text" 1
+         "exact text size" 11
+         "text halign" right
+         "text valign" center
+        }
+        EditBoxWidgetClass EditPreviewClassname {
+         position 95 10
+         size 685 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "exact text" 1
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 1 1 1 1
+        }
+       }
+      }
+      ButtonWidgetClass ApplyButton {
+       position 8 935
+       size 150 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scaled 1
+       text "Apply Changes"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.3 1 0.3 1
+      }
+      ButtonWidgetClass RevertButton {
+       position 165 935
+       size 120 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Revert"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.7 0.3 1
+      }
+      ButtonWidgetClass SaveAllButton {
+       position 560 935
+       size 125 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Save JSON"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.3 0.8 1 1
+      }
+      ButtonWidgetClass ReloadButton {
+       position 690 935
+       size 125 38
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Reload JSON"
+       text_proportion 0.5
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.9 0.3 1
+      }
+     }
+    }
+    PanelWidgetClass RightBox {
+     visible 1
+     clipchildren 1
+     color 0.1 0.1 0.1 1
+     position 1170 45
+     size 380 980
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass RightBoxBorder {
+       ignorepointer 1
+       color 0.3294 0.3294 0.3294 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass RightBoxTitle {
+       ignorepointer 1
+       position 5 5
+       size 370 26
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "ITEM PICKER"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.4 0.8 1 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      EditBoxWidgetClass PickerSearchBox {
+       position 8 38
+       size 364 28
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text ""
+       "exact text" 1
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 1 1 1
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass PickerSearchHint {
+       ignorepointer 1
+       position 8 38
+       size 364 28
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "  Search items..."
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.4 0.4 0.4 1
+       "exact text" 1
+       "exact text size" 12
+       "text halign" left
+       "text valign" center
+      }
+      XComboBoxWidgetClass PickerCategoryFilter {
+       position 8 70
+       size 364 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+      }
+      ButtonWidgetClass PickerTabItems {
+       position 8 98
+       size 180 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Spawnable"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.4 0.8 1 1
+      }
+      ButtonWidgetClass PickerTabBase {
+       position 192 98
+       size 180 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Non-Spawnable"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+      }
+      TextListboxWidgetClass PickerItemList {
+       visible 1
+       clipchildren 1
+       ignorepointer 0
+       position 8 124
+       size 364 448
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scaled 1
+       style Editor
+       font "gui/fonts/sansserif"
+       "text color" 1 1 1 1
+      }
+      PanelWidgetClass PickerPreviewPanel {
+       visible 1
+       color 0.08 0.08 0.08 1
+       position 8 580
+       size 120 120
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass PickerPreviewBorder {
+         ignorepointer 1
+         color 0.2588 0.2588 0.2588 1
+         position 0 0
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+        }
+        ItemPreviewWidgetClass PickerItemPreview {
+         position 5 5
+         size 110 110
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 200
+        }
+       }
+      }
+      TextWidgetClass SelectedItemText {
+       ignorepointer 1
+       position 135 580
+       size 235 60
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "No item selected"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 11
+       "text halign" left
+       "text valign" top
+      }
+      TextWidgetClass LabelQuantity {
+       ignorepointer 1
+       position 135 648
+       size 50 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Qty:"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.7 0.7 0.7 1
+       "exact text" 1
+       "exact text size" 11
+       "text halign" left
+       "text valign" center
+      }
+      EditBoxWidgetClass PickerQuantityBox {
+       position 185 648
+       size 60 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "1"
+       "exact text" 1
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 1 1 1
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass PickerItemCount {
+       ignorepointer 1
+       position 8 708
+       size 180 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "0 items"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 11
+       "text halign" left
+       "text valign" center
+      }
+      ButtonWidgetClass AddToRequiredBtn {
+       position 8 738
+       size 62 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "+ Req"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.7 0.3 1
+      }
+      ButtonWidgetClass AddToResultBtn {
+       position 73 738
+       size 62 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "+ Result"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.3 0.9 0.3 1
+      }
+      ButtonWidgetClass AddToVariantBtn {
+       position 138 738
+       size 62 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "+ Variant"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.6 0.6 0.9 1
+      }
+      ButtonWidgetClass AddAsAlternativeBtn {
+       position 203 738
+       size 50 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "+ Alt"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.5 0.2 1
+      }
+      ButtonWidgetClass AddAsExtraItemBtn {
+       position 256 738
+       size 50 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "+ Extra"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.7 0.5 0.9 1
+      }
+      ButtonWidgetClass SetPreviewBtn {
+       position 309 738
+       size 61 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "= Preview"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.3 0.8 0.8 1
+      }
+      ButtonWidgetClass AddToBlacklistBtn {
+       position 8 768
+       size 362 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Add to Repair Blacklist"
+       text_proportion 0.7
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 0.3 0.3 1
+      }
+      TextWidgetClass ItemDescriptionLabel {
+       ignorepointer 1
+       position 8 800
+       size 362 20
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Item Description"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.4 0.8 1 1
+       "exact text" 1
+       "exact text size" 12
+       "text halign" left
+       "text valign" center
+      }
+      MultilineTextWidgetClass ItemDescriptionText {
+       ignorepointer 1
+       position 8 822
+       size 362 150
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text ""
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.85 0.85 0.85 1
+       "exact text" 1
+       "exact text size" 11
+       "size to text h" 0
+       "size to text v" 0
+       "text halign" left
+       "text valign" top
+       wrap 1
+      }
+     }
+    }
+    TextWidgetClass StatusText {
+     ignorepointer 1
+     position 1171.67993 997.43408
+     size 378.319 24
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Ready - Select a recipe to edit"
+     font "WorkbenchMod/GUI/fonts/Coolvetica2"
+     "text color" 0.5 0.5 0.5 1
+     "exact text" 1
+     "exact text size" 11
+     "text halign" left
+     "text valign" center
+    }
+    FrameWidgetClass TitleTextFrame {
+     position 9.8212 14.8031
+     size 1539.97998 31.43
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass TitleText {
+       ignorepointer 1
+       position 1.13933 -0.37281
+       size 1539.97998 31.43
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 1
+       style Normal
+       text "RECIPE EDITOR"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 0.85 0.3 1
+       "exact text" 1
+       "exact text size" 20
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass ImageWidget0 {
+       ignorepointer 1
+       color 0.898 0.6667 0 1
+       position 0.06995 -0.10881
+       size 1539.89001 31.43
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+      ButtonWidgetClass CloseButton {
+       position 0 0
+       size 31 31
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass CloseButtonBg {
+         ignorepointer 1
+         color 1 1 1 0.85
+         position 0 0
+         size 31 31
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         mode blend
+        }
+        TextWidgetClass CloseButtonText {
+         ignorepointer 1
+         position 0 0
+         size 31 31
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "X"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0 0 0 1
+         "exact text" 1
+         "exact text size" 18
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

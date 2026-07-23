@@ -10,7 +10,8 @@ class CfgPatches
 			"DZ_Scripts",
             "DZ_Gear_Consumables",
             "DZ_Gear_Camping",
-            "DayZExpansion_Core_Objects_CircuitBoard"
+            "DayZExpansion_Core_Objects_CircuitBoard",
+			"WorkbenchMod"
 		};
 	};
 };
@@ -31,10 +32,20 @@ class CfgMods
 		dependencies[] = {"World"};
 		class defs
 		{
+			class gameScriptModule
+			{
+				value = "";
+				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\3_Game"};
+			};			
 			class worldScriptModule
 			{
 				value = "";
 				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\4_World"};
+			};
+			class missionScriptModule
+			{
+				value = "";
+				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\5_Mission"};
 			};
 		};
 	};

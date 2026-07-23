@@ -1,0 +1,1653 @@
+FrameWidgetClass WorkbenchMenuRoot {
+ clipchildren 0
+ position 0 0
+ size 1 1
+ halign left_ref
+ valign top_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 1
+ {
+  ImageWidgetClass ImageWidgetMainBG {
+   ignorepointer 1
+   color 1 1 1 0
+   position 0.004 0.011
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   imageTexture "{5FE03D83FBB173E4}WorkbenchMod/GUI/textures/loading13.edds"
+   mode blend
+   filter 1
+  }
+  PanelWidgetClass MainPanel {
+   visible 1
+   clipchildren 1
+   color 1 0.533 0 1
+   position 0 0
+   size 1 1
+   halign left_ref
+   valign top_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   style blank
+   {
+    ImageWidgetClass MainPanelBackground {
+     ignorepointer 1
+     color 0.223 0.223 0.223 0
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     mode blend
+    }
+    PanelWidgetClass CharacterPreviewPanel {
+     clipchildren 0
+     color 0.059 0.059 0.078 1
+     position 1440.4 96.807
+     size 320 595.725
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass CharacterPanelBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass CharacterPreviewTitle {
+       position 10 10
+       size 300 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_char_preview"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 20
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass CharacterPreviewHint {
+       position 9.955 532.557
+       size 300 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_preview_equipped"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 16
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass CharacterPreviewWidget {
+     clipchildren 0
+     position 1450 146
+     size 300 476
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      PlayerPreviewWidgetClass CharacterPreview {
+       clipchildren 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       priority 151
+      }
+     }
+    }
+    PanelWidgetClass WorkbenchInventoryPanel {
+     clipchildren 1
+     color 0.059 0.059 0.078 1
+     position 994 736.716
+     size 408 300
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass InventoryPanelBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass InventoryPanelTitle {
+       position 10 8
+       size 388 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_workbench_storage"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 24
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass InventoryEmptyText {
+       position 10 130
+       size 388 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_no_items_stored"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 18
+       "text halign" center
+       "text valign" center
+      }
+      PanelWidgetClass InventoryScroller {
+       clipchildren 1
+       position 8 38
+       size 378 254
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        GridSpacerWidgetClass InventoryGrid {
+         position 0 0
+         size 374 3700
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         Padding 2
+         Margin 0
+         Columns 5
+         Rows 50
+        }
+       }
+      }
+      PanelWidgetClass InventoryScrollbarTrack {
+       color 0.2 0.2 0.2 0.8
+       position 390 38
+       size 10 254
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+      ImageWidgetClass InventoryScrollbarThumb {
+       color 0.6 0.5 0.3 0.9
+       position 391 39
+       size 8 60
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+      }
+     }
+    }
+    PanelWidgetClass PlayerInventoryPanel {
+     clipchildren 1
+     color 0.059 0.059 0.078 1
+     position 582 736.716
+     size 408 300
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass PlayerInventoryBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass PlayerInventoryTitle {
+       position 10 8
+       size 388 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_player_inventory"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 24
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass PlayerInventoryEmptyText {
+       position 10 130
+       size 388 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_no_items_inv"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 18
+       "text halign" center
+       "text valign" center
+      }
+      PanelWidgetClass PlayerInventoryScroller {
+       clipchildren 1
+       position 8 38
+       size 378 254
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        GridSpacerWidgetClass PlayerInventoryGrid {
+         position 0 0
+         size 374 3700
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         Padding 2
+         Margin 0
+         Columns 5
+         Rows 50
+        }
+       }
+      }
+      PanelWidgetClass PlayerInventoryScrollbarTrack {
+       color 0.2 0.2 0.2 0.8
+       position 390 38
+       size 10 254
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+      ImageWidgetClass PlayerInventoryScrollbarThumb {
+       color 0.6 0.5 0.3 0.9
+       position 391 39
+       size 8 60
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+      }
+     }
+    }
+    PanelWidgetClass HeaderPanel {
+     clipchildren 0
+     color 1 0.533 0 1
+     position 0 0
+     size 1 50
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass HeaderBackground {
+       ignorepointer 0
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass WorkbenchTitle {
+       position 10.692 4.337
+       size 377.372 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_title"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 1 1 1
+       "exact text" 1
+       "exact text size" 25
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass CurrentReputationText {
+       position 402.675 4.337
+       size 400 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Reputation: 0"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 20
+       "text halign" left
+       "text valign" center
+      }
+      PanelWidgetClass CloseButton {
+       position 0 0
+       size 50 50
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass CloseButtonBg {
+         ignorepointer 1
+         color 1 1 1 0.85
+         position 0 0
+         size 50 50
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         mode blend
+        }
+        TextWidgetClass CloseButtonText {
+         ignorepointer 1
+         position 0 0
+         size 50 50
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "X"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0 0 0 1
+         "exact text" 1
+         "exact text size" 24
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass CategoryTabsPanel {
+     clipchildren 1
+     color 0.149 0.149 0.196 1
+     position 0 50
+     size 1 35
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass TabsPanelBackground {
+       ignorepointer 1
+       color 1 1 1 0.518
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      GridSpacerWidgetClass CategoryTabsContainer {
+       position 10 0
+       size 0.99 1
+       hexactpos 1
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 0
+       Columns 10
+       Rows 1
+      }
+     }
+    }
+    PanelWidgetClass RecipeListPanel {
+     color 0.502 0.502 0.502 1
+     position 135.401 96.807
+     size 408 597
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass RecipeListBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1.003 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass RecipeListTitle {
+       position 10 10
+       size 244.734 14.42
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_available_recipes"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "outline size" 5
+       "exact text" 1
+       "exact text size" 20
+       "text halign" left
+       "text valign" center
+      }
+      ImageWidgetClass SearchBoxBackground {
+       ignorepointer 1
+       color 0.3 0.3 0.3 0.8
+       position 9.858 31.172
+       size 339.936 35
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+      }
+      EditBoxWidgetClass SearchBox {
+       position 9.858 31.172
+       size 339.936 35
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 100
+       style DefaultBorder
+       text "#STR_wb_search"
+       "Default text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+      }
+      PanelWidgetClass ClearSearchButton {
+       position 354.794 31.172
+       size 35 35
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ImageWidgetClass ClearSearchBg {
+         ignorepointer 1
+         color 1 1 1 0.85
+         position 0 0
+         size 35 35
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         mode blend
+        }
+        TextWidgetClass ClearSearchText {
+         ignorepointer 1
+         position 0 0
+         size 35 35
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "X"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0 0 0 1
+         "exact text" 1
+         "exact text size" 18
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      ScrollWidgetClass RecipeScrollWidget {
+       position 10 73.456
+       size 365 521.768
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        GridSpacerWidgetClass RecipeGrid {
+         ignorepointer 0
+         position 0 0
+         size 365 490
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         Padding 5
+         Margin 0
+         "Size To Content H" 1
+         "Size To Content V" 1
+         Columns 4
+         Rows 100
+        }
+       }
+      }
+      PanelWidgetClass RecipeScrollbarTrack {
+       ignorepointer 1
+       color 0.2 0.2 0.2 0.8
+       position 375 73.456
+       size 10 521.768
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+      ImageWidgetClass RecipeScrollbarThumb {
+       ignorepointer 1
+       color 0.6 0.5 0.3 0.9
+       position 376 74.456
+       size 8 80
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+      }
+     }
+    }
+    PanelWidgetClass RecipeDetailsPanel {
+     color 0.502 0.502 0.502 0.902
+     position 545.401 96.807
+     size 893 637.525
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      PanelWidgetClass ModuleReqTextPanel {
+       ignorepointer 1
+       position 7.807 416.108
+       size 50 48
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 201
+       {
+        TextWidgetClass ModulereqText {
+         ignorepointer 1
+         position 0.015 -0.007
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         priority 200
+         text "#STR_wb_modules_label"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 1 1 1 1
+         "exact text" 1
+         "exact text size" 10
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      PanelWidgetClass MaterialsReqTextPanel {
+       ignorepointer 1
+       position 5.609 489.702
+       size 50 48
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 201
+       {
+        TextWidgetClass MaterialsReqText {
+         ignorepointer 1
+         position 0.015 -0.007
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         priority 200
+         text "#STR_wb_materials_label"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 1 1 1 1
+         "exact text" 1
+         "exact text size" 10
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      ImageWidgetClass RecipeDetailsBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1.002
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+       {
+        ImageWidgetClass seperator {
+         ignorepointer 1
+         color 1 0.686 0.008 0.416
+         position 110.746 387.221
+         size 317.885 2.72
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+        }
+       }
+      }
+      PanelWidgetClass PreviewContainer {
+       clipchildren 1
+       color 0.059 0.059 0.078 1
+       position 251.908 13.178
+       size 380 576.336
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ItemPreviewWidgetClass LargeItemPreview {
+         clipchildren 1
+         position 37.099 1.374
+         size 316.29 350
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         scaled 1
+         priority 200
+        }
+        PanelWidgetClass MultiResultScroll {
+         visible 0
+         clipchildren 1
+         position 10 10
+         size 360 340
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          WrapSpacerWidgetClass MultiResultGrid {
+           position 0 0
+           size 350 2000
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           content_halign left
+           content_valign top
+          }
+         }
+        }
+        PanelWidgetClass QuantityPanel {
+         position 145.099 361.374
+         size 100 30
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ButtonWidgetClass QuantityMinusBtn {
+           position 0 0
+           size 30 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style OldStyle
+           text ""
+           {
+            ImageWidgetClass QuantityMinusBg {
+             ignorepointer 1
+             color 0.3 0.3 0.3 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             mode blend
+            }
+            TextWidgetClass QuantityMinusText {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "-"
+             font "WorkbenchMod/GUI/fonts/Coolvetica2"
+             "text color" 1 1 1 1
+             "exact text" 1
+             "exact text size" 24
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          TextWidgetClass QuantityText {
+           ignorepointer 1
+           position 32 0
+           size 36 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "1"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+           "exact text" 1
+           "exact text size" 24
+           "text halign" center
+           "text valign" center
+          }
+          ButtonWidgetClass QuantityPlusBtn {
+           position 70 0
+           size 30 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style OldStyle
+           text ""
+           {
+            ImageWidgetClass QuantityPlusBg {
+             ignorepointer 1
+             color 0.3 0.3 0.3 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             mode blend
+            }
+            TextWidgetClass QuantityPlusText {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "+"
+             font "WorkbenchMod/GUI/fonts/Coolvetica2"
+             "text color" 1 1 1 1
+             "exact text" 1
+             "exact text size" 24
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass VariantPanel {
+         visible 1
+         position 0.878 392.939
+         size 370 182.862
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass VariantLabel {
+           ignorepointer 1
+           position 0 0
+           size 45 120
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "#STR_wb_variants_label"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 0.8 0.8 0.8 1
+           "exact text" 1
+           "exact text size" 16
+           "text halign" left
+           "text valign" top
+          }
+          PanelWidgetClass VariantScroller {
+           clipchildren 1
+           position 45 0
+           size 320 181.066
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            WrapSpacerWidgetClass VariantIconContainer {
+             position 0 0
+             size 320 800
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      MultilineTextWidgetClass ItemName {
+       visible 1
+       position -183.21 15.962
+       size 425.457 60.913
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scaled 1
+       text "#STR_wb_select_a_recipe"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 0 0 1
+       "exact text" 1
+       "exact text size" 20
+       "text halign" center
+       wrap 1
+      }
+      MultilineTextWidgetClass ItemDescription {
+       position -179.893 84.186
+       size 395.482 256.609
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_select_recipe_desc"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 20
+       "size to text h" 0
+       "size to text v" 0
+       "text halign" center
+       wrap 1
+      }
+      TextWidgetClass RequirementsTitle {
+       position 164.744 354.842
+       size 212.17 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_requirements"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 1 1 1
+       "exact text" 1
+       "exact text size" 24
+       "text halign" left
+       "text valign" center
+      }
+      ImageWidgetClass PowerCostIcon {
+       visible 0
+       ignorepointer 1
+       color 0 0.8 1 1
+       position 358 354.842
+       size 24 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:workbench_icons image:icon_power"
+       mode blend
+       "src alpha" 1
+      }
+      TextWidgetClass PowerCostText {
+       visible 0
+       ignorepointer 1
+       position 382 354.842
+       size 120 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text ""
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0 0.8 1 1
+       "exact text" 1
+       "exact text size" 18
+       "text halign" left
+       "text valign" center
+      }
+      WrapSpacerWidgetClass ModulesPanel {
+       position 53.582 393.072
+       size 450.01 65
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Colorable
+       content_halign left
+       content_valign top
+      }
+      ScrollWidgetClass RequirementsScroll {
+       position 53.109 463.106
+       size 450 130
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        WrapSpacerWidgetClass RequirementsPanel {
+         position 0 0
+         size 450 1000
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style Colorable
+         "Size To Content H" 1
+         "Size To Content V" 1
+         content_halign left
+         content_valign top
+        }
+       }
+      }
+      PanelWidgetClass RequirementsScrollbarTrack {
+       ignorepointer 1
+       color 0.2 0.2 0.2 0.8
+       position 503 463.106
+       size 8 130
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+      ImageWidgetClass RequirementsScrollbarThumb {
+       ignorepointer 1
+       color 0.6 0.5 0.3 0.9
+       position 504 464.106
+       size 6 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       mode blend
+      }
+      PanelWidgetClass TrackButtonPanel {
+       color 1 1 1 0
+       position 118.973 595.274
+       size 150 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Outline
+       {
+        ButtonWidgetClass TrackButton {
+         position 2 2
+         size 146 36
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 200
+         style Empty
+         text ""
+         {
+          ImageWidgetClass TrackButtonBackground {
+           ignorepointer 1
+           color 0.428 0.333 0.114 0.075
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           mode blend
+          }
+          ImageWidgetClass TrackButtonLeftBorder {
+           ignorepointer 1
+           color 0 1 0 1
+           position 0 0
+           size 4 1
+           hexactpos 1
+           vexactpos 0
+           hexactsize 1
+           vexactsize 0
+           mode blend
+          }
+          ImageWidgetClass TrackButtonTopBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 3 0
+           size 143 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          ImageWidgetClass TrackButtonRightBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 145 0
+           size 1 36
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          ImageWidgetClass TrackButtonBottomBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 3 35
+           size 143 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          TextWidgetClass TrackButtonText {
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#STR_wb_track"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass CraftButtonPanel {
+       color 1 1 1 0
+       position 273.752 595.517
+       size 150 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Outline
+       {
+        ButtonWidgetClass CraftButton {
+         position 2 2
+         size 146 36
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 200
+         style Empty
+         text ""
+         {
+          ImageWidgetClass CraftButtonBackground {
+           ignorepointer 1
+           color 0 0.22 0.004 0.196
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           mode blend
+          }
+          ImageWidgetClass CraftButtonLeftBorder {
+           ignorepointer 1
+           color 0 1 0 1
+           position 0 0
+           size 4 1
+           hexactpos 1
+           vexactpos 0
+           hexactsize 1
+           vexactsize 0
+           mode blend
+          }
+          ImageWidgetClass CraftButtonTopBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 3 0
+           size 143 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          ImageWidgetClass CraftButtonRightBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 145 0
+           size 1 36
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          ImageWidgetClass CraftButtonBottomBorder {
+           visible 0
+           ignorepointer 1
+           color 0 1 0 1
+           position 3 35
+           size 143 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           mode blend
+          }
+          TextWidgetClass CraftButtonText {
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#STR_wb_craft"
+           font "WorkbenchMod/GUI/fonts/Coolvetica2"
+           "text color" 1 1 1 1
+           "exact text" 1
+           "exact text size" 12
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass QueuePanel {
+     position 20.094 893.262
+     size 228.643 145.171
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass QueuePanelBG {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.9
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass QueueTitle {
+       ignorepointer 1
+       position 5 2
+       size 170 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_queue_label"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.9 0.9 0.9 1
+       "exact text" 1
+       "exact text size" 16
+       "text halign" left
+       "text valign" center
+      }
+      ButtonWidgetClass StopCraftButton {
+       position 155 2
+       size 70 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_clear"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 1 0.3 0.3 1
+      }
+      ScrollWidgetClass QueueScroller {
+       position 5 22
+       size 218 118
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        MultilineTextWidgetClass QueuedItems {
+         ignorepointer 1
+         position 0 0
+         size 200 1
+         hexactpos 1
+         vexactpos 0
+         hexactsize 1
+         vexactsize 0
+         text ""
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 0.7 0.7 0.7 1
+         "exact text" 1
+         "exact text size" 12
+         "text halign" left
+         wrap 1
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PanelWidgetStatusPanel {
+     position 0 0
+     size 1 40
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      ImageWidgetClass ImageWidgetStatusBG {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass CurrentCraftText {
+       ignorepointer 1
+       position 20 0
+       size 399.685 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_no_active_crafts"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.7 0.7 0.7 1
+       "exact text" 1
+       "exact text size" 18
+       "text valign" center
+      }
+      PanelWidgetClass ProgressBarContainer {
+       position 420.801 1.116
+       size 910.542 37.767
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Outline
+       {
+        ImageWidgetClass ProgressBarBackground {
+         ignorepointer 1
+         color 0.15 0.15 0.15 1
+         position 0 0
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         mode blend
+        }
+        ImageWidgetClass ProgressBarFill {
+         ignorepointer 1
+         color 0.3 0.7 0.3 1
+         position 0 0
+         size 0 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         mode blend
+        }
+        TextWidgetClass ProgressBarText {
+         ignorepointer 1
+         position 0 -0.035
+         size 1.001 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "0%"
+         font "WorkbenchMod/GUI/fonts/Coolvetica2"
+         "text color" 1 1 1 1
+         "exact text" 1
+         "exact text size" 18
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass ModuleLogoPanel {
+     disabled 0
+     clipchildren 1
+     inheritalpha 0
+     ignorepointer 1
+     ignoregloballv 0
+     keepsafezone 0
+     position 0 85
+     size 100 955
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass ModulePanelBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      GridSpacerWidgetClass ModuleDisplay {
+       position 8.796 6.317
+       size 50 450
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 100
+       Padding 2
+       Columns 1
+       Rows 9
+      }
+      ImageWidgetClass ImageWidgetLogo {
+       ignorepointer 1
+       position 0.921 714.172
+       size 100 100
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       imageTexture "{F2FA161FF1324806}WorkbenchMod/GUI/textures/SOS-logo.edds"
+       mode blend
+       "src alpha" 1
+       "stretch mode" fit_w
+      }
+     }
+    }
+    PanelWidgetClass PowerPanel {
+     visible 1
+     color 0.059 0.059 0.078 1
+     position 1491.16 700.945
+     size 186.576 300
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     "no focus" 0
+     {
+      ImageWidgetClass PowerPanelBackground {
+       ignorepointer 1
+       color 0.098 0.098 0.098 0.937
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      TextWidgetClass PowerPanelTitle {
+       ignorepointer 1
+       position 0 8
+       size 185.433 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_power_status"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.8 0.8 0.8 1
+       "exact text" 1
+       "exact text size" 18
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass PowerIcon {
+       ignorepointer 1
+       color 0.4 0.4 0.4 1
+       position 63 45
+       size 60 60
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:workbench_icons image:icon_power"
+       mode blend
+       "src alpha" 1
+      }
+      TextWidgetClass PowerStatusText {
+       ignorepointer 1
+       position 8 115
+       size 170 24
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_not_connected"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.6 0.6 0.6 1
+       "exact text" 1
+       "exact text size" 16
+       "text halign" center
+       "text valign" center
+      }
+      PanelWidgetClass PowerBarBackground {
+       ignorepointer 1
+       color 0.15 0.15 0.15 1
+       position 18 150
+       size 150 16
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style blank
+       {
+        ImageWidgetClass PowerBarFill {
+         ignorepointer 1
+         color 0.3 0.8 0.3 1
+         position 0 0
+         size 0 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         mode blend
+        }
+       }
+      }
+      TextWidgetClass PowerText {
+       ignorepointer 1
+       position 8 172
+       size 170 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text ""
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.6 0.6 0.6 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass PowerSourceLabel {
+       ignorepointer 1
+       position 8 200
+       size 170 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_source"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 12
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass PowerSourceText {
+       ignorepointer 1
+       position 8 218
+       size 170 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_none"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.6 0.6 0.6 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass ChargingText {
+       visible 0
+       ignorepointer 1
+       position 8 250
+       size 170 20
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "#STR_wb_charging"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0 0.8 1 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass BatteryCountText {
+       ignorepointer 1
+       position 8 275
+       size 170 18
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "0 batteries"
+       font "WorkbenchMod/GUI/fonts/Coolvetica2"
+       "text color" 0.5 0.5 0.5 1
+       "exact text" 1
+       "exact text size" 12
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass SubcategoryTabsPanel {
+     visible 0
+     clipchildren 1
+     color 0.149 0.149 0.196 1
+     position 0 86
+     size 160 300
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style blank
+     {
+      ImageWidgetClass SubcategoryPanelBg {
+       ignorepointer 1
+       color 1 1 1 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      PanelWidgetClass SubcategoryTabsContainer {
+       clipchildren 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass TooltipContainer {
+   ignorepointer 1
+   position -0.01 -0.007
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 999999
+  }
+ }
+}
