@@ -10,7 +10,8 @@ class CfgPatches
 			"DZ_Scripts",
 			"DZ_Gear_Consumables",
             "DZ_Gear_Camping",
-            "DayZExpansion_Core_Objects_CircuitBoard"
+            "DayZExpansion_Core_Objects_CircuitBoard",
+			"TheHive_zmWorkbench_Integration_Scripts"
 		};
 	};
 };
@@ -786,4 +787,75 @@ class CfgVehicles
 		};
 	};
 	
+	//! CIRCUITS BOARDS
+	class ExpansionCircuitBoardBase;
+	class TheHive_CS_Craft_Tool_BASE: ExpansionCircuitBoardBase
+	{
+		scope=0;
+		displayName="#STR_TheHive_CS_BASE_DEVICE";
+		descriptionShort="#STR_TheHive_CS_BASE_DEVICE_DESCRIPTION";
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+	};
+	class TheHive_CS_Engineer_Device: TheHive_CS_Craft_Tool_BASE
+	{
+		scope=2;
+		displayName="#STR_TheHive_CS_ENGINEER_DEVICE";
+		descriptionShort="#STR_TheHive_CS_ENGINEER_DEVICE_DESCRIPTION";
+		model="DayZExpansion\Core\Objects\CircuitBoard\CircuitBoard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board.rvmat"
+		};
+	};
+	class TheHive_CS_Security_Device: TheHive_CS_Craft_Tool_BASE
+	{
+		scope=2;
+		displayName="#STR_TheHive_CS_SECURITY_DEVICE";
+		descriptionShort="#STR_TheHive_CS_SECURITY_DEVICE_DESCRIPTION";
+		model="DayZExpansion\Core\Objects\CircuitBoard\CircuitBoard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board_mk2_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board.rvmat"
+		};
+	};
+	class TheHive_CS_Medic_Device: TheHive_CS_Craft_Tool_BASE
+	{
+		scope=2;
+		displayName="#STR_TheHive_CS_MEDIC_DEVICE";
+		descriptionShort="#STR_TheHive_CS_MEDIC_DEVICE_DESCRIPTION";
+		model="DayZExpansion\Core\Objects\CircuitBoard\CircuitBoard.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board_mk3_co.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board.rvmat"
+		};
+	};
+
 };
