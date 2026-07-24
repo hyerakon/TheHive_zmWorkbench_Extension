@@ -158,7 +158,7 @@ class CfgVehicles
 			"pestle"
 		};
 		weight=500;
-		itemSize[]={3,1};
+		itemSize[]={1,3};
 		itemBehaviour=2;
 		canBeSplit=0;
 		hiddenSelections[]=
