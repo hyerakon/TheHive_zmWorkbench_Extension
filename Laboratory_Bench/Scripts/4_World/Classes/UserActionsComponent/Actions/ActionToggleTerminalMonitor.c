@@ -36,6 +36,8 @@ class ActionToggleTerminalMonitor : ActionInteractBase
     {
         TH_CS_LB_Terminal terminal = GetTerminal(target);
 
+        // SOLO SE SEI MEDICO/STAFF OPPURE SE QUEST_ID=blablabla
+
         if (!terminal)
             return false;
 

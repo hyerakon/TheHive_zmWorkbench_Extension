@@ -9,8 +9,12 @@ class TheHive_CS_LB_Bench_BASE extends TheHive_CS_Bench_BASE
 
     override void SetActions()
     {
-        super.SetActions();
-
+        
+        AddAction(LB_ActionOpenCraftingWorkbench)
         AddAction(ActionToggleTerminalMonitor);
+        
+        super.SetActions();
+        
+        RemoveAction(ActionOpenCraftingWorkbench);        
     }
 }
