@@ -371,7 +371,7 @@ modded class WorkbenchMenu extends UIScriptedMenu
         if (!m_ModuleTooltipWidget) return;
         
         // Module class names
-        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing", "TH_CS_LB_Terminal", "TH_CS_LB_WaveGenerator", "TH_CS_LB_MortarPestle"};
+        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing", "TH_CS_LB_Terminal", "TH_CS_LB_WaveGenerator", "TH_CS_LB_Mortar"};
         
         if (moduleIndex < 0 || moduleIndex >= moduleClassNames.Count()) return;
         
@@ -608,7 +608,7 @@ modded class WorkbenchMenu extends UIScriptedMenu
             // TH Modules mapping
             moduleClasses.Insert("terminal", "TH_CS_LB_Terminal");
             moduleClasses.Insert("wavegenerator", "TH_CS_LB_WaveGenerator");
-            moduleClasses.Insert("mortarpestle", "TH_CS_LB_MortarPestle");
+            moduleClasses.Insert("mortarpestle", "TH_CS_LB_Mortar");
             
             foreach (string reqModule : recipe.required_attachments) {
                 string reqModuleLower = reqModule;

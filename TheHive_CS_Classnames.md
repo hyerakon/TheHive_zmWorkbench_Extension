@@ -32,7 +32,7 @@ TheHive_CS_LB_Kit_Locked
 TheHive_CS_LB_Bench_Modular
 TheHive_CS_LB_Bench_Locked
 TheHive_CS_LB_Bench_Public
-TH_CS_LB_MortarPestle
+TH_CS_LB_Mortar
 TH_CS_LB_Terminal
 TH_CS_LB_WaveGenerator
 ```
@@ -46,7 +46,7 @@ TH_CS_LB_WaveGenerator
 | `TheHive_CS_LB_Bench_Modular` | `2` | Banco | `TheHive_CS_LB_Bench_BASE` | `$STR_TheHive_CS_LB_Bench_Modular` | `Laboratory_Bench/items/laboratorybench/config.cpp:373` |
 | `TheHive_CS_LB_Bench_Locked` | `2` | Banco | `TheHive_CS_LB_Bench_BASE` | `$STR_TheHive_CS_LB_Bench_Locked` | `Laboratory_Bench/items/laboratorybench/config.cpp:393` |
 | `TheHive_CS_LB_Bench_Public` | `1` | Banco | `zm_WorkbenchPublic` | `$STR_TheHive_CS_LB_Bench_Public` | `Laboratory_Bench/items/laboratorybench/config.cpp:412` |
-| `TH_CS_LB_MortarPestle` | `2` | Modulo | `Inventory_Base` | `$STR_TH_CS_LB_MortarPestle` | `Laboratory_Bench/items/module_mortarpestle/config.cpp:24` |
+| `TH_CS_LB_Mortar` | `2` | Modulo | `Inventory_Base` | `$STR_TH_CS_LB_Mortar` | `Laboratory_Bench/items/module_mortarpestle/config.cpp:24` |
 | `TH_CS_LB_Terminal` | `2` | Modulo | `Inventory_Base` | `$STR_TH_CS_LB_Terminal` | `Laboratory_Bench/items/module_terminal/config.cpp:24` |
 | `TH_CS_LB_WaveGenerator` | `2` | Modulo | `Inventory_Base` | `$STR_TH_CS_LB_WaveGenerator` | `Laboratory_Bench/items/module_wavegenerator/config.cpp:24` |
 
@@ -180,7 +180,7 @@ Esempio errato:
 ```json
 "required_attachments": [
     "TH_CS_LB_Terminal",
-    "TH_CS_LB_MortarPestle"
+    "TH_CS_LB_Mortar"
 ]
 ```
 
@@ -192,7 +192,7 @@ Il controllo delle ricette confronta infatti i valori di `required_attachments` 
 |---|---|---|---|---:|---|
 | Terminale | `TH_CS_LB_Terminal` | `terminal` | `TheHive_CS_LB_Bench_Modular`, `TheHive_CS_LB_Bench_Locked`, `TheHive_CS_LB_Bench_Public` | `2` | `Laboratory_Bench/items/module_terminal/config.cpp:25-34` |
 | Generatore di forme d'onda | `TH_CS_LB_WaveGenerator` | `wavegenerator` | `TheHive_CS_LB_Bench_Modular`, `TheHive_CS_LB_Bench_Locked`, `TheHive_CS_LB_Bench_Public` | `2` | `Laboratory_Bench/items/module_wavegenerator/config.cpp:25-34` |
-| Mortaio e pestello | `TH_CS_LB_MortarPestle` | `mortarpestle` | `TheHive_CS_LB_Bench_Modular`, `TheHive_CS_LB_Bench_Locked`, `TheHive_CS_LB_Bench_Public` | `2` | `Laboratory_Bench/items/module_mortarpestle/config.cpp:25-34` |
+| Mortaio e pestello | `TH_CS_LB_Mortar` | `mortarpestle` | `TheHive_CS_LB_Bench_Modular`, `TheHive_CS_LB_Bench_Locked`, `TheHive_CS_LB_Bench_Public` | `2` | `Laboratory_Bench/items/module_mortarpestle/config.cpp:25-34` |
 
 Gli slot disponibili sul Laboratory Bench sono dichiarati in `Laboratory_Bench/items/laboratorybench/config.cpp:61-65`.
 
@@ -277,7 +277,7 @@ Di conseguenza:
 | `sewing` | `zm_Sewing` | `Tecnic_Bench` |
 | `terminal` | `TH_CS_LB_Terminal` | `Laboratory_Bench` |
 | `wavegenerator` | `TH_CS_LB_WaveGenerator` | `Laboratory_Bench` |
-| `mortarpestle` | `TH_CS_LB_MortarPestle` | `Laboratory_Bench` |
+| `mortarpestle` | `TH_CS_LB_Mortar` | `Laboratory_Bench` |
 
 ## Classi `scope = 1` da trattare con cautela
 
