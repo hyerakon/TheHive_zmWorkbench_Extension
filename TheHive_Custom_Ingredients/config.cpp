@@ -66,6 +66,13 @@ class CfgVehicles
 		hiddenSelections[]={"zbytek"};
         hiddenSelectionsMaterials[]={"DZ\gear\containers\data\Protector_Case.rvmat"};
         hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\supply_weapon_parts_co.paa"};
+		
+		stackedUnit="percentage";
+		quantityBar=1;
+		varQuantityInit=100;
+		varQuantityMin=0;
+		varQuantityMax=100;
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -357,6 +364,62 @@ class CfgVehicles
         scope = 2;
         name = "TH_CS_WeaponPack_SCARH";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SCARH";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_CZ61: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_CZ61";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_CZ61";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_Rak37: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_Rak37";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Rak37";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_ExpansionKedr: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_ExpansionKedr";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ExpansionKedr";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_USG45: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_USG45";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_USG45";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_SG5: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_SG5";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SG5";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_ExpansionMP7: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_ExpansionMP7";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ExpansionMP7";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_ExpansionKar98: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_ExpansionKar98";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ExpansionKar98";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_ZenTaser: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_ZenTaser";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ZenTaser";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
 
