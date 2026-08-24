@@ -422,6 +422,20 @@ class CfgVehicles
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ZenTaser";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
+	class TH_CS_WeaponPack_R12: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_R12";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_R12";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_MP133: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_MP133";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP133";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
 
 	//! PACK OGGETTI
 	class SmallProtectorCase;
