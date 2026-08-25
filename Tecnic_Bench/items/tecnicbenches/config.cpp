@@ -1,12 +1,12 @@
 class CfgPatches
 {
-	class TheHive_CS_TB_Script
+	class TH_CS_TB_Script
 	{
 		units[]=
 		{
-			"TheHive_CS_TB_Bench",
-            "TheHive_CS_TB_Bench_Public",
-            "TheHive_CS_TB_Bench_Locked"
+			"TH_CS_TB_Bench",
+            "TH_CS_TB_Bench_Public",
+            "TH_CS_TB_Bench_Locked"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -24,10 +24,10 @@ class CfgVehicles
 {
 	
     class zm_WorkbenchPublic;
-	class TheHive_CS_Bench_BASE;
+	class TH_CS_Bench_BASE;
 
 
-	class TheHive_CS_TB_Bench_BASE: TheHive_CS_Bench_BASE
+	class TH_CS_TB_Bench_BASE: TH_CS_Bench_BASE
 	{
 		scope=0;
 		displayName="$STR_TheHive_CS_TB_Bench_BASE";
@@ -316,7 +316,7 @@ class CfgVehicles
 		};
 	
 	};
-	class TheHive_CS_TB_Bench_Modular: TheHive_CS_TB_Bench_BASE
+	class TH_CS_TB_Bench_Modular: TH_CS_TB_Bench_BASE
 	{
 		scope=2;
 		displayName="$STR_TheHive_CS_TB_Bench_Modular";
@@ -336,7 +336,7 @@ class CfgVehicles
 		};
 	
 	};
-	class TheHive_CS_TB_Bench_Locked: TheHive_CS_TB_Bench_BASE
+	class TH_CS_TB_Bench_Locked: TH_CS_TB_Bench_BASE
 	{
 		scope=2;
 		displayName="$STR_TheHive_CS_TB_Bench_Locked";
@@ -355,7 +355,7 @@ class CfgVehicles
 			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
 		};
 	};
-	class TheHive_CS_TB_Bench_Public: zm_WorkbenchPublic
+	class TH_CS_TB_Bench_Public: zm_WorkbenchPublic
 	{
 		scope=1;
 		displayName="$STR_TheHive_CS_TB_Bench_Public";

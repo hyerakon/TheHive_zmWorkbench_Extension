@@ -49,7 +49,7 @@ class CfgVehicles
 	class TH_CS_WeaponPack_BASE: SmallProtectorCase
 	{
 		scope = 1;
-        name = "TheHive_CS_BASE";
+        name = "TH_CS_BASE";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
 		model="\dz\gear\containers\Protector_Case.p3d";
@@ -439,7 +439,7 @@ class CfgVehicles
 
 	//! PACK OGGETTI
 	class SmallProtectorCase;
-	class TheHive_CS_Supply_BASE: SmallProtectorCase
+	class TH_CS_Supply_BASE: SmallProtectorCase
 	{
 		scope=1;
 		displayName="$STR_CfgVehicles_SmallProtectorCase0";
@@ -553,7 +553,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class TheHive_CS_Supply_Food: TheHive_CS_Supply_BASE
+	class TH_CS_Supply_Food: TH_CS_Supply_BASE
 	{
 		scope=2;
 		displayName="$STR_THEHIVE_CS_SUPPLY_FOOD";
@@ -661,7 +661,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class TheHive_CS_Supply_Lab: TheHive_CS_Supply_BASE
+	class TH_CS_Supply_Lab: TH_CS_Supply_BASE
 	{
 		scope=2;
 		displayName="$STR_THEHIVE_CS_SUPPLY_LAB";
@@ -769,7 +769,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class TheHive_CS_Supply_Tec: TheHive_CS_Supply_BASE
+	class TH_CS_Supply_Tec: TH_CS_Supply_BASE
 	{
 		scope=2;
 		displayName="$STR_THEHIVE_CS_SUPPLY_TEC";
@@ -880,7 +880,7 @@ class CfgVehicles
 	
 	//! CIRCUITS BOARDS
 	class ExpansionCircuitBoardBase;
-	class TheHive_CS_Craft_Tool_BASE: ExpansionCircuitBoardBase
+	class TH_CS_Craft_Tool_BASE: ExpansionCircuitBoardBase
 	{
 		scope=0;
 		displayName="#STR_TheHive_CS_BASE_DEVICE";
@@ -891,7 +891,7 @@ class CfgVehicles
 		varQuantityMin=0;
 		varQuantityMax=100;
 	};
-	class TheHive_CS_Engineer_Device: TheHive_CS_Craft_Tool_BASE
+	class TH_CS_Engineer_Device: TH_CS_Craft_Tool_BASE
 	{
 		scope=2;
 		displayName="#STR_TheHive_CS_ENGINEER_DEVICE";
@@ -910,7 +910,7 @@ class CfgVehicles
 			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board.rvmat"
 		};
 	};
-	class TheHive_CS_Security_Device: TheHive_CS_Craft_Tool_BASE
+	class TH_CS_Security_Device: TH_CS_Craft_Tool_BASE
 	{
 		scope=2;
 		displayName="#STR_TheHive_CS_SECURITY_DEVICE";
@@ -929,7 +929,7 @@ class CfgVehicles
 			"DayZExpansion\Core\Objects\CircuitBoard\data\circuit_board.rvmat"
 		};
 	};
-	class TheHive_CS_Medic_Device: TheHive_CS_Craft_Tool_BASE
+	class TH_CS_Medic_Device: TH_CS_Craft_Tool_BASE
 	{
 		scope=2;
 		displayName="#STR_TheHive_CS_MEDIC_DEVICE";

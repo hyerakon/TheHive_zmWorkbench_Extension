@@ -55,7 +55,7 @@ class cfgVehicles
 {
     
 	class zm_WorkbenchModular;
-    class TheHive_CS_Bench_BASE: zm_WorkbenchModular
+    class TH_CS_Bench_BASE: zm_WorkbenchModular
     {
         scope=0;
 		displayName="$STR_TheHive_CS_Bench_BASE";

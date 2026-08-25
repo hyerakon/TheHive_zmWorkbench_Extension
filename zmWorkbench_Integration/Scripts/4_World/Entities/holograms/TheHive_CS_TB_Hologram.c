@@ -1,4 +1,4 @@
-// Scripts/4_World/Entities/Hologram/TheHive_CS_TB_Hologram.c
+// Scripts/4_World/Entities/Hologram/TH_CS_TB_Hologram.c
 
 modded class Hologram
 {	
@@ -16,10 +16,10 @@ modded class Hologram
     {
         Print("[TB HOLOGRAM] item=" + item.GetType());
 
-        TheHive_CS_TB_KitBox_BASE kit = TheHive_CS_TB_KitBox_BASE.Cast(item);
+        TH_CS_TB_KitBox_BASE kit = TH_CS_TB_KitBox_BASE.Cast(item);
         if (kit)
         {
-            string holo = kit.TheHive_CS_TB_Kit_Holo();
+            string holo = kit.TH_CS_TB_Kit_Holo();
             Print("[TB HOLOGRAM] holo=" + holo);
             return holo;
         }
@@ -32,7 +32,7 @@ modded class Hologram
         if (m_Projection)
         {
             string projType = m_Projection.GetType();
-            if (projType.Contains("TheHive_CS_TB_Script") || projType.Contains("TheHive_CS_TB_Bench_"))
+            if (projType.Contains("TH_CS_TB_Script") || projType.Contains("TH_CS_TB_Bench_"))
             {
                 return true;
             }
@@ -43,7 +43,7 @@ modded class Hologram
     protected bool IsWorkbenchKit()
     {
         ItemBase item_in_hands = ItemBase.Cast(m_Player.GetHumanInventory().GetEntityInHands());
-        if (item_in_hands && item_in_hands.IsKindOf("TheHive_CS_TB_KitBox_BASE"))
+        if (item_in_hands && item_in_hands.IsKindOf("TH_CS_TB_KitBox_BASE"))
         {
             return true;
         }

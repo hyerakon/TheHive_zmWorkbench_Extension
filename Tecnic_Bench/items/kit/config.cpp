@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class TheHive_CS_TB_Kits_Scripts
+    class TH_CS_TB_Kits_Scripts
     {
         units[]={};
         weapons[]={};
@@ -10,7 +10,7 @@ class CfgPatches
 			"DZ_Scripts",
 			"DZ_Data",
             "TheHive_zmWorkbench_Extension_TB_Script",
-            "TheHive_CS_TB_Script"
+            "TH_CS_TB_Script"
         };
     };
 };
@@ -18,7 +18,7 @@ class CfgPatches
 class CfgVehicles
 {
     class Inventory_Base;
-    class TheHive_CS_TB_KitBox_BASE : Inventory_Base
+    class TH_CS_TB_KitBox_BASE : Inventory_Base
 	{
 		scope = 0;
 		displayName = "$STR_TheHive_CS_TB_KitBox_BASE";
@@ -31,7 +31,7 @@ class CfgVehicles
 		canBeSplit = 0;
         soundImpactType = "wood";
 		rotationFlags = 2;
-		projectionTypename = "TheHive_CS_TB_Bench_BASE";
+		projectionTypename = "TH_CS_TB_Bench_BASE";
 		alignHologramToTerain=1;
 		slopeTolerance=0.5;
 
@@ -146,18 +146,18 @@ class CfgVehicles
 	
 		
 	};  
-    class TheHive_CS_TB_Kit_Modular : TheHive_CS_TB_KitBox_BASE
+    class TH_CS_TB_Kit_Modular : TH_CS_TB_KitBox_BASE
     {
         scope = 2;
         displayName = "$STR_TheHive_CS_TB_Kit_Modular";
 		descriptionShort = "$STR_TheHive_CS_TB_Kit_Modular_desc";
-        projectionTypename = "TheHive_CS_TB_Bench_Modular";
+        projectionTypename = "TH_CS_TB_Bench_Modular";
     };
-    class TheHive_CS_TB_Kit_Locked : TheHive_CS_TB_KitBox_BASE
+    class TH_CS_TB_Kit_Locked : TH_CS_TB_KitBox_BASE
     {
         scope = 2;
         displayName = "$STR_TheHive_CS_TB_Kit_Locked";
 		descriptionShort = "$STR_TheHive_CS_TB_Kit_Locked_desc";
-        projectionTypename = "TheHive_CS_TB_Bench_Locked";
+        projectionTypename = "TH_CS_TB_Bench_Locked";
     };
 };

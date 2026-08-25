@@ -1,7 +1,7 @@
-class TheHive_CS_Supply_BASE: Inventory_Base {};
-class TheHive_CS_Supply_Food: TheHive_CS_Supply_BASE
+class TH_CS_Supply_BASE: Inventory_Base {};
+class TH_CS_Supply_Food: TH_CS_Supply_BASE
 {
-    void TheHive_CS_Supply_Food()
+    void TH_CS_Supply_Food()
     {
         can_this_be_combined = true;
     };
@@ -13,7 +13,7 @@ class TheHive_CS_Supply_Food: TheHive_CS_Supply_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TheHive_CS_Supply_Food")
+        if (otherType != "TH_CS_Supply_Food")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -52,9 +52,9 @@ class TheHive_CS_Supply_Food: TheHive_CS_Supply_BASE
     };
 };
 
-class TheHive_CS_Supply_Lab: TheHive_CS_Supply_BASE
+class TH_CS_Supply_Lab: TH_CS_Supply_BASE
 {
-    void TheHive_CS_Supply_Lab()
+    void TH_CS_Supply_Lab()
     {
         can_this_be_combined = true;
     };
@@ -66,7 +66,7 @@ class TheHive_CS_Supply_Lab: TheHive_CS_Supply_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TheHive_CS_Supply_Lab")
+        if (otherType != "TH_CS_Supply_Lab")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -105,9 +105,9 @@ class TheHive_CS_Supply_Lab: TheHive_CS_Supply_BASE
     };
 };
 
-class TheHive_CS_Supply_Tec: TheHive_CS_Supply_BASE
+class TH_CS_Supply_Tec: TH_CS_Supply_BASE
 {
-    void TheHive_CS_Supply_Tec()
+    void TH_CS_Supply_Tec()
     {
         can_this_be_combined = true;
     };
@@ -119,7 +119,7 @@ class TheHive_CS_Supply_Tec: TheHive_CS_Supply_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TheHive_CS_Supply_Tec")
+        if (otherType != "TH_CS_Supply_Tec")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)

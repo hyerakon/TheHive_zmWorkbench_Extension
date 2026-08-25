@@ -1,4 +1,4 @@
-class TheHive_CS_TB_Bench_Modular extends TheHive_CS_TB_Bench_BASE
+class TH_CS_TB_Bench_Modular extends TH_CS_TB_Bench_BASE
 {
     override string GetWorkbenchID()
     {

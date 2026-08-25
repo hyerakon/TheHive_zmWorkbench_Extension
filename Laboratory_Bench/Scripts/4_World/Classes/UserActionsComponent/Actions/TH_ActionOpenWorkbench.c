@@ -20,7 +20,7 @@ class LB_ActionOpenCraftingWorkbench: ActionInteractBase
         Object targetObject = target.GetObject();
         if (!targetObject) return false;
         
-        if (!targetObject.IsKindOf("TheHive_CS_LB_Bench_BASE")) return false;
+        if (!targetObject.IsKindOf("TH_CS_LB_Bench_BASE")) return false;
         
         //CHECK TERMINALE
         TH_CS_LB_Terminal terminal = GetTerminal(target);
@@ -34,7 +34,7 @@ class LB_ActionOpenCraftingWorkbench: ActionInteractBase
             return false;
         }
         
-        TheHive_CS_LB_Bench_BASE workbench = TheHive_CS_LB_Bench_BASE.Cast(targetObject);
+        TH_CS_LB_Bench_BASE workbench = TH_CS_LB_Bench_BASE.Cast(targetObject);
         return WorkbenchHelpers.CanPlayerUseWorkbench(player, workbench);
     }
     
@@ -44,7 +44,7 @@ class LB_ActionOpenCraftingWorkbench: ActionInteractBase
         WBDebug("[WorkbenchMod] Action executed!");
         
         PlayerBase player = action_data.m_Player;
-        TheHive_CS_LB_Bench_BASE workbench = TheHive_CS_LB_Bench_BASE.Cast(action_data.m_Target.GetObject());
+        TH_CS_LB_Bench_BASE workbench = TH_CS_LB_Bench_BASE.Cast(action_data.m_Target.GetObject());
         
         if (!player || !workbench) {
             WBDebug("[WorkbenchMod] ERROR: No player or workbench!");
@@ -57,7 +57,7 @@ class LB_ActionOpenCraftingWorkbench: ActionInteractBase
             return;
         
         WBDebug("[WorkbenchMod] Opening menu for workbench...");
-        TheHive_CS_LB_Bench_BASE.s_PendingWorkbench = workbench;
+        TH_CS_LB_Bench_BASE.s_PendingWorkbench = workbench;
         GetGame().GetUIManager().EnterScriptedMenu(WorkbenchConstants.MENU_WORKBENCH, null);
     }
     
@@ -71,7 +71,7 @@ class LB_ActionOpenCraftingWorkbench: ActionInteractBase
 
         // Sync player's Hardline reputation when they open the workbench
         PlayerBase player = action_data.m_Player;
-        TheHive_CS_LB_Bench_BASE workbench = TheHive_CS_LB_Bench_BASE.Cast(action_data.m_Target.GetObject());
+        TH_CS_LB_Bench_BASE workbench = TH_CS_LB_Bench_BASE.Cast(action_data.m_Target.GetObject());
         
         if (player && workbench) {
             PlayerIdentity identity = player.GetIdentity();

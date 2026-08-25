@@ -1,13 +1,13 @@
-class TheHive_CS_LB_KitBox_BASE : DeployableContainer_Base 
+class TH_CS_LB_KitBox_BASE : DeployableContainer_Base 
 {
-    protected Object TheHive_CS_LB_KitBox_ProtectedVar;
+    protected Object TH_CS_LB_KitBox_ProtectedVar;
     
     protected string GetDeployObjectType()
     {
-        return "TheHive_CS_LB_Bench_BASE";
+        return "TH_CS_LB_Bench_BASE";
     };
     
-    string TheHive_CS_LB_Kit_Holo()
+    string TH_CS_LB_Kit_Holo()
     {
         return GetDeployObjectType();
     };
@@ -67,7 +67,7 @@ class TheHive_CS_LB_KitBox_BASE : DeployableContainer_Base
 		ItemBase deployedItem = ItemBase.Cast(g_Game.CreateObject(deployedItemType, pb.GetLocalProjectionPosition(), false));
 		if (!deployedItem)
 		{
-			Error("TheHive_CS_LB_KitBox_BASE - failed to deploy classname: " + deployedItemType);
+			Error("TH_CS_LB_KitBox_BASE - failed to deploy classname: " + deployedItemType);
 			return;
 		}
 

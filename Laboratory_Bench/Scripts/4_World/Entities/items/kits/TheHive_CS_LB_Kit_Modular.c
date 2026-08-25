@@ -1,14 +1,14 @@
-class TheHive_CS_LB_Kit_Modular : TheHive_CS_LB_KitBox_BASE 
+class TH_CS_LB_Kit_Modular : TH_CS_LB_KitBox_BASE 
 {
     
-    void TheHive_CS_LB_Kit_Modular() {};
+    void TH_CS_LB_Kit_Modular() {};
 
     override protected string GetDeployObjectType()
     {
-        return "TheHive_CS_LB_Bench_Modular";
+        return "TH_CS_LB_Bench_Modular";
     };
 
-    string TheHive_CS_LB_Kit_Holo()
+    string TH_CS_LB_Kit_Holo()
     {
         return GetDeployObjectType();
     };

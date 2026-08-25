@@ -1,4 +1,4 @@
-class TheHive_CS_TB_Bench_Modular_Pack : RecipeBase
+class TH_CS_TB_Bench_Modular_Pack : RecipeBase
 {
     override void Init()
 	{
@@ -22,7 +22,7 @@ class TheHive_CS_TB_Bench_Modular_Pack : RecipeBase
 		
 		//INGREDIENTS
 		//ingredient 1 - the workbench
-		InsertIngredient(0, "TheHive_CS_TB_Bench_Modular");
+		InsertIngredient(0, "TH_CS_TB_Bench_Modular");
 		m_IngredientAddHealth[0] = 0;
 		m_IngredientSetHealth[0] = -1;
 		m_IngredientAddQuantity[0] = 0;
@@ -40,7 +40,7 @@ class TheHive_CS_TB_Bench_Modular_Pack : RecipeBase
 		m_IngredientUseSoftSkills[1] = false;
 		
 		//result - the kit
-		AddResult("TheHive_CS_TB_Kit_Modular");
+		AddResult("TH_CS_TB_Kit_Modular");
 		m_ResultSetFullQuantity[0] = true;
 		m_ResultSetQuantity[0] = -1;
 		m_ResultSetHealth[0] = -1;
@@ -57,10 +57,10 @@ class TheHive_CS_TB_Bench_Modular_Pack : RecipeBase
 			return false;
 		
 		// Custom empty check - ignore internal storage containers but check if they're empty
-		TheHive_CS_TB_Bench_Modular workbench = TheHive_CS_TB_Bench_Modular.Cast(ingredients[0]);
+		TH_CS_TB_Bench_Modular workbench = TH_CS_TB_Bench_Modular.Cast(ingredients[0]);
 		if (!workbench)
 			return false;
-		if (workbench.IsKindOf("TheHive_CS_TB_Bench_Locked"))
+		if (workbench.IsKindOf("TH_CS_TB_Bench_Locked"))
 		{
 			return false;
 		}

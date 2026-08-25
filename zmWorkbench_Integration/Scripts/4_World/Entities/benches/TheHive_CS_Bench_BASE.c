@@ -1,4 +1,4 @@
-class TheHive_CS_Bench_BASE extends zm_WorkbenchBase
+class TH_CS_Bench_BASE extends zm_WorkbenchBase
 {
     override string GetWorkbenchID()
     {
