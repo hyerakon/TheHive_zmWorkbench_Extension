@@ -2,8 +2,14 @@
 modded class AdminRecipeEditorMenu extends UIScriptedMenu
 {
     private CheckBoxWidget m_CheckTerminal;
-    private CheckBoxWidget m_CheckWaveGenerator;
     private CheckBoxWidget m_CheckMortarPestle;
+    //private CheckBoxWidget m_CheckWaveGenerator;
+    private CheckBoxWidget m_CheckMicroscope;
+    private CheckBoxWidget m_CheckCondenser;
+
+    private CheckBoxWidget m_CheckScale;
+    private CheckBoxWidget m_CheckStill;
+    private CheckBoxWidget m_CheckStove;
 
     override Widget Init()
     {
@@ -71,8 +77,12 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
 
         // TH Get Edit Fields for additional modules
         m_CheckTerminal = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckTerminal"));
-        m_CheckWaveGenerator = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckWaveGenerator"));
-        m_CheckMortarPestle = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckMortarPestle"));
+        //m_CheckWaveGenerator = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckWaveGenerator"));
+        m_CheckMicroscope = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckMicroscope"));
+        m_CheckCondenser = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckCondenser"));
+        m_CheckScale = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckScale"));
+        m_CheckStill = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckStill"));
+        m_CheckStove = CheckBoxWidget.Cast(layoutRoot.FindAnyWidget("CheckStove"));
         
         // Inner scroll widgets for item sections
         m_RequiredItemsScroll = ScrollWidget.Cast(layoutRoot.FindAnyWidget("RequiredItemsScroll"));
@@ -219,14 +229,14 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
         
         // Load TH_CS_LB modules into checkboxes
         if (m_CheckTerminal) m_CheckTerminal.SetChecked(recipe.required_attachments.Find("terminal") >= 0);
-        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(recipe.required_attachments.Find("microscope") >= 0);
         if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("mortarpestle") >= 0);
-        if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("condenser") >= 0);
+        if (m_CheckMicroscope) m_CheckMicroscope.SetChecked(recipe.required_attachments.Find("microscope") >= 0);
+        if (m_CheckCondenser) m_CheckCondenser.SetChecked(recipe.required_attachments.Find("condenser") >= 0);
 
         // Load TH_CS_CB modules into checkboxes
-        if (m_CheckTerminal) m_CheckTerminal.SetChecked(recipe.required_attachments.Find("scale") >= 0);
-        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(recipe.required_attachments.Find("still") >= 0);
-        if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("stove") >= 0);
+        if (m_CheckScale) m_CheckScale.SetChecked(recipe.required_attachments.Find("scale") >= 0);
+        if (m_CheckStill) m_CheckStill.SetChecked(recipe.required_attachments.Find("still") >= 0);
+        if (m_CheckStove) m_CheckStove.SetChecked(recipe.required_attachments.Find("stove") >= 0);
 
 
         // Required items - populate grid with slot widgets
@@ -442,29 +452,29 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
         {
             m_SelectedRecipe.required_attachments.Insert("terminal");
         }
-        if (m_CheckWaveGenerator && m_CheckWaveGenerator.IsChecked())
-        {
-            m_SelectedRecipe.required_attachments.Insert("microscope");
-        }
         if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("mortarpestle");
         }
-        if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
+        if (m_CheckMicroscope && m_CheckMicroscope.IsChecked())
+        {
+            m_SelectedRecipe.required_attachments.Insert("microscope");
+        }
+        if (m_CheckCondenser && m_CheckCondenser.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("condenser");
         }
 
         // TH_CS_CB modules
-        if (m_CheckTerminal && m_CheckTerminal.IsChecked())
+        if (m_CheckScale && m_CheckScale.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("scale");
         }
-        if (m_CheckWaveGenerator && m_CheckWaveGenerator.IsChecked())
+        if (m_CheckStill && m_CheckStill.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("still");
         }
-        if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
+        if (m_CheckStove && m_CheckStove.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("stove");
         }
@@ -712,8 +722,13 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
 
         // TH module checkboxes
         if (m_CheckTerminal) m_CheckTerminal.SetChecked(false);
-        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(false);
+        //if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(false);
         if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(false);
+        if (m_CheckMicroscope) m_CheckMicroscope.SetChecked(false);
+        if (m_CheckCondenser) m_CheckCondenser.SetChecked(false);
+        if (m_CheckScale) m_CheckScale.SetChecked(false);
+        if (m_CheckStill) m_CheckStill.SetChecked(false);
+        if (m_CheckStove) m_CheckStove.SetChecked(false);
 
 
         ClearRequiredItemSlots();

@@ -371,7 +371,7 @@ modded class WorkbenchMenu extends UIScriptedMenu
         if (!m_ModuleTooltipWidget) return;
         
         // Module class names
-        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing", "TH_CS_LB_Terminal", "TH_CS_LB_WaveGenerator", "TH_CS_LB_Mortar"};
+        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing", "TH_CS_LB_Terminal", "TH_CS_LB_Mortar", "TH_CS_LB_Microscope", "TH_CS_LB_Condenser", "TH_CS_CB_Scale", "TH_CS_CB_Still", "TH_CS_CB_Stove"};
         
         if (moduleIndex < 0 || moduleIndex >= moduleClassNames.Count()) return;
         
@@ -463,8 +463,15 @@ modded class WorkbenchMenu extends UIScriptedMenu
 
         // TH modules LB
         allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_TERMINAL);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_WAVEGENERATOR);
+        //allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_WAVEGENERATOR);
         allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_MORTARPESTLE);
+        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_MICROSCOPE);
+        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_CONDENSER);
+
+        // TH modules CB
+        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_SCALE);
+        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_STILL);
+        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_STOVE);
 
         
         // Slot names (lowercase) for comparison with GetAttachedModules()
@@ -478,8 +485,8 @@ modded class WorkbenchMenu extends UIScriptedMenu
 
         // TH_CS_LB Slots
         moduleSlotNames.Insert("terminal");
-        moduleSlotNames.Insert("microscope");
         moduleSlotNames.Insert("mortarpestle");
+        moduleSlotNames.Insert("microscope");
         moduleSlotNames.Insert("condenser");
 
         // TH_CS_CB Slots
@@ -495,10 +502,18 @@ modded class WorkbenchMenu extends UIScriptedMenu
         moduleDisplayNames.Insert("Welding");
         moduleDisplayNames.Insert("Sewing");
 
-        // TH Module DisplayNames
+        // TH_CS_CB Module DisplayNames
         moduleDisplayNames.Insert("Terminal");
-        moduleDisplayNames.Insert("Wave Generator");
         moduleDisplayNames.Insert("Mortar Pestle");
+        moduleDisplayNames.Insert("Microscope");
+        moduleDisplayNames.Insert("Condenser");
+
+        // TH_CS_CB Module DisplayNames
+        moduleDisplayNames.Insert("Scale");
+        moduleDisplayNames.Insert("Still");
+        moduleDisplayNames.Insert("Stove");
+
+
         
         // Create icon for each module type (always show all)
         for (int i = 0; i < allModuleTypes.Count(); i++) {
@@ -614,8 +629,8 @@ modded class WorkbenchMenu extends UIScriptedMenu
             // TH_CS_LB Modules mapping
             moduleClasses.Insert("terminal", "TH_CS_LB_Terminal");
             //moduleClasses.Insert("wavegenerator", "TH_CS_LB_WaveGenerator");
-            moduleClasses.Insert("microscope", "TH_CS_LB_Microscope");
             moduleClasses.Insert("mortarpestle", "TH_CS_LB_Mortar");
+            moduleClasses.Insert("microscope", "TH_CS_LB_Microscope");
             moduleClasses.Insert("condenser", "TH_CS_LB_Condenser");
 
             // TH_CS_CB Modules mapping

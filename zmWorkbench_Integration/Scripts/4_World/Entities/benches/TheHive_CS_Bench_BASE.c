@@ -19,8 +19,8 @@ class TH_CS_Bench_BASE extends zm_WorkbenchBase
 
         //TH Modules LB
         moduleSlots.Insert("terminal");
-        moduleSlots.Insert("microscope");
         moduleSlots.Insert("mortarpestle");
+        moduleSlots.Insert("microscope");
         moduleSlots.Insert("condenser");
 
         //TH Modules CB

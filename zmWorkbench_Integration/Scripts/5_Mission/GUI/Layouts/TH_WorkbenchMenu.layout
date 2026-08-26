@@ -41,7 +41,7 @@ FrameWidgetClass WorkbenchMenuRoot {
     ImageWidgetClass MainPanelBackground {
      ignorepointer 1
      color 0.223 0.223 0.223 0
-     position 0 0
+     position 0 0.001
      size 1 1
      hexactpos 0
      vexactpos 0
@@ -1404,7 +1404,7 @@ FrameWidgetClass WorkbenchMenuRoot {
       }
       GridSpacerWidgetClass ModuleDisplay {
        position 8.796 6.317
-       size 50 450
+       size 50 650
        hexactpos 1
        vexactpos 1
        hexactsize 1
@@ -1412,7 +1412,7 @@ FrameWidgetClass WorkbenchMenuRoot {
        priority 100
        Padding 2
        Columns 1
-       Rows 9
+       Rows 13
       }
       ImageWidgetClass ImageWidgetLogo {
        ignorepointer 1
@@ -1641,7 +1641,7 @@ FrameWidgetClass WorkbenchMenuRoot {
   }
   PanelWidgetClass TooltipContainer {
    ignorepointer 1
-   position -0.01 -0.007
+   position -0.01 -0.006
    size 1 1
    hexactpos 0
    vexactpos 0
