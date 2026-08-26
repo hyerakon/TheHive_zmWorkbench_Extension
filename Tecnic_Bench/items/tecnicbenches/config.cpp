@@ -52,7 +52,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\thehive_cs_tb_workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -328,7 +328,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\thehive_cs_tb_workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -348,7 +348,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\thehive_cs_tb_workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -413,7 +413,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\thehive_cs_tb_workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{

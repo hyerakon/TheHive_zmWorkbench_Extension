@@ -30,7 +30,7 @@ class CfgVehicles
 		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\TH_CS_LB_WaveGenerator.p3d";
 		inventorySlot[]=
 		{
-			"wavegenerator"
+			"microscope"
 		};
 		weight=2000;
 		itemSize[]={5,5};
@@ -50,7 +50,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis.rvmat",
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis.rvmat",
             "DZ\data\data\penetration\plastic_material.rvmat",
             "DZ\data\data\penetration\plastic_material.rvmat"
 		};
@@ -97,31 +97,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TheHive_CS_LB_WaveGenerator_Chassis_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_wavegenerator\model\data\TH_CS_LB_WaveGenerator_Chassis_destruct.rvmat"
 							}
 						}
 					};

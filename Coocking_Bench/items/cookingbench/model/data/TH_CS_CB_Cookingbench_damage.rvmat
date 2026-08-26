@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_nohq.paa";
+	texture="TheHive_zmWorkbench_Extension\Coocking_Bench\items\cookingbench\model\data\TH_CS_CB_Cookingbench_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\th_cs_lb_workbench_smdi.paa";
+	texture="TheHive_zmWorkbench_Extension\Coocking_Bench\items\cookingbench\model\data\th_cs_cb_cookingbench_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

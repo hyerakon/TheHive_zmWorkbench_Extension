@@ -95,31 +95,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_destruct.rvmat"
 							}
 						}
 					};
@@ -222,31 +222,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TheHive_CS_LB_MortarPestle_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\data\TH_CS_LB_MortarPestle_destruct.rvmat"
 							}
 						}
 					};

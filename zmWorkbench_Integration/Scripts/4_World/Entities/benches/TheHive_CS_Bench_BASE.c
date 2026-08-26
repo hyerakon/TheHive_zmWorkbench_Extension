@@ -19,8 +19,14 @@ class TH_CS_Bench_BASE extends zm_WorkbenchBase
 
         //TH Modules LB
         moduleSlots.Insert("terminal");
-        moduleSlots.Insert("wavegenerator");
+        moduleSlots.Insert("microscope");
         moduleSlots.Insert("mortarpestle");
+        moduleSlots.Insert("condenser");
+
+        //TH Modules CB
+        moduleSlots.Insert("scale");
+        moduleSlots.Insert("still");
+        moduleSlots.Insert("stove");
         
         foreach (string slotName : moduleSlots) {
             int slotId = InventorySlots.GetSlotIdFromString(slotName);

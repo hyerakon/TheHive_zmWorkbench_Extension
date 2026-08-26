@@ -61,8 +61,9 @@ class CfgVehicles
 		attachments[] = 
 		{ 
 			"terminal",
-			"wavegenerator",
+			"microscope",
 			"mortarpestle",
+			"condenser",
 			"workbenchstorage",
 			"workbenchoutput",
 			"WB_Battery1",
@@ -291,8 +292,9 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"terminal",
-					"wavegenerator",
-					"mortarpestle"
+					"microscope",
+					"mortarpestle",
+					"condenser"
 				};
 				icon="set:workbench_icons image:cat_modules";
 			};
@@ -445,8 +447,9 @@ class CfgVehicles
 		attachments[] = 
 		{ 
 			"terminal",
-			"wavegenerator",
+			"microscope",
 			"mortarpestle",
+			"condenser",
 			"workbenchstorage",
 			"workbenchoutput",
 			"WB_Battery1",
@@ -675,8 +678,9 @@ class CfgVehicles
 				attachmentSlots[]=
 				{
 					"terminal",
-					"wavegenerator",
-					"mortarpestle"
+					"microscope",
+					"mortarpestle",
+					"condenser"
 				};
 				icon="set:workbench_icons image:cat_modules";
 			};

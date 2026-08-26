@@ -9,5 +9,7 @@ modded class ModItemRegisterCallbacks
 		pType.AddItemInHandsProfileIK("TH_CS_LB_Terminal", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
 		pType.AddItemInHandsProfileIK("TH_CS_LB_KitBox_BASE", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
 		pType.AddItemInHandsProfileIK("TH_CS_LB_WaveGenerator", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
+		pType.AddItemInHandsProfileIK("TH_CS_LB_Microscope", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
+		pType.AddItemInHandsProfileIK("TH_CS_LB_Condenser", "dz/anims/workspaces/player/player_main/player_main_heavy.asi", pBehavior, "dz/anims/anm/player/ik/heavy/wooden_crate.anm");
 	}
 }

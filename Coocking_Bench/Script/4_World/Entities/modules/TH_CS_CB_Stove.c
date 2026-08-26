@@ -1,9 +1,9 @@
-class TH_CS_CB_Stove extends ItemBase
+class TH_CS_CB_Stove extends PortableGasStove
 {
 	StoveLight	m_Light;
 	
-	protected const string FLAME_BUTANE_ON 			= "TheHive_zmWorkbench_Extension\Coocking_Bench\items\module_stove\module\data\TH_CS_CB_Stove_co.paa";
-	protected const string FLAME_BUTANE_OFF 		= "TheHive_zmWorkbench_Extension\Coocking_Bench\items\module_stove\module\data\TH_CS_CB_Stove_co.paa";
+	protected const string FLAME_BUTANE_ON 			= "";
+	protected const string FLAME_BUTANE_OFF 		= "";
 	typename ATTACHMENT_COOKING_POT 				= Pot;
 	typename ATTACHMENT_FRYING_PAN 					= FryingPan;
 	typename ATTACHMENT_CAULDRON	 				= Cauldron;
@@ -225,14 +225,10 @@ class TH_CS_CB_Stove extends ItemBase
 
 	protected void RefreshFlameVisual(bool working = false, bool hasAttachment = false)
 	{
-		int idx = m_Projection.GetHiddenSelectionIndex("AllStove");
-		
-		if (idx < 0) return;
-
 		if (!working)
 		{
-			SetObjectTexture(idx, FLAME_BUTANE_OFF);
-			SetObjectTexture(idx, FLAME_BUTANE_OFF);
+			SetObjectTexture(0, FLAME_BUTANE_OFF);
+			SetObjectTexture(1, FLAME_BUTANE_OFF);
 
 			return;
 		}
@@ -240,14 +236,14 @@ class TH_CS_CB_Stove extends ItemBase
 		if (!hasAttachment)
 		{
 			//! full size flame selection
-			SetObjectTexture(idx, FLAME_BUTANE_ON);
-			SetObjectTexture(idx, FLAME_BUTANE_OFF);
+			SetObjectTexture(0, FLAME_BUTANE_ON);
+			SetObjectTexture(1, FLAME_BUTANE_OFF);
 		}
 		else
 		{
 			//! shrinked flame selection
-			SetObjectTexture(idx, FLAME_BUTANE_OFF);
-			SetObjectTexture(idx, FLAME_BUTANE_ON);
+			SetObjectTexture(0, FLAME_BUTANE_OFF);
+			SetObjectTexture(1, FLAME_BUTANE_ON);
 		}
 	}
 
@@ -410,6 +406,7 @@ class TH_CS_CB_Stove extends ItemBase
 		return GetCompEM().IsWorking();
 	}
 	
+	/*
 	override void SetActions()
 	{
 		super.SetActions();
@@ -417,7 +414,7 @@ class TH_CS_CB_Stove extends ItemBase
 		AddAction(ActionLightItemOnFire);
 		AddAction(ActionTurnOnWhileOnGround);
 		AddAction(ActionTurnOffWhileOnGround);
-	}
+	}*/
 	
 	//Debug menu Spawn Ground Special
 	override void OnDebugSpawn()

@@ -217,10 +217,17 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
         if (m_CheckWelding) m_CheckWelding.SetChecked(recipe.required_attachments.Find("welding") >= 0);
         if (m_CheckSewing) m_CheckSewing.SetChecked(recipe.required_attachments.Find("sewing") >= 0);
         
-        // Load TH modules into checkboxes
+        // Load TH_CS_LB modules into checkboxes
         if (m_CheckTerminal) m_CheckTerminal.SetChecked(recipe.required_attachments.Find("terminal") >= 0);
-        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(recipe.required_attachments.Find("wavegenerator") >= 0);
+        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(recipe.required_attachments.Find("microscope") >= 0);
         if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("mortarpestle") >= 0);
+        if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("condenser") >= 0);
+
+        // Load TH_CS_CB modules into checkboxes
+        if (m_CheckTerminal) m_CheckTerminal.SetChecked(recipe.required_attachments.Find("scale") >= 0);
+        if (m_CheckWaveGenerator) m_CheckWaveGenerator.SetChecked(recipe.required_attachments.Find("still") >= 0);
+        if (m_CheckMortarPestle) m_CheckMortarPestle.SetChecked(recipe.required_attachments.Find("stove") >= 0);
+
 
         // Required items - populate grid with slot widgets
         ClearRequiredItemSlots();
@@ -430,18 +437,36 @@ modded class AdminRecipeEditorMenu extends UIScriptedMenu
             m_SelectedRecipe.required_attachments.Insert("sewing");
         }
 
-        // TH modules
+        // TH_CS_LB modules
         if (m_CheckTerminal && m_CheckTerminal.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("terminal");
         }
         if (m_CheckWaveGenerator && m_CheckWaveGenerator.IsChecked())
         {
-            m_SelectedRecipe.required_attachments.Insert("wavegenerator");
+            m_SelectedRecipe.required_attachments.Insert("microscope");
         }
         if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
         {
             m_SelectedRecipe.required_attachments.Insert("mortarpestle");
+        }
+        if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
+        {
+            m_SelectedRecipe.required_attachments.Insert("condenser");
+        }
+
+        // TH_CS_CB modules
+        if (m_CheckTerminal && m_CheckTerminal.IsChecked())
+        {
+            m_SelectedRecipe.required_attachments.Insert("scale");
+        }
+        if (m_CheckWaveGenerator && m_CheckWaveGenerator.IsChecked())
+        {
+            m_SelectedRecipe.required_attachments.Insert("still");
+        }
+        if (m_CheckMortarPestle && m_CheckMortarPestle.IsChecked())
+        {
+            m_SelectedRecipe.required_attachments.Insert("stove");
         }
         
         // Collect required items from slot widgets

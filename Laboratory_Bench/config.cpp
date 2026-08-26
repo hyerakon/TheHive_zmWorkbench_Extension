@@ -354,11 +354,18 @@ class CfgSlots
 		displayName = "$STR_Slot_TH_LB_Terminal";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
-
+	/* INACTIVE
 	class Slot_TH_LB_WaveGenerator
 	{
 		name = "wavegenerator";
 		displayName = "$STR_Slot_TH_LB_WaveGenerator";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};*/
+
+	class Slot_TH_LB_Microscope
+	{
+		name = "microscope";
+		displayName = "$STR_Slot_TH_LB_Microscope";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
 
@@ -366,6 +373,13 @@ class CfgSlots
 	{
 		name = "mortarpestle";
 		displayName = "$STR_Slot_TH_LB_MortarPestle";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	class Slot_TH_LB_Condenser
+	{
+		name = "condenser";
+		displayName = "$STR_Slot_TH_LB_Condenser";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
 
@@ -749,6 +763,7 @@ class CfgSlots
 class CfgNonAIVehicles
 {
 	class ProxyAttachment;
+	// MODULES
 	class ProxyTH_LB_Terminal_Proxy: ProxyAttachment
 	{
 		scope = 2;
@@ -756,11 +771,19 @@ class CfgNonAIVehicles
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Terminal_Proxy.p3d";
 		
 	};
+	/* INACTIVE
 	class ProxyTH_LB_WaveGenerator_Proxy: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "wavegenerator";
+		inventorySlot = "microscope";
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_WaveGenerator_Proxy.p3d";
+		
+	};*/
+	class ProxyTH_LB_Microscope_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "microscope";
+		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Microscope_Proxy.p3d";
 		
 	};
 	class ProxyTH_LB_Mortarpestle_Proxy: ProxyAttachment
@@ -770,6 +793,15 @@ class CfgNonAIVehicles
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Mortarpestle_Proxy.p3d";
 		
 	};
+	class ProxyTH_LB_Condenser_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "condenser";
+		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Condenser_Proxy.p3d";
+		
+	};
+
+	// ATTACHMENTS
 
 	class ProxyTH_LB_InfectionVial_Proxy_1: ProxyAttachment
 	{

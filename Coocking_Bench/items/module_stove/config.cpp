@@ -43,6 +43,10 @@ class CfgVehicles
 			"GasCanister",
 			"CookingEquipment"
 		};
+		inventorySlot[]=
+		{
+			"stove"
+		};
 		containerSlot="GasCanister";
 		hiddenSelections[]=
 		{

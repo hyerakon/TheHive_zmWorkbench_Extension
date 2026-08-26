@@ -476,10 +476,16 @@ modded class WorkbenchMenu extends UIScriptedMenu
         moduleSlotNames.Insert("welding");
         moduleSlotNames.Insert("sewing");
 
-        // TH Slots
+        // TH_CS_LB Slots
         moduleSlotNames.Insert("terminal");
-        moduleSlotNames.Insert("wavegenerator");
+        moduleSlotNames.Insert("microscope");
         moduleSlotNames.Insert("mortarpestle");
+        moduleSlotNames.Insert("condenser");
+
+        // TH_CS_CB Slots
+        moduleSlotNames.Insert("scale");
+        moduleSlotNames.Insert("still");
+        moduleSlotNames.Insert("stove");
         
         array<string> moduleDisplayNames = new array<string>();
         moduleDisplayNames.Insert("Drill Press");
@@ -605,10 +611,17 @@ modded class WorkbenchMenu extends UIScriptedMenu
             moduleClasses.Insert("welding", "zm_Welding");
             moduleClasses.Insert("sewing", "zm_Sewing");
 
-            // TH Modules mapping
+            // TH_CS_LB Modules mapping
             moduleClasses.Insert("terminal", "TH_CS_LB_Terminal");
-            moduleClasses.Insert("wavegenerator", "TH_CS_LB_WaveGenerator");
+            //moduleClasses.Insert("wavegenerator", "TH_CS_LB_WaveGenerator");
+            moduleClasses.Insert("microscope", "TH_CS_LB_Microscope");
             moduleClasses.Insert("mortarpestle", "TH_CS_LB_Mortar");
+            moduleClasses.Insert("condenser", "TH_CS_LB_Condenser");
+
+            // TH_CS_CB Modules mapping
+            moduleClasses.Insert("scale", "TH_CS_CB_Scale");
+            moduleClasses.Insert("still", "TH_CS_CB_Still");
+            moduleClasses.Insert("stove", "TH_CS_CB_Stove");
             
             foreach (string reqModule : recipe.required_attachments) {
                 string reqModuleLower = reqModule;
