@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_nohq.paa";
+	texture="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -19,7 +19,8 @@ class CfgPatches
 			"zm_Soldering",
 			"zm_Vice",
 			"zm_Welding",
-			"TheHive_zmWorkbench_Integration_Scripts"
+			"TheHive_zmWorkbench_Integration_Scripts",
+			"TheHive_Craft_Ingredients_Scripts"
 		};
 	};
 };
@@ -114,6 +115,7 @@ class CfgVehicles
 
 	// FOODSUPPLY ITEMS
 
+	class TH_CS_Supply_BASE;
 	class TH_CS_Supply_Food: TH_CS_Supply_BASE
 	{
 		inventorySlot[] += 

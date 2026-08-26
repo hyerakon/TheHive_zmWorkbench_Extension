@@ -52,7 +52,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -140,31 +140,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_destruct.rvmat"
 							}
 						}
 					};
@@ -376,18 +376,18 @@ class CfgVehicles
 		scope=2;
 		displayName="$STR_TheHive_CS_LB_Bench_Modular";
 		descriptionShort="$STR_TheHive_CS_LB_Bench_Modular_desc";
-		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TheHive_CS_LB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TH_CS_LB_Workbench.p3d";
 		hiddenSelections[]=
 		{
 			"Workbench"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 		};
 	
 	};
@@ -396,18 +396,18 @@ class CfgVehicles
 		scope=2;
 		displayName="$STR_TheHive_CS_LB_Bench_Locked";
 		descriptionShort="$STR_TheHive_CS_LB_Bench_Locked_desc";
-		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TheHive_CS_LB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TH_CS_LB_Workbench.p3d";
 		hiddenSelections[]=
 		{
 			"Workbench"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 		};
 	};
 	
@@ -416,7 +416,7 @@ class CfgVehicles
 		scope=1;
 		displayName="$STR_TheHive_CS_LB_Bench_Public";
 		descriptionShort="$STR_TheHive_CS_LB_Bench_Public_desc";
-		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TheHive_CS_LB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\TH_CS_LB_Workbench.p3d";
 		weight=50000;
 		itemSize[]={10,10};
 		physLayer="item_large";
@@ -436,7 +436,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_co.paa"
+			"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -524,31 +524,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TheHive_CS_LB_Workbench_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Laboratory_Bench\items\laboratorybench\model\data\TH_CS_LB_Workbench_destruct.rvmat"
 							}
 						}
 					};

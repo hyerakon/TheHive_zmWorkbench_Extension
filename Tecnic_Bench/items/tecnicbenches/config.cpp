@@ -32,7 +32,7 @@ class CfgVehicles
 		scope=0;
 		displayName="$STR_TheHive_CS_TB_Bench_BASE";
 		descriptionShort="$STR_TheHive_CS_TB_Bench_BASE_desc";
-		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TheHive_CS_TB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TH_CS_TB_Workbench.p3d";
 		weight=50000;
 		itemSize[]={10,10};
 		physLayer="item_large";
@@ -113,31 +113,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_destruct.rvmat"
 							}
 						}
 					};
@@ -321,7 +321,7 @@ class CfgVehicles
 		scope=2;
 		displayName="$STR_TheHive_CS_TB_Bench_Modular";
 		descriptionShort="$STR_TheHive_CS_TB_Bench_Modular_desc";
-		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TheHive_CS_TB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TH_CS_TB_Workbench.p3d";
 		hiddenSelections[]=
 		{
 			"Workbench"
@@ -332,7 +332,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 		};
 	
 	};
@@ -341,7 +341,7 @@ class CfgVehicles
 		scope=2;
 		displayName="$STR_TheHive_CS_TB_Bench_Locked";
 		descriptionShort="$STR_TheHive_CS_TB_Bench_Locked_desc";
-		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TheHive_CS_TB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TH_CS_TB_Workbench.p3d";
 		hiddenSelections[]=
 		{
 			"Workbench"
@@ -352,7 +352,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 		};
 	};
 	class TH_CS_TB_Bench_Public: zm_WorkbenchPublic
@@ -360,7 +360,7 @@ class CfgVehicles
 		scope=1;
 		displayName="$STR_TheHive_CS_TB_Bench_Public";
 		descriptionShort="$STR_TheHive_CS_TB_Bench_Public_desc";
-		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TheHive_CS_TB_Workbench.p3d";
+		model="TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\TH_CS_TB_Workbench.p3d";
 		weight=100000;
 		itemSize[]={15,15};
 		physLayer="item_large";
@@ -417,7 +417,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+			"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 		};
 
 		class DamageSystem
@@ -432,31 +432,31 @@ class CfgVehicles
 						{
 							1,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 							}
 						},
 						{
 							0.69999999,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench.rvmat"
 							}
 						},
 						{
 							0.5,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0.30000001,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_damage.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_damage.rvmat"
 							}
 						},
 						{
 							0,
 							{
-								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TheHive_CS_TB_Workbench_destruct.rvmat"
+								"TheHive_zmWorkbench_Extension\Tecnic_Bench\items\tecnicbenches\model\data\TH_CS_TB_Workbench_destruct.rvmat"
 							}
 						}
 					};
