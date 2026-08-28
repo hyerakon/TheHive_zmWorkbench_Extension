@@ -1,0 +1,1 @@
+class TH_CS_CB_Still: Inventory_Base {};

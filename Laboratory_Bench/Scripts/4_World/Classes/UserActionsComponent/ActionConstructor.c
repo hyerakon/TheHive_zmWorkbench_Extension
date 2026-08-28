@@ -6,6 +6,6 @@ modded class ActionConstructor
     {
         super.RegisterActions(actions);
         actions.Insert(ActionToggleTerminalMonitor);
-        actions.Insert(LB_ActionOpenCraftingWorkbench);
+        actions.Insert(TH_CS_LB_ActionOpenCraftingWorkbench);
     }
 };

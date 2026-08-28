@@ -270,8 +270,8 @@ class CfgVehicles
 			};
 			class modules
 			{
-				name="$STR_CB_AttachmentsProps_Modules";
-				description="$STR_CB_AttachmentsProps_Modules_desc";
+				name="$STR_AttachmentsProps_Modules";
+				description="$STR_AttachmentsProps_Modules_desc";
 				attachmentSlots[]=
 				{
 					"scale",

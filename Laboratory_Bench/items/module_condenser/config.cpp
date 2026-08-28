@@ -30,7 +30,7 @@ class CfgVehicles
 		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_condenser\model\TH_CS_LB_Condenser.p3d";
 		inventorySlot[]=
 		{
-			"Condenser"
+			"condenser"
 		};
 		weight=2000;
 		itemSize[]={5,5};
@@ -38,7 +38,7 @@ class CfgVehicles
 		canBeSplit=0;
 		hiddenSelections[]=
 		{
-			"condenser"
+			"Condenser"
 		};
 		hiddenSelectionsTextures[]=
 		{

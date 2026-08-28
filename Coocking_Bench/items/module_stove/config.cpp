@@ -22,8 +22,8 @@ class CfgPatches
 
 class CfgVehicles
 {
-    class Inventory_Base;
-    class TH_CS_CB_Stove: Inventory_Base
+    class PortableGasStove;
+    class TH_CS_CB_Stove : PortableGasStove
 	{
 		scope=2;
 		displayName="$STR_TH_CS_CB_Stove";
@@ -138,5 +138,28 @@ class CfgVehicles
 		};
 		soundImpactType="metal";
 	};
-	
+		
+};
+
+class CfgNonAIVehicles
+{
+	class ProxyAttachment;
+	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
+	{
+		scope=2;
+		model="\dz\gear\cooking\CookingPot.p3d";
+		inventorySlot[]=
+		{
+			"CookingEquipment"
+		};
+		class AnimationSources
+		{
+			class handleRotate
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
+	};
 };

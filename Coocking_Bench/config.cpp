@@ -89,7 +89,7 @@ class CfgVehicles
 			"TH_CB_Gas_1",
 			"TH_CB_Gas_2",
 			"TH_CB_Gas_3",
-			"TH_CB_Gas_4"			
+			"TH_CB_Gas_4"		
 		};
 	};
 	class MediumGasCanister : Inventory_Base
@@ -3043,25 +3043,25 @@ class CfgSlots
 	{
 		name = "TH_CB_Gas_1";
 		displayName = "$STR_Slot_TH_CB_Gas";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 	class Slot_TH_CB_Gas_2
 	{
 		name = "TH_CB_Gas_2";
 		displayName = "$STR_Slot_TH_CB_Gas";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 	class Slot_TH_CB_Gas_3
 	{
 		name = "TH_CB_Gas_3";
 		displayName = "$STR_Slot_TH_CB_Gas";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 	class Slot_TH_CB_Gas_4
 	{
 		name = "TH_CB_Gas_4";
 		displayName = "$STR_Slot_TH_CB_Gas";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon="set:dayz_inventory image:gascanister";
 	};
 
 	// FOODSUPPLY SLOTS
@@ -3391,6 +3391,37 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "TH_CB_WoodenCase";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_WoodenCase.p3d";
+		
+	};
+
+	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "CookingEquipment";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookingPot_Proxy.p3d";
+		
+	};
+
+	// MODULE PROXY
+	class ProxyTH_CS_CB_Scale_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "scale";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Scale_Proxy.p3d";
+		
+	};
+	class ProxyTH_CS_CB_Still_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "still";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Still_Proxy.p3d";
+		
+	};
+	class ProxyTH_CS_CB_Stove_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "stove";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Stove_Proxy.p3d";
 		
 	};
 

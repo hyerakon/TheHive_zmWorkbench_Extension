@@ -7,8 +7,8 @@ modded class WorkbenchConstants
     static const string MODULE_TH_MICROSCOPE = "TH_CS_LB_Microscope";
     static const string MODULE_TH_CONDENSER = "TH_CS_LB_Condenser";
 
-    static const string MODULE_TH_SCALE = "TH_CS_CB_Stove";
-    static const string MODULE_TH_STILL = "TH_CS_CB_Stove";
+    static const string MODULE_TH_SCALE = "TH_CS_CB_Scale";
+    static const string MODULE_TH_STILL = "TH_CS_CB_Still";
     static const string MODULE_TH_STOVE = "TH_CS_CB_Stove";
 
 
