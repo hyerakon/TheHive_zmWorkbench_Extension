@@ -68,10 +68,6 @@ class CfgVehicles
 			"TH_CB_FoodSupply_2",
 			"TH_CB_FoodSupply_3",
 			"TH_CB_FoodSupply_4",
-			"TH_CB_FoodSupply_5",
-			"TH_CB_FoodSupply_6",
-			"TH_CB_FoodSupply_7",
-			"TH_CB_FoodSupply_8",
 			"TH_CB_CookEquipment_1",
 			"TH_CB_CookEquipment_2",
 			"TH_CB_CookEquipment_3",
@@ -99,22 +95,6 @@ class CfgVehicles
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
 			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32",
 			"workbenchstorage",
 			"workbenchoutput",
 			"TH_CB_WoodenCase"
@@ -242,11 +222,7 @@ class CfgVehicles
 					"TH_CB_FoodSupply_1",
 					"TH_CB_FoodSupply_2",
 					"TH_CB_FoodSupply_3",
-					"TH_CB_FoodSupply_4",
-					"TH_CB_FoodSupply_5",
-					"TH_CB_FoodSupply_6",
-					"TH_CB_FoodSupply_7",
-					"TH_CB_FoodSupply_8"
+					"TH_CB_FoodSupply_4"
 					
 				};
 				icon="set:workbench_icons image:cat_tools";
@@ -301,23 +277,7 @@ class CfgVehicles
 					"TH_CB_Ingredient_13",
 					"TH_CB_Ingredient_14",
 					"TH_CB_Ingredient_15",
-					"TH_CB_Ingredient_16",
-					"TH_CB_Ingredient_17",
-					"TH_CB_Ingredient_18",
-					"TH_CB_Ingredient_19",
-					"TH_CB_Ingredient_20",
-					"TH_CB_Ingredient_21",
-					"TH_CB_Ingredient_22",
-					"TH_CB_Ingredient_23",
-					"TH_CB_Ingredient_24",
-					"TH_CB_Ingredient_25",
-					"TH_CB_Ingredient_26",
-					"TH_CB_Ingredient_27",
-					"TH_CB_Ingredient_28",
-					"TH_CB_Ingredient_29",
-					"TH_CB_Ingredient_30",
-					"TH_CB_Ingredient_31",
-					"TH_CB_Ingredient_32"
+					"TH_CB_Ingredient_16"
 				};
 				icon="set:dayz_inventory image:plates";
 			};
@@ -436,10 +396,6 @@ class CfgVehicles
 			"TH_CB_FoodSupply_2",
 			"TH_CB_FoodSupply_3",
 			"TH_CB_FoodSupply_4",
-			"TH_CB_FoodSupply_5",
-			"TH_CB_FoodSupply_6",
-			"TH_CB_FoodSupply_7",
-			"TH_CB_FoodSupply_8",
 			"TH_CB_CookEquipment_1",
 			"TH_CB_CookEquipment_2",
 			"TH_CB_CookEquipment_3",
@@ -467,22 +423,6 @@ class CfgVehicles
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
 			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32",
 			"workbenchstorage",
 			"workbenchoutput",
 			"TH_CB_WoodenCase"
@@ -610,11 +550,7 @@ class CfgVehicles
 					"TH_CB_FoodSupply_1",
 					"TH_CB_FoodSupply_2",
 					"TH_CB_FoodSupply_3",
-					"TH_CB_FoodSupply_4",
-					"TH_CB_FoodSupply_5",
-					"TH_CB_FoodSupply_6",
-					"TH_CB_FoodSupply_7",
-					"TH_CB_FoodSupply_8"
+					"TH_CB_FoodSupply_4"
 					
 				};
 				icon="set:workbench_icons image:cat_tools";
@@ -669,23 +605,7 @@ class CfgVehicles
 					"TH_CB_Ingredient_13",
 					"TH_CB_Ingredient_14",
 					"TH_CB_Ingredient_15",
-					"TH_CB_Ingredient_16",
-					"TH_CB_Ingredient_17",
-					"TH_CB_Ingredient_18",
-					"TH_CB_Ingredient_19",
-					"TH_CB_Ingredient_20",
-					"TH_CB_Ingredient_21",
-					"TH_CB_Ingredient_22",
-					"TH_CB_Ingredient_23",
-					"TH_CB_Ingredient_24",
-					"TH_CB_Ingredient_25",
-					"TH_CB_Ingredient_26",
-					"TH_CB_Ingredient_27",
-					"TH_CB_Ingredient_28",
-					"TH_CB_Ingredient_29",
-					"TH_CB_Ingredient_30",
-					"TH_CB_Ingredient_31",
-					"TH_CB_Ingredient_32"
+					"TH_CB_Ingredient_16"
 				};
 				icon="set:dayz_inventory image:plates";
 			};

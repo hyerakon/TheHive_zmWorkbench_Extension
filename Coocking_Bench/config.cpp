@@ -123,11 +123,7 @@ class CfgVehicles
 			"TH_CB_FoodSupply_1",
 			"TH_CB_FoodSupply_2",
 			"TH_CB_FoodSupply_3",
-			"TH_CB_FoodSupply_4",
-			"TH_CB_FoodSupply_5",
-			"TH_CB_FoodSupply_6",
-			"TH_CB_FoodSupply_7",
-			"TH_CB_FoodSupply_8"		
+			"TH_CB_FoodSupply_4"		
 		};
 	};
 
@@ -156,23 +152,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SodaCan_ColorBase : Edible_Base
@@ -194,23 +174,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class BoxCerealCrunchin : Edible_Base
@@ -232,23 +196,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class PowderedMilk : Edible_Base
@@ -270,23 +218,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SmallGuts: Edible_Base
@@ -308,23 +240,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Guts: Edible_Base
@@ -346,23 +262,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Rice: Edible_Base
@@ -384,23 +284,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Marmalade: Edible_Base
@@ -422,23 +306,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Honey: Edible_Base
@@ -460,23 +328,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Zagorky_ColorBase: Edible_Base
@@ -498,23 +350,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Snack_ColorBase: Edible_Base
@@ -536,23 +372,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Candycane_Colorbase: Edible_Base
@@ -574,23 +394,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class BakedBeansCan: Edible_Base
@@ -612,23 +416,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class BakedBeansCan_Opened: Edible_Base
@@ -650,23 +438,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class PeachesCan: Edible_Base
@@ -688,23 +460,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class PeachesCan_Opened: Edible_Base
@@ -726,23 +482,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class TacticalBaconCan: Edible_Base
@@ -764,23 +504,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class TacticalBaconCan_Opened: Edible_Base
@@ -802,23 +526,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SpaghettiCan: Edible_Base
@@ -840,23 +548,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SpaghettiCan_Opened: Edible_Base
@@ -878,23 +570,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SardinesCan: Edible_Base
@@ -916,23 +592,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class SardinesCan_Opened: Edible_Base
@@ -954,23 +614,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class TunaCan: Edible_Base
@@ -992,23 +636,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class TunaCan_Opened: Edible_Base
@@ -1030,23 +658,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class FoodCan_250g_ColorBase: Edible_Base
@@ -1068,23 +680,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class FoodCan_250g_Opened_ColorBase: Edible_Base
@@ -1106,23 +702,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class UnknownFoodCan: Edible_Base
@@ -1144,23 +724,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class UnknownFoodCan_Opened: Edible_Base
@@ -1182,23 +746,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class FoodCan_100g_ColorBase: Edible_Base
@@ -1220,23 +768,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class FoodCan_100g_Opened_ColorBase: Edible_Base
@@ -1258,23 +790,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Apple: Edible_Base
@@ -1296,23 +812,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Plum: Edible_Base
@@ -1334,23 +834,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Pear: Edible_Base
@@ -1372,23 +856,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Banana: Edible_Base
@@ -1410,23 +878,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"
 		};
 	};
 	class Orange: Edible_Base
@@ -1448,23 +900,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Tomato: Edible_Base
@@ -1486,23 +922,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class GreenBellPepper: Edible_Base
@@ -1524,23 +944,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Zucchini: Edible_Base
@@ -1562,23 +966,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Pumpkin: Edible_Base
@@ -1600,23 +988,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class SlicedPumpkin: Edible_Base
@@ -1638,23 +1010,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Potato: Edible_Base
@@ -1676,23 +1032,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Kiwi: Edible_Base
@@ -1714,23 +1054,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class SambucusBerry: Edible_Base
@@ -1752,23 +1076,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class CaninaBerry: Edible_Base
@@ -1790,23 +1098,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class HumanSteakMeat: Edible_Base
@@ -1828,23 +1120,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class GoatSteakMeat: Edible_Base
@@ -1866,23 +1142,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class MouflonSteakMeat: Edible_Base
@@ -1904,23 +1164,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class BoarSteakMeat: Edible_Base
@@ -1942,23 +1186,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class PigSteakMeat: Edible_Base
@@ -1980,23 +1208,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class DeerSteakMeat: Edible_Base
@@ -2018,23 +1230,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class ReindeerSteakMeat: Edible_Base
@@ -2056,23 +1252,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class WolfSteakMeat: Edible_Base
@@ -2094,23 +1274,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class BearSteakMeat: Edible_Base
@@ -2132,23 +1296,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class CowSteakMeat: Edible_Base
@@ -2170,23 +1318,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class SheepSteakMeat: Edible_Base
@@ -2208,23 +1340,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class FoxSteakMeat: Edible_Base
@@ -2246,23 +1362,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class ChickenBreastMeat: Edible_Base
@@ -2284,23 +1384,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class RabbitLegMeat: Edible_Base
@@ -2322,23 +1406,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class CarpFilletMeat: Edible_Base
@@ -2360,23 +1428,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class MackerelFilletMeat: Edible_Base
@@ -2398,23 +1450,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class WalleyePollockFilletMeat: Edible_Base
@@ -2436,23 +1472,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class SteelheadTroutFilletMeat: Edible_Base
@@ -2474,23 +1494,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class RedCaviar: Edible_Base
@@ -2512,23 +1516,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Lard: Edible_Base
@@ -2550,23 +1538,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Bitterlings: Edible_Base
@@ -2588,23 +1560,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Shrimp: Edible_Base
@@ -2626,23 +1582,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Carp: Edible_Base
@@ -2664,23 +1604,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Sardines: Edible_Base
@@ -2702,23 +1626,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Mackerel: Edible_Base
@@ -2740,23 +1648,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class WalleyePollock: Edible_Base
@@ -2778,23 +1670,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class SteelheadTrout: Edible_Base
@@ -2816,23 +1692,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class Worm: Edible_Base
@@ -2854,23 +1714,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class DeadChicken_ColorBase: Edible_Base
@@ -2892,23 +1736,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class DeadRabbit: Edible_Base
@@ -2930,23 +1758,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class DeadFox: Edible_Base
@@ -2968,23 +1780,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 	class MushroomBase: Edible_Base
@@ -3006,23 +1802,7 @@ class CfgVehicles
 			"TH_CB_Ingredient_13",
 			"TH_CB_Ingredient_14",
 			"TH_CB_Ingredient_15",
-			"TH_CB_Ingredient_16",
-			"TH_CB_Ingredient_17",
-			"TH_CB_Ingredient_18",
-			"TH_CB_Ingredient_19",
-			"TH_CB_Ingredient_20",
-			"TH_CB_Ingredient_21",
-			"TH_CB_Ingredient_22",
-			"TH_CB_Ingredient_23",
-			"TH_CB_Ingredient_24",
-			"TH_CB_Ingredient_25",
-			"TH_CB_Ingredient_26",
-			"TH_CB_Ingredient_27",
-			"TH_CB_Ingredient_28",
-			"TH_CB_Ingredient_29",
-			"TH_CB_Ingredient_30",
-			"TH_CB_Ingredient_31",
-			"TH_CB_Ingredient_32"			
+			"TH_CB_Ingredient_16"			
 		};
 	};
 
@@ -3038,7 +1818,6 @@ class CfgSlots
 	};
 
 	// POWER SLOTS
-
 	class Slot_TH_CB_Gas_1
 	{
 		name = "TH_CB_Gas_1";
@@ -3065,7 +1844,6 @@ class CfgSlots
 	};
 
 	// FOODSUPPLY SLOTS
-
 	class Slot_TH_CB_FoodSupply_1
 	{
 		name = "TH_CB_FoodSupply_1";
@@ -3090,33 +1868,8 @@ class CfgSlots
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
-	class Slot_TH_CB_FoodSupply_5
-	{
-		name = "TH_CB_FoodSupply_5";
-		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_FoodSupply_6
-	{
-		name = "TH_CB_FoodSupply_6";
-		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_FoodSupply_7
-	{
-		name = "TH_CB_FoodSupply_7";
-		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_FoodSupply_8
-	{
-		name = "TH_CB_FoodSupply_8";
-		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
 
 	// COOKING EQUIPMENTS
-
 	class Slot_TH_CB_CookEquipment_1
 	{
 		name = "TH_CB_CookEquipment_1";
@@ -3167,7 +1920,6 @@ class CfgSlots
 	};
 
 	// MODUILE SLOTS
-
 	class Slot_TH_CB_Scale
 	{
 		name = "scale";
@@ -3284,116 +2036,21 @@ class CfgSlots
 		displayName = "$STR_Slot_TH_CB_Ingredient";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
-	class Slot_TH_CB_Ingredient_17
-	{
-		name = "TH_CB_Ingredient_17";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_18
-	{
-		name = "TH_CB_Ingredient_18";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_19
-	{
-		name = "TH_CB_Ingredient_19";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_20
-	{
-		name = "TH_CB_Ingredient_20";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_21
-	{
-		name = "TH_CB_Ingredient_21";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_22
-	{
-		name = "TH_CB_Ingredient_22";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_23
-	{
-		name = "TH_CB_Ingredient_23";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_24
-	{
-		name = "TH_CB_Ingredient_24";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_25
-	{
-		name = "TH_CB_Ingredient_25";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_26
-	{
-		name = "TH_CB_Ingredient_26";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_27
-	{
-		name = "TH_CB_Ingredient_27";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_28
-	{
-		name = "TH_CB_Ingredient_28";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_29
-	{
-		name = "TH_CB_Ingredient_29";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_30
-	{
-		name = "TH_CB_Ingredient_30";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_31
-	{
-		name = "TH_CB_Ingredient_31";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
-	class Slot_TH_CB_Ingredient_32
-	{
-		name = "TH_CB_Ingredient_32";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
-	};
 
 };
 
 class CfgNonAIVehicles
 {
     class ProxyAttachment;
-	class ProxyTH_CB_WoodenCase: ProxyAttachment
+	class ProxyTH_CB_WoodenCase_Proxy: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_WoodenCase";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_WoodenCase.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_WoodenCase_Proxy.p3d";
 		
 	};
 
+	// STOVE PROXY
 	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
 	{
 		scope = 2;
@@ -3403,27 +2060,181 @@ class CfgNonAIVehicles
 	};
 
 	// MODULE PROXY
-	class ProxyTH_CS_CB_Scale_Proxy: ProxyAttachment
+	class ProxyTH_CB_Scale_Proxy: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "scale";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Scale_Proxy.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Scale_Proxy.p3d";
 		
 	};
-	class ProxyTH_CS_CB_Still_Proxy: ProxyAttachment
+	class ProxyTH_CB_Still_Proxy: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "still";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Still_Proxy.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Still_Proxy.p3d";
 		
 	};
-	class ProxyTH_CS_CB_Stove_Proxy: ProxyAttachment
+	class ProxyTH_CB_Stove_Proxy: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "stove";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CS_CB_Stove_Proxy.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Stove_Proxy.p3d";
 		
 	};
 
+	// POWER PROXY
+	// POWER PROXY LARGE
+	class ProxyTH_CB_GasCannisterLarge_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_4.p3d";		
+	};
 	
+	// POWER PROXY MEDIUM
+	class ProxyTH_CB_GasCannisterMedium_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_4.p3d";		
+	};
+	// POWER PROXY SMALL
+	class ProxyTH_CB_GasCannisterSmall_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_4.p3d";		
+	};
+
+
+	// TH_CS_FOOD_SUPPLY PROXY
+	class ProxyTH_CB_FoodSupply_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_4.p3d";		
+	};
+	
+	// TH_CB_COOK_EQUIPMENT PROXY
+	class ProxyTH_CB_CookEquipment_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_2.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_3.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_4.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_5: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_5";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_5.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_6: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_6.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_7: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_7.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_8: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_8.p3d";
+	};
+
 };
