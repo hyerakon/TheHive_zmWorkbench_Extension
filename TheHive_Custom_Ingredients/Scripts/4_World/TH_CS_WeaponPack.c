@@ -1463,7 +1463,7 @@ class TH_CS_WeaponPack_Rak37: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponPack_ExpansionKedr: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Kedr: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1472,7 +1472,7 @@ class TH_CS_WeaponPack_ExpansionKedr: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponPack_ExpansionKedr")
+        if (otherType != "TH_CS_WeaponPack_Kedr")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1604,7 +1604,7 @@ class TH_CS_WeaponPack_SG5: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponPack_ExpansionMP7: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_MP7: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1613,7 +1613,7 @@ class TH_CS_WeaponPack_ExpansionMP7: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponPack_ExpansionMP7")
+        if (otherType != "TH_CS_WeaponPack_MP7")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1651,7 +1651,7 @@ class TH_CS_WeaponPack_ExpansionMP7: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponPack_ExpansionKar98: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Kar98: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1660,7 +1660,7 @@ class TH_CS_WeaponPack_ExpansionKar98: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponPack_ExpansionKar98")
+        if (otherType != "TH_CS_WeaponPack_Kar98")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1839,8 +1839,429 @@ class TH_CS_WeaponPack_MP133: TH_CS_WeaponPack_BASE
         return true;
     };
 };
+class TH_CS_WeaponsPack_Gorza: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
 
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_Gorza")
+            return false;
 
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_Groza762: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_Groza762")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_M249: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_M249")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_Model1887: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_Model1887")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_SuperShorty: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_SuperShorty")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_EVO3A1: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_EVO3A1")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_MP9: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_MP9")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_P90: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_P90")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
+class TH_CS_WeaponsPack_Tec9: TH_CS_WeaponPack_BASE 
+{
+    override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
+    {
+        // allow combi with nm_Gunpowder & nm_Gunpowder_sock
+        if (!other_item)
+            return false;
+
+        string otherType = other_item.GetType();
+        if (otherType != "TH_CS_WeaponsPack_Tec9")
+            return false;
+
+        if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
+            return false;
+
+        if (GetHealthLevel() == GameConstants.STATE_RUINED || other_item.GetHealthLevel() == GameConstants.STATE_RUINED)
+            return false;
+
+        if (!can_this_be_combined)
+            return false;
+
+        if (GetQuantity() >= GetQuantityMax() && other_item.GetQuantity() > 0)
+            return false;
+
+        if (stack_max_limit && (GetQuantity() + other_item.GetQuantity() > GetQuantityMax()))
+            return false;
+
+        PlayerBase player;
+        if (CastTo(player, GetHierarchyRootPlayer()))
+        {
+            if (player.GetInventory().HasAttachment(this))
+                return false;
+            if (player.IsItemsToDelete())
+                return false;
+        }
+
+        if (reservation_check && (GetInventory().HasInventoryReservation(this, null) || other_item.GetInventory().HasInventoryReservation(other_item, null)))
+            return false;
+
+        int slotID;
+        string slotName;
+        if (GetInventory().GetCurrentAttachmentSlotInfo(slotID, slotName) && GetHierarchyParent().GetInventory().GetSlotLock(slotID))
+            return false;
+
+        return true;
+    };
+};
 
 
 

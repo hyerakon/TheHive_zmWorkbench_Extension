@@ -1,0 +1,3824 @@
+class CfgPatches
+{
+	class TheHive_zmWorkbench_Extension_CB_Script
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = 
+		{
+			"DZ_Data",
+			"DZ_Scripts",
+			"DZ_Gear_Camping",
+			"DZ_Gear_Tools",
+			"DZ_Gear_Food",
+			"WorkbenchMod",
+			"zm_Workbench",
+			"zm_DrillPress",
+			"zm_Grinder",
+			"zm_Sewing",
+			"zm_Soldering",
+			"zm_Vice",
+			"zm_Welding",
+			"TheHive_zmWorkbench_Integration_Scripts",
+			"TheHive_Craft_Ingredients_Scripts"
+		};
+	};
+};
+class CfgMods
+{
+	class TheHive_zmWorkbench_Extension_CB
+	{
+		dir = "TheHive_zmWorkbench_Extension\Coocking_Bench";
+		picture = "";
+		action = "";
+		hideName = 1;
+		hidePicture = 1;
+		name = "The Hive - CraftingSystem - Cooking";
+		credits = "Hyerakon";
+		author = "Hyerakon - Luigi Francesco Ricatti";
+		authorID = "0";
+		version = "0.1";
+		extra = 0;
+		type = "mod";
+		//inputs = "TheHive_CraftingSystem\Tecnicbench\data\inputs.xml";
+        //defines[] = {"TECNICBENCH_DEBUG"};
+		dependencies[] = {"Game","World","Mission"};
+		class defs
+		{
+			class imageSets
+			{
+				files[] = {""};
+			};
+			class gameScriptModule
+			{
+				value = "";
+				files[] = {"TheHive_zmWorkbench_Extension/Coocking_Bench/Scripts/3_Game"};
+			};
+			class worldScriptModule
+			{
+				value = "";
+				files[] = {"TheHive_zmWorkbench_Extension/Coocking_Bench/Scripts/4_World"};
+			};
+			class missionScriptModule
+			{
+				value = "";
+				files[] = {"TheHive_zmWorkbench_Extension/Coocking_Bench/Scripts/5_Mission"};
+			};
+		};
+	};
+};
+
+class CfgVehicles
+{
+	class Container_Base;
+	class Inventory_Base;
+
+	class WoodenCrate: Container_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_WoodenCase"
+		};
+	};
+
+	// POWER ITEMS
+	class LargeGasCanister : Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Gas_1",
+			"TH_CB_Gas_2",
+			"TH_CB_Gas_3",
+			"TH_CB_Gas_4"		
+		};
+	};
+	class MediumGasCanister : Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Gas_1",
+			"TH_CB_Gas_2",
+			"TH_CB_Gas_3",
+			"TH_CB_Gas_4"			
+		};
+	};
+	class SmallGasCanister : Inventory_Base 
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Gas_1",
+			"TH_CB_Gas_2",
+			"TH_CB_Gas_3",
+			"TH_CB_Gas_4"			
+		};
+	};
+
+	// FOODSUPPLY ITEMS
+
+	class TH_CS_Supply_BASE;
+	class TH_CS_Supply_Food: TH_CS_Supply_BASE
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_FoodSupply_1",
+			"TH_CB_FoodSupply_2",
+			"TH_CB_FoodSupply_3",
+			"TH_CB_FoodSupply_4"		
+		};
+	};
+
+	// COOKING EQUIPMENTS ITEMS
+
+
+	// INGREDIENTS ITEMS
+	class Edible_Base;
+	// ------------------------------------------------------------------------
+	// CONTENITORI BEVANDE / BOTTIGLIE
+	// ------------------------------------------------------------------------
+	class Bottle_Base: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SodaCan_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// CONFEZIONI SECCHE / SCATOLE / BUSTE
+	// ------------------------------------------------------------------------
+	class BoxCerealCrunchin: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class PowderedMilk: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Rice: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// BARATTOLI / VASETTI
+	// ------------------------------------------------------------------------
+	class Marmalade: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Honey: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// SNACK / INVOLUCRI
+	// ------------------------------------------------------------------------
+	class Zagorky_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Snack_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Candycane_Colorbase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// VISCERE / PARTI MOLLI
+	// ------------------------------------------------------------------------
+	class SmallGuts: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Guts: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// LATTINE STANDARD / MEDIE - CHIUSE E APERTE
+	// ------------------------------------------------------------------------
+	class BakedBeansCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class BakedBeansCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class PeachesCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class PeachesCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class TacticalBaconCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class TacticalBaconCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SpaghettiCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SpaghettiCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class FoodCan_250g_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class FoodCan_250g_Opened_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class UnknownFoodCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class UnknownFoodCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// LATTINE BASSE / PICCOLE - CHIUSE E APERTE
+	// ------------------------------------------------------------------------
+	class SardinesCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SardinesCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class TunaCan: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class TunaCan_Opened: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class FoodCan_100g_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class FoodCan_100g_Opened_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// FRUTTA / VERDURA COMPATTA
+	// ------------------------------------------------------------------------
+	class Apple: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Plum: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Pear: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Orange: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Tomato: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class GreenBellPepper: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Potato: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Kiwi: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// FRUTTA / VERDURA ALLUNGATA
+	// ------------------------------------------------------------------------
+	class Banana: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Zucchini: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// ZUCCA / ELEMENTI GRANDI O PIATTI
+	// ------------------------------------------------------------------------
+	class Pumpkin: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SlicedPumpkin: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// BACCHE / ELEMENTI MOLTO PICCOLI
+	// ------------------------------------------------------------------------
+	class SambucusBerry: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class CaninaBerry: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// STEAK / FETTE DI CARNE
+	// ------------------------------------------------------------------------
+	class HumanSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class GoatSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class MouflonSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class BoarSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class PigSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class DeerSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class ReindeerSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class WolfSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class BearSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class CowSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SheepSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class FoxSteakMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// TAGLI PICCOLI DI CARNE
+	// ------------------------------------------------------------------------
+	class ChickenBreastMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class RabbitLegMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// FILETTI DI PESCE
+	// ------------------------------------------------------------------------
+	class CarpFilletMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class MackerelFilletMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class WalleyePollockFilletMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SteelheadTroutFilletMeat: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// PICCOLO SEAFOOD / DERIVATI
+	// ------------------------------------------------------------------------
+	class RedCaviar: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Bitterlings: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Shrimp: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// PESCI INTERI
+	// ------------------------------------------------------------------------
+	class Carp: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Sardines: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class Mackerel: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class WalleyePollock: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+	class SteelheadTrout: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// LARDO / GRASSO
+	// ------------------------------------------------------------------------
+	class Lard: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// ESCA / VERME
+	// ------------------------------------------------------------------------
+	class Worm: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ------------------------------------------------------------------------
+	// FUNGHI
+	// ------------------------------------------------------------------------
+	class MushroomBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_1",
+			"TH_CB_Ingredient_2",
+			"TH_CB_Ingredient_3",
+			"TH_CB_Ingredient_4",
+			"TH_CB_Ingredient_5",
+			"TH_CB_Ingredient_6",
+			"TH_CB_Ingredient_7",
+			"TH_CB_Ingredient_8",
+			"TH_CB_Ingredient_9",
+			"TH_CB_Ingredient_10",
+			"TH_CB_Ingredient_11",
+			"TH_CB_Ingredient_12",
+			"TH_CB_Ingredient_13",
+			"TH_CB_Ingredient_14",
+			"TH_CB_Ingredient_15",
+			"TH_CB_Ingredient_16",
+			"TH_CB_Ingredient_17",
+			"TH_CB_Ingredient_18",
+			"TH_CB_Ingredient_19",
+			"TH_CB_Ingredient_20",
+			"TH_CB_Ingredient_21",
+			"TH_CB_Ingredient_22",
+			"TH_CB_Ingredient_23",
+			"TH_CB_Ingredient_24",
+			"TH_CB_Ingredient_25",
+			"TH_CB_Ingredient_26",
+			"TH_CB_Ingredient_27",
+			"TH_CB_Ingredient_28",
+			"TH_CB_Ingredient_29",
+			"TH_CB_Ingredient_30",
+			"TH_CB_Ingredient_31",
+			"TH_CB_Ingredient_32"
+		};
+	};
+
+	// ========================================================================
+	// ANIMALI MORTI - SLOT DEDICATI
+	// ========================================================================
+
+	// POLLI MORTI
+	class DeadChicken_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Chicken_1",
+			"TH_CB_Chicken_2",
+			"TH_CB_Chicken_3"
+		};
+	};
+
+	// CONIGLI MORTI
+	class DeadRabbit: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Rabbit_1",
+			"TH_CB_Rabbit_2"
+		};
+	};
+
+	// VOLPI MORTE
+	class DeadFox: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fox_1"
+		};
+	};
+
+
+};
+
+class CfgSlots
+{
+    class Slot_TH_CB_WoodenCase
+	{
+		name = "TH_CB_WoodenCase";
+		displayName = "$STR_Slot_TH_CB_WoodenCase";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// POWER SLOTS
+	class Slot_TH_CB_Gas_1
+	{
+		name = "TH_CB_Gas_1";
+		displayName = "$STR_Slot_TH_CB_Gas";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+	class Slot_TH_CB_Gas_2
+	{
+		name = "TH_CB_Gas_2";
+		displayName = "$STR_Slot_TH_CB_Gas";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+	class Slot_TH_CB_Gas_3
+	{
+		name = "TH_CB_Gas_3";
+		displayName = "$STR_Slot_TH_CB_Gas";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+	class Slot_TH_CB_Gas_4
+	{
+		name = "TH_CB_Gas_4";
+		displayName = "$STR_Slot_TH_CB_Gas";
+		ghostIcon="set:dayz_inventory image:gascanister";
+	};
+
+	// FOODSUPPLY SLOTS
+	class Slot_TH_CB_FoodSupply_1
+	{
+		name = "TH_CB_FoodSupply_1";
+		displayName = "$STR_Slot_TH_CB_FoodSupply";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_FoodSupply_2
+	{
+		name = "TH_CB_FoodSupply_2";
+		displayName = "$STR_Slot_TH_CB_FoodSupply";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_FoodSupply_3
+	{
+		name = "TH_CB_FoodSupply_3";
+		displayName = "$STR_Slot_TH_CB_FoodSupply";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_FoodSupply_4
+	{
+		name = "TH_CB_FoodSupply_4";
+		displayName = "$STR_Slot_TH_CB_FoodSupply";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// COOKING EQUIPMENTS
+	class Slot_TH_CB_CookEquipment_1
+	{
+		name = "TH_CB_CookEquipment_1";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_2
+	{
+		name = "TH_CB_CookEquipment_2";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_3
+	{
+		name = "TH_CB_CookEquipment_3";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_4
+	{
+		name = "TH_CB_CookEquipment_4";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_5
+	{
+		name = "TH_CB_CookEquipment_5";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_6
+	{
+		name = "TH_CB_CookEquipment_6";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_7
+	{
+		name = "TH_CB_CookEquipment_7";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_CookEquipment_8
+	{
+		name = "TH_CB_CookEquipment_8";
+		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// MODUILE SLOTS
+	class Slot_TH_CB_Scale
+	{
+		name = "scale";
+		displayName = "$STR_Slot_TH_CB_Scale";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Still
+	{
+		name = "still";
+		displayName = "$STR_Slot_TH_CB_Still";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Stove
+	{
+		name = "stove";
+		displayName = "$STR_Slot_TH_CB_Stove";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// INGREDIENTS SLOTS
+	class Slot_TH_CB_Ingredient_1
+	{
+		name = "TH_CB_Ingredient_1";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_2
+	{
+		name = "TH_CB_Ingredient_2";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_3
+	{
+		name = "TH_CB_Ingredient_3";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_4
+	{
+		name = "TH_CB_Ingredient_4";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_5
+	{
+		name = "TH_CB_Ingredient_5";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_6
+	{
+		name = "TH_CB_Ingredient_6";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_7
+	{
+		name = "TH_CB_Ingredient_7";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_8
+	{
+		name = "TH_CB_Ingredient_8";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_9
+	{
+		name = "TH_CB_Ingredient_9";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_10
+	{
+		name = "TH_CB_Ingredient_10";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_11
+	{
+		name = "TH_CB_Ingredient_11";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_12
+	{
+		name = "TH_CB_Ingredient_12";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_13
+	{
+		name = "TH_CB_Ingredient_13";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_14
+	{
+		name = "TH_CB_Ingredient_14";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_15
+	{
+		name = "TH_CB_Ingredient_15";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_16
+	{
+		name = "TH_CB_Ingredient_16";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_17
+	{
+		name = "TH_CB_Ingredient_17";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_18
+	{
+		name = "TH_CB_Ingredient_18";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_19
+	{
+		name = "TH_CB_Ingredient_19";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_20
+	{
+		name = "TH_CB_Ingredient_20";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_21
+	{
+		name = "TH_CB_Ingredient_21";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_22
+	{
+		name = "TH_CB_Ingredient_22";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_23
+	{
+		name = "TH_CB_Ingredient_23";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_24
+	{
+		name = "TH_CB_Ingredient_24";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_25
+	{
+		name = "TH_CB_Ingredient_25";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_26
+	{
+		name = "TH_CB_Ingredient_26";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_27
+	{
+		name = "TH_CB_Ingredient_27";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_28
+	{
+		name = "TH_CB_Ingredient_28";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_29
+	{
+		name = "TH_CB_Ingredient_29";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_30
+	{
+		name = "TH_CB_Ingredient_30";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_31
+	{
+		name = "TH_CB_Ingredient_31";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Ingredient_32
+	{
+		name = "TH_CB_Ingredient_32";
+		displayName = "$STR_Slot_TH_CB_Ingredient";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// CHICKEN SLOTS
+	class Slot_TH_CB_Chicken_1
+	{
+		name = "TH_CB_Chicken_1";
+		displayName = "$STR_Slot_TH_CB_Chicken";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Chicken_2
+	{
+		name = "TH_CB_Chicken_2";
+		displayName = "$STR_Slot_TH_CB_Chicken";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Chicken_3
+	{
+		name = "TH_CB_Chicken_3";
+		displayName = "$STR_Slot_TH_CB_Chicken";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// RABBIT SLOTS
+	class Slot_TH_CB_Rabbit_1
+	{
+		name = "TH_CB_Rabbit_1";
+		displayName = "$STR_Slot_TH_CB_Rabbit";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+	class Slot_TH_CB_Rabbit_2
+	{
+		name = "TH_CB_Rabbit_2";
+		displayName = "$STR_Slot_TH_CB_Rabbit";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+	// FOX SLOT
+	class Slot_TH_CB_Fox_1
+	{
+		name = "TH_CB_Fox_1";
+		displayName = "$STR_Slot_TH_CB_Fox";
+		ghostIcon = "set:dayz_inventory image:woodcrate";
+	};
+
+};
+
+class CfgNonAIVehicles
+{
+    class ProxyAttachment;
+	class ProxyTH_CB_WoodenCase_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_WoodenCase";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_WoodenCase_Proxy.p3d";
+		
+	};
+
+	// STOVE PROXY
+	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "CookingEquipment";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookingPot_Proxy.p3d";
+		
+	};
+
+	// MODULE PROXY
+	class ProxyTH_CB_Scale_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "scale";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Scale_Proxy.p3d";
+		
+	};
+	class ProxyTH_CB_Still_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "still";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Still_Proxy.p3d";
+		
+	};
+	class ProxyTH_CB_Stove_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "stove";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Stove_Proxy.p3d";
+		
+	};
+
+	// POWER PROXY
+	// POWER PROXY LARGE
+	class ProxyTH_CB_GasCannisterLarge_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterLarge_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterLarge_Proxy_4.p3d";		
+	};
+	
+	// POWER PROXY MEDIUM
+	class ProxyTH_CB_GasCannisterMedium_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterMedium_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterMedium_Proxy_4.p3d";		
+	};
+	// POWER PROXY SMALL
+	class ProxyTH_CB_GasCannisterSmall_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_GasCannisterSmall_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Gas_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_GasCannisterSmall_Proxy_4.p3d";		
+	};
+
+
+	// TH_CS_FOOD_SUPPLY PROXY
+	class ProxyTH_CB_FoodSupply_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_1.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_2.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_3.p3d";		
+	};
+	class ProxyTH_CB_FoodSupply_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_FoodSupply_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_FoodSupply_Proxy_4.p3d";		
+	};
+	
+	// TH_CB_COOK_EQUIPMENT PROXY
+	class ProxyTH_CB_CookEquipment_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_2.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_3.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_4.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_5: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_5";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_5.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_6: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_6.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_7: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_7.p3d";
+	};
+	class ProxyTH_CB_CookEquipment_Proxy_8: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_CookEquipment_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_8.p3d";
+	};
+
+	// TH_CB_INGREDIENT PROXY
+
+	class ProxyTH_CB_Ingredient_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_2.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_3.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_4.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_5: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_5";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_5.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_6: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_6.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_7: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_7.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_8: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_8.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_9: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_9";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_9.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_10: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_10";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_10.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_11: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_11";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_11.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_12: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_12";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_12.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_13: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_13";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_13.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_14: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_14";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_14.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_15: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_15";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_15.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_16: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_16";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_16.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_17: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_17";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_17.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_18: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_18";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_18.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_19: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_19";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_19.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_20: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_20";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_20.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_21: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_21";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_21.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_22: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_22";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_22.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_23: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_23";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_23.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_24: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_24";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_24.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_25: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_25";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_25.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_26: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_26";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_26.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_27: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_27";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_27.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_28: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_28";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_28.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_29: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_29";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_29.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_30: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_30";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_30.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_31: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_31";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_31.p3d";
+	};
+	class ProxyTH_CB_Ingredient_Proxy_32: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Ingredient_32";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_32.p3d";
+	};
+	// TH_CB_CHICKEN PROXY
+	class ProxyTH_CB_Chicken_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Chicken_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Chicken_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_Chicken_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Chicken_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Chicken_Proxy_2.p3d";
+	};
+	class ProxyTH_CB_Chicken_Proxy_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Chicken_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Chicken_Proxy_3.p3d";
+	};
+	// TH_CB_RABBIT PROXY
+	class ProxyTH_CB_Rabbit_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Rabbit_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Rabbit_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_Rabbit_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Rabbit_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Rabbit_Proxy_2.p3d";
+	};
+	// TH_CB_FOX PROXY
+	class ProxyTH_CB_Fox_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Fox_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Fox_Proxy_1.p3d";
+	};
+
+};
