@@ -49,7 +49,7 @@ class CfgMods
 		{
 			class imageSets
 			{
-				files[] = {""};
+				files[] = {"TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset.imageset"};
 			};
 			class gameScriptModule
 			{
@@ -863,12 +863,14 @@ class CfgVehicles
 
 class CfgSlots
 {
-	class Slot_TH_CB_WoodenCase
+	// WOODEN CASE
+class Slot_TH_CB_WoodenCase
 	{
 		name = "TH_CB_WoodenCase";
 		displayName = "$STR_Slot_TH_CB_WoodenCase";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
+
 
 	// POWER SLOTS
 	class Slot_TH_CB_Gas_1
@@ -901,75 +903,76 @@ class CfgSlots
 	{
 		name = "TH_CB_FoodSupply_1";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:food";
 	};
 	class Slot_TH_CB_FoodSupply_2
 	{
 		name = "TH_CB_FoodSupply_2";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:food";
 	};
 	class Slot_TH_CB_FoodSupply_3
 	{
 		name = "TH_CB_FoodSupply_3";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:food";
 	};
 	class Slot_TH_CB_FoodSupply_4
 	{
 		name = "TH_CB_FoodSupply_4";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:food";
 	};
 
-	// COOKING EQUIPMENTS
+	// COOKING EQUIPMENT SLOTS
 	class Slot_TH_CB_CookEquipment_1
 	{
 		name = "TH_CB_CookEquipment_1";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:knife"
 	};
 	class Slot_TH_CB_CookEquipment_2
 	{
 		name = "TH_CB_CookEquipment_2";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:knife"
 	};
 	class Slot_TH_CB_CookEquipment_3
 	{
 		name = "TH_CB_CookEquipment_3";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:knife"
 	};
 	class Slot_TH_CB_CookEquipment_4
 	{
 		name = "TH_CB_CookEquipment_4";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:knife"
 	};
+	// COOKING EQUIPMENT SLOTS - FRYING PAN / POT / CAULDRON
 	class Slot_TH_CB_CookEquipment_5
 	{
 		name = "TH_CB_CookEquipment_5";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 	class Slot_TH_CB_CookEquipment_6
 	{
 		name = "TH_CB_CookEquipment_6";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 	class Slot_TH_CB_CookEquipment_7
 	{
 		name = "TH_CB_CookEquipment_7";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 	class Slot_TH_CB_CookEquipment_8
 	{
 		name = "TH_CB_CookEquipment_8";
 		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 
 	// MODULE SLOTS
@@ -977,259 +980,259 @@ class CfgSlots
 	{
 		name = "scale";
 		displayName = "$STR_Slot_TH_CB_Scale";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 	class Slot_TH_CB_Still
 	{
 		name = "still";
 		displayName = "$STR_Slot_TH_CB_Still";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingbase";
 	};
 	class Slot_TH_CB_Stove
 	{
 		name = "stove";
 		displayName = "$STR_Slot_TH_CB_Stove";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:cookingbase";
 	};
 
 	// INGREDIENT SLOTS - MATRIX 8x4
-	//
 	// ROW 1: Can 1-5 | Produce 1-3
-	// ROW 2: Steak 1-5 | Bottle | Dry | Jar
-	// ROW 3: SmallCan 1-2 | Fillet 1-2 | Fish 1-2 | Snack | Guts
-	// ROW 4: LongProduce | Pumpkin | Berry | SmallMeat | Seafood | Lard | Worm | Mushroom
 	class Slot_TH_CB_Ingredient_Can_1
 	{
 		name = "TH_CB_Ingredient_Can_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_2
 	{
 		name = "TH_CB_Ingredient_Can_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_3
 	{
 		name = "TH_CB_Ingredient_Can_3";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_4
 	{
 		name = "TH_CB_Ingredient_Can_4";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_5
 	{
 		name = "TH_CB_Ingredient_Can_5";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Produce_1
 	{
 		name = "TH_CB_Ingredient_Produce_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
 	class Slot_TH_CB_Ingredient_Produce_2
 	{
 		name = "TH_CB_Ingredient_Produce_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
 	class Slot_TH_CB_Ingredient_Produce_3
 	{
 		name = "TH_CB_Ingredient_Produce_3";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
+
+	// ROW 2: Steak 1-5 | Bottle | Dry | Jar
 	class Slot_TH_CB_Ingredient_Steak_1
 	{
 		name = "TH_CB_Ingredient_Steak_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
 	};
 	class Slot_TH_CB_Ingredient_Steak_2
 	{
 		name = "TH_CB_Ingredient_Steak_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
 	};
 	class Slot_TH_CB_Ingredient_Steak_3
 	{
 		name = "TH_CB_Ingredient_Steak_3";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
 	};
 	class Slot_TH_CB_Ingredient_Steak_4
 	{
 		name = "TH_CB_Ingredient_Steak_4";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
 	};
 	class Slot_TH_CB_Ingredient_Steak_5
 	{
 		name = "TH_CB_Ingredient_Steak_5";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
 	};
 	class Slot_TH_CB_Ingredient_Bottle_1
 	{
 		name = "TH_CB_Ingredient_Bottle_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_bottle";
 	};
 	class Slot_TH_CB_Ingredient_Dry_1
 	{
 		name = "TH_CB_Ingredient_Dry_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_dry";
 	};
 	class Slot_TH_CB_Ingredient_Jar_1
 	{
 		name = "TH_CB_Ingredient_Jar_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_jar";
 	};
+
+	// ROW 3: SmallCan 1-2 | Fillet 1-2 | Fish 1-2 | Snack | Guts
 	class Slot_TH_CB_Ingredient_SmallCan_1
 	{
 		name = "TH_CB_Ingredient_SmallCan_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_smallcan";
 	};
 	class Slot_TH_CB_Ingredient_SmallCan_2
 	{
 		name = "TH_CB_Ingredient_SmallCan_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_smallcan";
 	};
 	class Slot_TH_CB_Ingredient_Fillet_1
 	{
 		name = "TH_CB_Ingredient_Fillet_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_fillet";
 	};
 	class Slot_TH_CB_Ingredient_Fillet_2
 	{
 		name = "TH_CB_Ingredient_Fillet_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_fillet";
 	};
 	class Slot_TH_CB_Ingredient_Fish_1
 	{
 		name = "TH_CB_Ingredient_Fish_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_fish";
 	};
 	class Slot_TH_CB_Ingredient_Fish_2
 	{
 		name = "TH_CB_Ingredient_Fish_2";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_fish";
 	};
 	class Slot_TH_CB_Ingredient_Snack_1
 	{
 		name = "TH_CB_Ingredient_Snack_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_snack";
 	};
 	class Slot_TH_CB_Ingredient_Guts_1
 	{
 		name = "TH_CB_Ingredient_Guts_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_guts";
 	};
+
+	// ROW 4: LongProduce | Pumpkin | Berry | SmallMeat | Seafood | Lard | Worm | Mushroom
 	class Slot_TH_CB_Ingredient_LongProduce_1
 	{
 		name = "TH_CB_Ingredient_LongProduce_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_longproduce";
 	};
 	class Slot_TH_CB_Ingredient_Pumpkin_1
 	{
 		name = "TH_CB_Ingredient_Pumpkin_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_pumpkin";
 	};
 	class Slot_TH_CB_Ingredient_Berry_1
 	{
 		name = "TH_CB_Ingredient_Berry_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_berry";
 	};
 	class Slot_TH_CB_Ingredient_SmallMeat_1
 	{
 		name = "TH_CB_Ingredient_SmallMeat_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_smallmeat";
 	};
 	class Slot_TH_CB_Ingredient_Seafood_1
 	{
 		name = "TH_CB_Ingredient_Seafood_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_seafood";
 	};
 	class Slot_TH_CB_Ingredient_Lard_1
 	{
 		name = "TH_CB_Ingredient_Lard_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_lard";
 	};
 	class Slot_TH_CB_Ingredient_Worm_1
 	{
 		name = "TH_CB_Ingredient_Worm_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:dayz_inventory image:trapbait";
 	};
 	class Slot_TH_CB_Ingredient_Mushroom_1
 	{
 		name = "TH_CB_Ingredient_Mushroom_1";
 		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:ing_mushroom";
 	};
-	// CHICKEN SLOTS
+
+	// DEAD ANIMAL SLOTS
 	class Slot_TH_CB_Chicken_1
 	{
 		name = "TH_CB_Chicken_1";
 		displayName = "$STR_Slot_TH_CB_Chicken";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_chicken";
 	};
 	class Slot_TH_CB_Chicken_2
 	{
 		name = "TH_CB_Chicken_2";
 		displayName = "$STR_Slot_TH_CB_Chicken";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_chicken";
 	};
 	class Slot_TH_CB_Chicken_3
 	{
 		name = "TH_CB_Chicken_3";
 		displayName = "$STR_Slot_TH_CB_Chicken";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_chicken";
 	};
-	// RABBIT SLOTS
 	class Slot_TH_CB_Rabbit_1
 	{
 		name = "TH_CB_Rabbit_1";
 		displayName = "$STR_Slot_TH_CB_Rabbit";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_rabbit";
 	};
 	class Slot_TH_CB_Rabbit_2
 	{
 		name = "TH_CB_Rabbit_2";
 		displayName = "$STR_Slot_TH_CB_Rabbit";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_rabbit";
 	};
-	// FOX SLOT
 	class Slot_TH_CB_Fox_1
 	{
 		name = "TH_CB_Fox_1";
 		displayName = "$STR_Slot_TH_CB_Fox";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_cb_icons image:dead_fox";
 	};
-
 };
 
 class CfgNonAIVehicles

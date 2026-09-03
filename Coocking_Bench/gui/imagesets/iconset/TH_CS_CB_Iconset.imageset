@@ -1,0 +1,152 @@
+ImageSetClass {
+ Name "th_cb_icons"
+ RefSize 1254 1254
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{6681BC07868041DE}TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass cat_ingredients {
+   Name "cat_ingredients"
+   Pos 0 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_deadanimals {
+   Name "cat_deadanimals"
+   Pos 251 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_can {
+   Name "ing_can"
+   Pos 502 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_produce {
+   Name "ing_produce"
+   Pos 753 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_steak {
+   Name "ing_steak"
+   Pos 1004 0
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass ing_bottle {
+   Name "ing_bottle"
+   Pos 0 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_dry {
+   Name "ing_dry"
+   Pos 251 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_jar {
+   Name "ing_jar"
+   Pos 502 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_smallcan {
+   Name "ing_smallcan"
+   Pos 753 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_fillet {
+   Name "ing_fillet"
+   Pos 1004 251
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass ing_fish {
+   Name "ing_fish"
+   Pos 0 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_snack {
+   Name "ing_snack"
+   Pos 251 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_guts {
+   Name "ing_guts"
+   Pos 502 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_longproduce {
+   Name "ing_longproduce"
+   Pos 753 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_pumpkin {
+   Name "ing_pumpkin"
+   Pos 1004 502
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass ing_berry {
+   Name "ing_berry"
+   Pos 0 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_smallmeat {
+   Name "ing_smallmeat"
+   Pos 251 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_seafood {
+   Name "ing_seafood"
+   Pos 502 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_lard {
+   Name "ing_lard"
+   Pos 753 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass ing_mushroom {
+   Name "ing_mushroom"
+   Pos 1004 753
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass dead_chicken {
+   Name "dead_chicken"
+   Pos 0 1004
+   Size 251 250
+   Flags 0
+  }
+  ImageSetDefClass dead_rabbit {
+   Name "dead_rabbit"
+   Pos 251 1004
+   Size 251 250
+   Flags 0
+  }
+  ImageSetDefClass dead_fox {
+   Name "dead_fox"
+   Pos 502 1004
+   Size 251 250
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

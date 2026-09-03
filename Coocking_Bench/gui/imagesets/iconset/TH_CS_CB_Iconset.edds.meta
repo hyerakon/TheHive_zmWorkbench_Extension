@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{6681BC07868041DE}TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset.edds"
+ Author "leviathan"
+ ChangeDate -1105021661
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "TH_CS_CB_Iconset.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
