@@ -20,6 +20,7 @@ class CfgPatches
 			"zm_Vice",
 			"zm_Welding",
 			"TheHive_zmWorkbench_Integration_Scripts",
+			//"TH_CS_zmTerje_Integration_Scripts",
 			"TheHive_Craft_Ingredients_Scripts"
 		};
 	};
