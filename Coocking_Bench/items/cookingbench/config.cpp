@@ -60,81 +60,70 @@ class CfgVehicles
 		};
 		attachments[] = 
 		{
+			
+			// MODULES
+			"scale",
+			"still",
+			"stove",
+			// POWER
 			"TH_CB_Gas_1",
 			"TH_CB_Gas_2",
 			"TH_CB_Gas_3",
 			"TH_CB_Gas_4",
-
+			// FOOD SUPPLIES
 			"TH_CB_FoodSupply_1",
 			"TH_CB_FoodSupply_2",
 			"TH_CB_FoodSupply_3",
 			"TH_CB_FoodSupply_4",
-
-			"TH_CB_CookEquipment_1",
-			"TH_CB_CookEquipment_2",
-			"TH_CB_CookEquipment_3",
-			"TH_CB_CookEquipment_4",
+			// COOKING EQUIPMENT
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4",
 			"TH_CB_CookEquipment_5",
 			"TH_CB_CookEquipment_6",
-			"TH_CB_CookEquipment_7",
-			"TH_CB_CookEquipment_8",
-
-			"scale",
-			"still",
-			"stove",
-
-			// INGREDIENTS - ROW 1
+			"TH_CB_BottleEquipment_7",
+			"TH_CB_BottleEquipment_8",
+			// INGREDIENTS ROW 1
 			"TH_CB_Ingredient_Can_1",
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
 			"TH_CB_Ingredient_Can_5",
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3",
-
-			// INGREDIENTS - ROW 2
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5",
-			"TH_CB_Ingredient_Bottle_1",
-			"TH_CB_Ingredient_Dry_1",
-			"TH_CB_Ingredient_Jar_1",
-
-			// INGREDIENTS - ROW 3
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2",
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2",
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2",
-			"TH_CB_Ingredient_Snack_1",
-			"TH_CB_Ingredient_Guts_1",
-
-			// INGREDIENTS - ROW 4
-			"TH_CB_Ingredient_LongProduce_1",
-			"TH_CB_Ingredient_Pumpkin_1",
-			"TH_CB_Ingredient_Berry_1",
-			"TH_CB_Ingredient_SmallMeat_1",
-			"TH_CB_Ingredient_Seafood_1",
-			"TH_CB_Ingredient_Lard_1",
-			"TH_CB_Ingredient_Worm_1",
-			"TH_CB_Ingredient_Mushroom_1",
-
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8",
+			// INGREDIENTS ROW 2
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8",
+			// INGREDIENTS ROW 3
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8",
 			// DEAD ANIMALS
 			"TH_CB_Chicken_1",
 			"TH_CB_Chicken_2",
 			"TH_CB_Chicken_3",
-
 			"TH_CB_Rabbit_1",
 			"TH_CB_Rabbit_2",
-
 			"TH_CB_Fox_1",
-
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2",
+			// ZM STORAGE
 			"workbenchstorage",
 			"workbenchoutput",
+			// TH WOODEN CASE
 			"TH_CB_WoodenCase"
 		};
 		class DamageSystem
@@ -270,14 +259,14 @@ class CfgVehicles
 				description="$STR_AttachmentsProps_CookingEquipment_desc";
 				attachmentSlots[]=
 				{
-					"TH_CB_CookEquipment_1",
-					"TH_CB_CookEquipment_2",
-					"TH_CB_CookEquipment_3",
-					"TH_CB_CookEquipment_4",
+					"TH_CB_KnifeEquipment_1",
+					"TH_CB_KnifeEquipment_2",
+					"TH_CB_KnifeEquipment_3",
+					"TH_CB_KnifeEquipment_4",
 					"TH_CB_CookEquipment_5",
 					"TH_CB_CookEquipment_6",
-					"TH_CB_CookEquipment_7",
-					"TH_CB_CookEquipment_8"
+					"TH_CB_BottleEquipment_7",
+					"TH_CB_BottleEquipment_8"
 				};
 				icon="set:workbench_icons image:icon_spraycan";
 			};
@@ -300,45 +289,33 @@ class CfgVehicles
 
 				attachmentSlots[] =
 				{
-					// ROW 1
+					// INGREDIENTS ROW 1
 					"TH_CB_Ingredient_Can_1",
 					"TH_CB_Ingredient_Can_2",
 					"TH_CB_Ingredient_Can_3",
 					"TH_CB_Ingredient_Can_4",
 					"TH_CB_Ingredient_Can_5",
-					"TH_CB_Ingredient_Produce_1",
-					"TH_CB_Ingredient_Produce_2",
-					"TH_CB_Ingredient_Produce_3",
-
-					// ROW 2
-					"TH_CB_Ingredient_Steak_1",
-					"TH_CB_Ingredient_Steak_2",
-					"TH_CB_Ingredient_Steak_3",
-					"TH_CB_Ingredient_Steak_4",
-					"TH_CB_Ingredient_Steak_5",
-					"TH_CB_Ingredient_Bottle_1",
-					"TH_CB_Ingredient_Dry_1",
-					"TH_CB_Ingredient_Jar_1",
-
-					// ROW 3
-					"TH_CB_Ingredient_SmallCan_1",
-					"TH_CB_Ingredient_SmallCan_2",
-					"TH_CB_Ingredient_Fillet_1",
-					"TH_CB_Ingredient_Fillet_2",
-					"TH_CB_Ingredient_Fish_1",
-					"TH_CB_Ingredient_Fish_2",
-					"TH_CB_Ingredient_Snack_1",
-					"TH_CB_Ingredient_Guts_1",
-
-					// ROW 4
-					"TH_CB_Ingredient_LongProduce_1",
-					"TH_CB_Ingredient_Pumpkin_1",
-					"TH_CB_Ingredient_Berry_1",
-					"TH_CB_Ingredient_SmallMeat_1",
-					"TH_CB_Ingredient_Seafood_1",
-					"TH_CB_Ingredient_Lard_1",
-					"TH_CB_Ingredient_Worm_1",
-					"TH_CB_Ingredient_Mushroom_1"
+					"TH_CB_Ingredient_Can_6",
+					"TH_CB_Ingredient_Can_7",
+					"TH_CB_Ingredient_Can_8",
+					// INGREDIENTS ROW 2
+					"TH_CB_Ingredient_Meat_1",
+					"TH_CB_Ingredient_Meat_2",
+					"TH_CB_Ingredient_Meat_3",
+					"TH_CB_Ingredient_Meat_4",
+					"TH_CB_Ingredient_Meat_5",
+					"TH_CB_Ingredient_Meat_6",
+					"TH_CB_Ingredient_Meat_7",
+					"TH_CB_Ingredient_Meat_8",
+					// INGREDIENTS ROW 3
+					"TH_CB_Ingredient_Vegetables_1",
+					"TH_CB_Ingredient_Vegetables_2",
+					"TH_CB_Ingredient_Vegetables_3",
+					"TH_CB_Ingredient_Vegetables_4",
+					"TH_CB_Ingredient_Vegetables_5",
+					"TH_CB_Ingredient_Vegetables_6",
+					"TH_CB_Ingredient_Vegetables_7",
+					"TH_CB_Ingredient_Vegetables_8"
 				};
 			};
 
@@ -352,11 +329,11 @@ class CfgVehicles
 					"TH_CB_Chicken_1",
 					"TH_CB_Chicken_2",
 					"TH_CB_Chicken_3",
-
 					"TH_CB_Rabbit_1",
 					"TH_CB_Rabbit_2",
-
-					"TH_CB_Fox_1"
+					"TH_CB_Fox_1",
+					"TH_CB_Fish_1",
+					"TH_CB_Fish_2"
 				};
 			};
 			class storage
@@ -466,84 +443,72 @@ class CfgVehicles
 		};
 		attachments[] = 
 		{
+			
+			// MODULES
+			"scale",
+			"still",
+			"stove",
+			// POWER
 			"TH_CB_Gas_1",
 			"TH_CB_Gas_2",
 			"TH_CB_Gas_3",
 			"TH_CB_Gas_4",
-
+			// FOOD SUPPLIES
 			"TH_CB_FoodSupply_1",
 			"TH_CB_FoodSupply_2",
 			"TH_CB_FoodSupply_3",
 			"TH_CB_FoodSupply_4",
-
-			"TH_CB_CookEquipment_1",
-			"TH_CB_CookEquipment_2",
-			"TH_CB_CookEquipment_3",
-			"TH_CB_CookEquipment_4",
+			// COOKING EQUIPMENT
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4",
 			"TH_CB_CookEquipment_5",
 			"TH_CB_CookEquipment_6",
-			"TH_CB_CookEquipment_7",
-			"TH_CB_CookEquipment_8",
-
-			"scale",
-			"still",
-			"stove",
-
-			// INGREDIENTS - ROW 1
+			"TH_CB_BottleEquipment_7",
+			"TH_CB_BottleEquipment_8",
+			// INGREDIENTS ROW 1
 			"TH_CB_Ingredient_Can_1",
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
 			"TH_CB_Ingredient_Can_5",
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3",
-
-			// INGREDIENTS - ROW 2
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5",
-			"TH_CB_Ingredient_Bottle_1",
-			"TH_CB_Ingredient_Dry_1",
-			"TH_CB_Ingredient_Jar_1",
-
-			// INGREDIENTS - ROW 3
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2",
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2",
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2",
-			"TH_CB_Ingredient_Snack_1",
-			"TH_CB_Ingredient_Guts_1",
-
-			// INGREDIENTS - ROW 4
-			"TH_CB_Ingredient_LongProduce_1",
-			"TH_CB_Ingredient_Pumpkin_1",
-			"TH_CB_Ingredient_Berry_1",
-			"TH_CB_Ingredient_SmallMeat_1",
-			"TH_CB_Ingredient_Seafood_1",
-			"TH_CB_Ingredient_Lard_1",
-			"TH_CB_Ingredient_Worm_1",
-			"TH_CB_Ingredient_Mushroom_1",
-
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8",
+			// INGREDIENTS ROW 2
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8",
+			// INGREDIENTS ROW 3
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8",
 			// DEAD ANIMALS
 			"TH_CB_Chicken_1",
 			"TH_CB_Chicken_2",
 			"TH_CB_Chicken_3",
-
 			"TH_CB_Rabbit_1",
 			"TH_CB_Rabbit_2",
-
 			"TH_CB_Fox_1",
-
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2",
+			// ZM STORAGE
 			"workbenchstorage",
 			"workbenchoutput",
+			// TH WOODEN CASE
 			"TH_CB_WoodenCase"
 		};
-	
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -677,14 +642,14 @@ class CfgVehicles
 				description="$STR_AttachmentsProps_CookingEquipment_desc";
 				attachmentSlots[]=
 				{
-					"TH_CB_CookEquipment_1",
-					"TH_CB_CookEquipment_2",
-					"TH_CB_CookEquipment_3",
-					"TH_CB_CookEquipment_4",
+					"TH_CB_KnifeEquipment_1",
+					"TH_CB_KnifeEquipment_2",
+					"TH_CB_KnifeEquipment_3",
+					"TH_CB_KnifeEquipment_4",
 					"TH_CB_CookEquipment_5",
 					"TH_CB_CookEquipment_6",
-					"TH_CB_CookEquipment_7",
-					"TH_CB_CookEquipment_8"
+					"TH_CB_BottleEquipment_7",
+					"TH_CB_BottleEquipment_8"
 				};
 				icon="set:workbench_icons image:icon_spraycan";
 			};
@@ -707,45 +672,33 @@ class CfgVehicles
 
 				attachmentSlots[] =
 				{
-					// ROW 1
+					// INGREDIENTS ROW 1
 					"TH_CB_Ingredient_Can_1",
 					"TH_CB_Ingredient_Can_2",
 					"TH_CB_Ingredient_Can_3",
 					"TH_CB_Ingredient_Can_4",
 					"TH_CB_Ingredient_Can_5",
-					"TH_CB_Ingredient_Produce_1",
-					"TH_CB_Ingredient_Produce_2",
-					"TH_CB_Ingredient_Produce_3",
-
-					// ROW 2
-					"TH_CB_Ingredient_Steak_1",
-					"TH_CB_Ingredient_Steak_2",
-					"TH_CB_Ingredient_Steak_3",
-					"TH_CB_Ingredient_Steak_4",
-					"TH_CB_Ingredient_Steak_5",
-					"TH_CB_Ingredient_Bottle_1",
-					"TH_CB_Ingredient_Dry_1",
-					"TH_CB_Ingredient_Jar_1",
-
-					// ROW 3
-					"TH_CB_Ingredient_SmallCan_1",
-					"TH_CB_Ingredient_SmallCan_2",
-					"TH_CB_Ingredient_Fillet_1",
-					"TH_CB_Ingredient_Fillet_2",
-					"TH_CB_Ingredient_Fish_1",
-					"TH_CB_Ingredient_Fish_2",
-					"TH_CB_Ingredient_Snack_1",
-					"TH_CB_Ingredient_Guts_1",
-
-					// ROW 4
-					"TH_CB_Ingredient_LongProduce_1",
-					"TH_CB_Ingredient_Pumpkin_1",
-					"TH_CB_Ingredient_Berry_1",
-					"TH_CB_Ingredient_SmallMeat_1",
-					"TH_CB_Ingredient_Seafood_1",
-					"TH_CB_Ingredient_Lard_1",
-					"TH_CB_Ingredient_Worm_1",
-					"TH_CB_Ingredient_Mushroom_1"
+					"TH_CB_Ingredient_Can_6",
+					"TH_CB_Ingredient_Can_7",
+					"TH_CB_Ingredient_Can_8",
+					// INGREDIENTS ROW 2
+					"TH_CB_Ingredient_Meat_1",
+					"TH_CB_Ingredient_Meat_2",
+					"TH_CB_Ingredient_Meat_3",
+					"TH_CB_Ingredient_Meat_4",
+					"TH_CB_Ingredient_Meat_5",
+					"TH_CB_Ingredient_Meat_6",
+					"TH_CB_Ingredient_Meat_7",
+					"TH_CB_Ingredient_Meat_8",
+					// INGREDIENTS ROW 3
+					"TH_CB_Ingredient_Vegetables_1",
+					"TH_CB_Ingredient_Vegetables_2",
+					"TH_CB_Ingredient_Vegetables_3",
+					"TH_CB_Ingredient_Vegetables_4",
+					"TH_CB_Ingredient_Vegetables_5",
+					"TH_CB_Ingredient_Vegetables_6",
+					"TH_CB_Ingredient_Vegetables_7",
+					"TH_CB_Ingredient_Vegetables_8"
 				};
 			};
 
@@ -759,11 +712,11 @@ class CfgVehicles
 					"TH_CB_Chicken_1",
 					"TH_CB_Chicken_2",
 					"TH_CB_Chicken_3",
-
 					"TH_CB_Rabbit_1",
 					"TH_CB_Rabbit_2",
-
-					"TH_CB_Fox_1"
+					"TH_CB_Fox_1",
+					"TH_CB_Fish_1",
+					"TH_CB_Fish_2"
 				};
 			};
 			class storage
@@ -798,7 +751,6 @@ class CfgVehicles
 			};
 			
 		};
-	
 	};
 
 };

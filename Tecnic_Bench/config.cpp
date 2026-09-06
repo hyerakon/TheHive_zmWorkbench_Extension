@@ -209,7 +209,7 @@ class CfgNonAIVehicles
 		model = "\TheHive_zmWorkbench_Extension\Tecnic_Bench\proxies\TH_TB_spraycan7.p3d";
 		
 	};
-	class ProxyTH_TB_Material_MetalSheets1: ProxyAttachment
+	class ProxyTH_TB_Material_MetalSheets: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "Material_MetalSheets";

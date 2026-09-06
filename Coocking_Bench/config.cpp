@@ -12,6 +12,7 @@ class CfgPatches
 			"DZ_Gear_Camping",
 			"DZ_Gear_Tools",
 			"DZ_Gear_Food",
+			"DZ_Gear_Drinks",
 			"WorkbenchMod",
 			"zm_Workbench",
 			"zm_DrillPress",
@@ -129,112 +130,28 @@ class CfgVehicles
 	};
 
 	// COOKING EQUIPMENTS ITEMS
-
-
 	// INGREDIENTS ITEMS
 	class Edible_Base;
-	// ------------------------------------------------------------------------
+	
 	// CONTENITORI BEVANDE / BOTTIGLIE
-	// ------------------------------------------------------------------------
 	class Bottle_Base: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Bottle_1"
+			"TH_CB_BottleEquipment_7",
+    		"TH_CB_BottleEquipment_8"
 		};
 	};
 	class SodaCan_ColorBase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Bottle_1"
+			"TH_CB_BottleEquipment_7",
+    		"TH_CB_BottleEquipment_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// CONFEZIONI SECCHE / SCATOLE / BUSTE
-	// ------------------------------------------------------------------------
-	class BoxCerealCrunchin: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Dry_1"
-		};
-	};
-	class PowderedMilk: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Dry_1"
-		};
-	};
-	class Rice: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Dry_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// BARATTOLI / VASETTI
-	// ------------------------------------------------------------------------
-	class Marmalade: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Jar_1"
-		};
-	};
-	class Honey: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Jar_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// SNACK / INVOLUCRI
-	// ------------------------------------------------------------------------
-	class Zagorky_ColorBase: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Snack_1"
-		};
-	};
-	class Snack_ColorBase: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Snack_1"
-		};
-	};
-	class Candycane_Colorbase: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Snack_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// VISCERE / PARTI MOLLI
-	// ------------------------------------------------------------------------
-	class SmallGuts: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Guts_1"
-		};
-	};
-	class Guts: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Guts_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// LATTINE STANDARD / MEDIE - CHIUSE E APERTE
-	// ------------------------------------------------------------------------
+	
+	// LATTINE STANDARD / MEDIE - CHIUSE E APERTE / CONFEZIONI SECCHE / SCATOLE / BUSTE
 	class BakedBeansCan: Edible_Base
 	{
 		inventorySlot[] += 
@@ -243,7 +160,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class BakedBeansCan_Opened: Edible_Base
@@ -254,7 +174,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class PeachesCan: Edible_Base
@@ -265,7 +188,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class PeachesCan_Opened: Edible_Base
@@ -276,7 +202,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class TacticalBaconCan: Edible_Base
@@ -287,7 +216,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class TacticalBaconCan_Opened: Edible_Base
@@ -298,7 +230,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class SpaghettiCan: Edible_Base
@@ -309,7 +244,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class SpaghettiCan_Opened: Edible_Base
@@ -320,7 +258,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class FoodCan_250g_ColorBase: Edible_Base
@@ -331,7 +272,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class FoodCan_250g_Opened_ColorBase: Edible_Base
@@ -342,7 +286,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class UnknownFoodCan: Edible_Base
@@ -353,7 +300,10 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class UnknownFoodCan_Opened: Edible_Base
@@ -364,474 +314,874 @@ class CfgVehicles
 			"TH_CB_Ingredient_Can_2",
 			"TH_CB_Ingredient_Can_3",
 			"TH_CB_Ingredient_Can_4",
-			"TH_CB_Ingredient_Can_5"
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// LATTINE BASSE / PICCOLE - CHIUSE E APERTE
-	// ------------------------------------------------------------------------
 	class SardinesCan: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class SardinesCan_Opened: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class TunaCan: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class TunaCan_Opened: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class FoodCan_100g_ColorBase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
 	class FoodCan_100g_Opened_ColorBase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallCan_1",
-			"TH_CB_Ingredient_SmallCan_2"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// FRUTTA / VERDURA COMPATTA
-	// ------------------------------------------------------------------------
-	class Apple: Edible_Base
+	class BoxCerealCrunchin: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Plum: Edible_Base
+	class PowderedMilk: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Pear: Edible_Base
+	class Rice: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Orange: Edible_Base
+	class Marmalade: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Tomato: Edible_Base
+	class Honey: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class GreenBellPepper: Edible_Base
+	class Zagorky_ColorBase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Potato: Edible_Base
+	class Snack_ColorBase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	class Kiwi: Edible_Base
+	class Candycane_Colorbase: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Produce_1",
-			"TH_CB_Ingredient_Produce_2",
-			"TH_CB_Ingredient_Produce_3"
+			"TH_CB_Ingredient_Can_1",
+			"TH_CB_Ingredient_Can_2",
+			"TH_CB_Ingredient_Can_3",
+			"TH_CB_Ingredient_Can_4",
+			"TH_CB_Ingredient_Can_5",
+			"TH_CB_Ingredient_Can_6",
+			"TH_CB_Ingredient_Can_7",
+			"TH_CB_Ingredient_Can_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// FRUTTA / VERDURA ALLUNGATA
-	// ------------------------------------------------------------------------
-	class Banana: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_LongProduce_1"
-		};
-	};
-	class Zucchini: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_LongProduce_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// ZUCCA / ELEMENTI GRANDI O PIATTI
-	// ------------------------------------------------------------------------
-	class Pumpkin: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Pumpkin_1"
-		};
-	};
-	class SlicedPumpkin: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Pumpkin_1"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// BACCHE / ELEMENTI MOLTO PICCOLI
-	// ------------------------------------------------------------------------
-	class SambucusBerry: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Berry_1"
-		};
-	};
-	class CaninaBerry: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Berry_1"
-		};
-	};
-	// ------------------------------------------------------------------------
+	
 	// STEAK / FETTE DI CARNE
-	// ------------------------------------------------------------------------
 	class HumanSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class GoatSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class MouflonSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class BoarSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class PigSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class DeerSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class ReindeerSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class WolfSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class BearSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class CowSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class SheepSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class FoxSteakMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Steak_1",
-			"TH_CB_Ingredient_Steak_2",
-			"TH_CB_Ingredient_Steak_3",
-			"TH_CB_Ingredient_Steak_4",
-			"TH_CB_Ingredient_Steak_5"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// TAGLI PICCOLI DI CARNE
-	// ------------------------------------------------------------------------
 	class ChickenBreastMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallMeat_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class RabbitLegMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_SmallMeat_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// FILETTI DI PESCE
-	// ------------------------------------------------------------------------
 	class CarpFilletMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class MackerelFilletMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class WalleyePollockFilletMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class SteelheadTroutFilletMeat: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Fillet_1",
-			"TH_CB_Ingredient_Fillet_2"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// PICCOLO SEAFOOD / DERIVATI
-	// ------------------------------------------------------------------------
 	class RedCaviar: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Seafood_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class Bitterlings: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Seafood_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
 	class Shrimp: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Seafood_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// PESCI INTERI
-	// ------------------------------------------------------------------------
-	class Carp: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2"
-		};
-	};
-	class Sardines: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2"
-		};
-	};
-	class Mackerel: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2"
-		};
-	};
-	class WalleyePollock: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2"
-		};
-	};
-	class SteelheadTrout: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_Ingredient_Fish_1",
-			"TH_CB_Ingredient_Fish_2"
-		};
-	};
-	// ------------------------------------------------------------------------
-	// LARDO / GRASSO
-	// ------------------------------------------------------------------------
 	class Lard: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Lard_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// ESCA / VERME
-	// ------------------------------------------------------------------------
 	class Worm: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Worm_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ------------------------------------------------------------------------
-	// FUNGHI
-	// ------------------------------------------------------------------------
-	class MushroomBase: Edible_Base
+	class SmallGuts: Edible_Base
 	{
 		inventorySlot[] += 
 		{
-			"TH_CB_Ingredient_Mushroom_1"
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
 		};
 	};
-	// ========================================================================
-	// ANIMALI MORTI - SLOT DEDICATI
-	// ========================================================================
-
+	class Guts: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Meat_1",
+			"TH_CB_Ingredient_Meat_2",
+			"TH_CB_Ingredient_Meat_3",
+			"TH_CB_Ingredient_Meat_4",
+			"TH_CB_Ingredient_Meat_5",
+			"TH_CB_Ingredient_Meat_6",
+			"TH_CB_Ingredient_Meat_7",
+			"TH_CB_Ingredient_Meat_8"
+		};
+	};
+	
+	// FRUTTA / VERDURA COMPATTA
+	class Apple: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Plum: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Pear: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Orange: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Tomato: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class GreenBellPepper: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Potato: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Kiwi: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Banana: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Zucchini: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class Pumpkin: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class SlicedPumpkin: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class SambucusBerry: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class CaninaBerry: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	
+	class MushroomBase;
+	class AgaricusMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	};
+	class AmanitaMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class MacrolepiotaMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class PsilocybeMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class AuriculariaMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class BoletusMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class PleurotusMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	class CraterellusMushroom: MushroomBase
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Ingredient_Vegetables_1",
+			"TH_CB_Ingredient_Vegetables_2",
+			"TH_CB_Ingredient_Vegetables_3",
+			"TH_CB_Ingredient_Vegetables_4",
+			"TH_CB_Ingredient_Vegetables_5",
+			"TH_CB_Ingredient_Vegetables_6",
+			"TH_CB_Ingredient_Vegetables_7",
+			"TH_CB_Ingredient_Vegetables_8"
+		};
+	}
+	
+	
 	// POLLI MORTI
 	class DeadChicken_ColorBase: Edible_Base
 	{
@@ -859,19 +1209,59 @@ class CfgVehicles
 			"TH_CB_Fox_1"
 		};
 	};
+	// PESCI MORTI
+	class Carp: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2"
+		};
+	};
+	class Sardines: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2"
+		};
+	};
+	class Mackerel: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2"
+		};
+	};
+	class WalleyePollock: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2"
+		};
+	};
+	class SteelheadTrout: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_Fish_1",
+			"TH_CB_Fish_2"
+		};
+	};
 
 };
 
 class CfgSlots
 {
 	// WOODEN CASE
-class Slot_TH_CB_WoodenCase
+	class Slot_TH_CB_WoodenCase
 	{
 		name = "TH_CB_WoodenCase";
 		displayName = "$STR_Slot_TH_CB_WoodenCase";
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};
-
 
 	// POWER SLOTS
 	class Slot_TH_CB_Gas_1
@@ -926,54 +1316,56 @@ class Slot_TH_CB_WoodenCase
 	};
 
 	// COOKING EQUIPMENT SLOTS
-	class Slot_TH_CB_CookEquipment_1
+	class Slot_TH_CB_KnifeEquipment_1
 	{
-		name = "TH_CB_CookEquipment_1";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:knife"
+		name = "TH_CB_KnifeEquipment_1";
+		displayName = "$STR_Slot_TH_CB_KnifeEquipment_Knives";
+		ghostIcon = "set:dayz_inventory image:knife";
 	};
-	class Slot_TH_CB_CookEquipment_2
+	class Slot_TH_CB_KnifeEquipment_2
 	{
-		name = "TH_CB_CookEquipment_2";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:knife"
+		name = "TH_CB_KnifeEquipment_2";
+		displayName = "$STR_Slot_TH_CB_KnifeEquipment_Knives";
+		ghostIcon = "set:dayz_inventory image:knife";
 	};
-	class Slot_TH_CB_CookEquipment_3
+	class Slot_TH_CB_KnifeEquipment_3
 	{
-		name = "TH_CB_CookEquipment_3";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:knife"
+		name = "TH_CB_KnifeEquipment_3";
+		displayName = "$STR_Slot_TH_CB_KnifeEquipment_Knives";
+		ghostIcon = "set:dayz_inventory image:knife";
 	};
-	class Slot_TH_CB_CookEquipment_4
+	class Slot_TH_CB_KnifeEquipment_4
 	{
-		name = "TH_CB_CookEquipment_4";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:knife"
+		name = "TH_CB_KnifeEquipment_4";
+		displayName = "$STR_Slot_TH_CB_KnifeEquipment_Knives";
+		ghostIcon = "set:dayz_inventory image:knife";
 	};
 	// COOKING EQUIPMENT SLOTS - FRYING PAN / POT / CAULDRON
 	class Slot_TH_CB_CookEquipment_5
 	{
 		name = "TH_CB_CookEquipment_5";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		displayName = "$STR_Slot_TH_CB_CookEquipment_Pots";
 		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
 	class Slot_TH_CB_CookEquipment_6
 	{
 		name = "TH_CB_CookEquipment_6";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
+		displayName = "$STR_Slot_TH_CB_CookEquipment_Pots";
 		ghostIcon = "set:dayz_inventory image:cookingequipment";
 	};
-	class Slot_TH_CB_CookEquipment_7
+	
+	//COOKING EQUIPMENT SLOTS - BOTTLES
+	class Slot_TH_CB_BottleEquipment_7
 	{
-		name = "TH_CB_CookEquipment_7";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:cookingequipment";
+		name = "TH_CB_BottleEquipment_7";
+		displayName = "$STR_Slot_TH_CB_BottleEquipment_Bottles";
+		ghostIcon = "set:th_cb_icons image:ing_bottle";
 	};
-	class Slot_TH_CB_CookEquipment_8
+	class Slot_TH_CB_BottleEquipment_8
 	{
-		name = "TH_CB_CookEquipment_8";
-		displayName = "$STR_Slot_TH_CB_CookEquipment";
-		ghostIcon = "set:dayz_inventory image:cookingequipment";
+		name = "TH_CB_BottleEquipment_8";
+		displayName = "$STR_Slot_TH_CB_BottleEquipment_Bottles";
+		ghostIcon = "set:th_cb_icons image:ing_bottle";
 	};
 
 	// MODULE SLOTS
@@ -996,207 +1388,157 @@ class Slot_TH_CB_WoodenCase
 		ghostIcon = "set:dayz_inventory image:cookingbase";
 	};
 
-	// INGREDIENT SLOTS - MATRIX 8x4
-	// ROW 1: Can 1-5 | Produce 1-3
+	// INGREDIENT SLOTS - MATRIX 8x3
+	// ROW 1: Can 1-8
 	class Slot_TH_CB_Ingredient_Can_1
 	{
 		name = "TH_CB_Ingredient_Can_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
 		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_2
 	{
 		name = "TH_CB_Ingredient_Can_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
 		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_3
 	{
 		name = "TH_CB_Ingredient_Can_3";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
 		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_4
 	{
 		name = "TH_CB_Ingredient_Can_4";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
 		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
 	class Slot_TH_CB_Ingredient_Can_5
 	{
 		name = "TH_CB_Ingredient_Can_5";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
 		ghostIcon = "set:th_cb_icons image:ing_can";
 	};
-	class Slot_TH_CB_Ingredient_Produce_1
+	class Slot_TH_CB_Ingredient_Can_6
 	{
-		name = "TH_CB_Ingredient_Produce_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		name = "TH_CB_Ingredient_Can_6";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
+		ghostIcon = "set:th_cb_icons image:ing_can";
+	};
+	class Slot_TH_CB_Ingredient_Can_7
+	{
+		name = "TH_CB_Ingredient_Can_7";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
+		ghostIcon = "set:th_cb_icons image:ing_can";
+	};
+	class Slot_TH_CB_Ingredient_Can_8
+	{
+		name = "TH_CB_Ingredient_Can_8";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Can";
+		ghostIcon = "set:th_cb_icons image:ing_can";
+	};
+
+	// ROW 2: Steak / Lard / Fillet / Seafood / Guts	
+	class Slot_TH_CB_Ingredient_Meat_1
+	{
+		name = "TH_CB_Ingredient_Meat_1";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_2
+	{
+		name = "TH_CB_Ingredient_Meat_2";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_3
+	{
+		name = "TH_CB_Ingredient_Meat_3";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_4
+	{
+		name = "TH_CB_Ingredient_Meat_4";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_5
+	{
+		name = "TH_CB_Ingredient_Meat_5";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_6
+	{
+		name = "TH_CB_Ingredient_Meat_6";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_7
+	{
+		name = "TH_CB_Ingredient_Meat_7";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+	class Slot_TH_CB_Ingredient_Meat_8
+	{
+		name = "TH_CB_Ingredient_Meat_8";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Meat";
+		ghostIcon = "set:th_cb_icons image:ing_steak";
+	};
+
+	// ROW 3: Fruit and Vegetables 1-8
+	class Slot_TH_CB_Ingredient_Vegetables_1
+	{
+		name = "TH_CB_Ingredient_Vegetables_1";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
 		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Produce_2
+	class Slot_TH_CB_Ingredient_Vegetables_2
 	{
-		name = "TH_CB_Ingredient_Produce_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		name = "TH_CB_Ingredient_Vegetables_2";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
 		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Produce_3
+	class Slot_TH_CB_Ingredient_Vegetables_3
 	{
-		name = "TH_CB_Ingredient_Produce_3";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
+		name = "TH_CB_Ingredient_Vegetables_3";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
 		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-
-	// ROW 2: Steak 1-5 | Bottle | Dry | Jar
-	class Slot_TH_CB_Ingredient_Steak_1
+	class Slot_TH_CB_Ingredient_Vegetables_4
 	{
-		name = "TH_CB_Ingredient_Steak_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_steak";
+		name = "TH_CB_Ingredient_Vegetables_4";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Steak_2
+	class Slot_TH_CB_Ingredient_Vegetables_5
 	{
-		name = "TH_CB_Ingredient_Steak_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_steak";
+		name = "TH_CB_Ingredient_Vegetables_5";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Steak_3
+	class Slot_TH_CB_Ingredient_Vegetables_6
 	{
-		name = "TH_CB_Ingredient_Steak_3";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_steak";
+		name = "TH_CB_Ingredient_Vegetables_6";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Steak_4
+	class Slot_TH_CB_Ingredient_Vegetables_7
 	{
-		name = "TH_CB_Ingredient_Steak_4";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_steak";
+		name = "TH_CB_Ingredient_Vegetables_7";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
 	};
-	class Slot_TH_CB_Ingredient_Steak_5
+	class Slot_TH_CB_Ingredient_Vegetables_8
 	{
-		name = "TH_CB_Ingredient_Steak_5";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_steak";
-	};
-	class Slot_TH_CB_Ingredient_Bottle_1
-	{
-		name = "TH_CB_Ingredient_Bottle_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_bottle";
-	};
-	class Slot_TH_CB_Ingredient_Dry_1
-	{
-		name = "TH_CB_Ingredient_Dry_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_dry";
-	};
-	class Slot_TH_CB_Ingredient_Jar_1
-	{
-		name = "TH_CB_Ingredient_Jar_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_jar";
-	};
-
-	// ROW 3: SmallCan 1-2 | Fillet 1-2 | Fish 1-2 | Snack | Guts
-	class Slot_TH_CB_Ingredient_SmallCan_1
-	{
-		name = "TH_CB_Ingredient_SmallCan_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_smallcan";
-	};
-	class Slot_TH_CB_Ingredient_SmallCan_2
-	{
-		name = "TH_CB_Ingredient_SmallCan_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_smallcan";
-	};
-	class Slot_TH_CB_Ingredient_Fillet_1
-	{
-		name = "TH_CB_Ingredient_Fillet_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_fillet";
-	};
-	class Slot_TH_CB_Ingredient_Fillet_2
-	{
-		name = "TH_CB_Ingredient_Fillet_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_fillet";
-	};
-	class Slot_TH_CB_Ingredient_Fish_1
-	{
-		name = "TH_CB_Ingredient_Fish_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_fish";
-	};
-	class Slot_TH_CB_Ingredient_Fish_2
-	{
-		name = "TH_CB_Ingredient_Fish_2";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_fish";
-	};
-	class Slot_TH_CB_Ingredient_Snack_1
-	{
-		name = "TH_CB_Ingredient_Snack_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_snack";
-	};
-	class Slot_TH_CB_Ingredient_Guts_1
-	{
-		name = "TH_CB_Ingredient_Guts_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_guts";
-	};
-
-	// ROW 4: LongProduce | Pumpkin | Berry | SmallMeat | Seafood | Lard | Worm | Mushroom
-	class Slot_TH_CB_Ingredient_LongProduce_1
-	{
-		name = "TH_CB_Ingredient_LongProduce_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_longproduce";
-	};
-	class Slot_TH_CB_Ingredient_Pumpkin_1
-	{
-		name = "TH_CB_Ingredient_Pumpkin_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_pumpkin";
-	};
-	class Slot_TH_CB_Ingredient_Berry_1
-	{
-		name = "TH_CB_Ingredient_Berry_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_berry";
-	};
-	class Slot_TH_CB_Ingredient_SmallMeat_1
-	{
-		name = "TH_CB_Ingredient_SmallMeat_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_smallmeat";
-	};
-	class Slot_TH_CB_Ingredient_Seafood_1
-	{
-		name = "TH_CB_Ingredient_Seafood_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_seafood";
-	};
-	class Slot_TH_CB_Ingredient_Lard_1
-	{
-		name = "TH_CB_Ingredient_Lard_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_lard";
-	};
-	class Slot_TH_CB_Ingredient_Worm_1
-	{
-		name = "TH_CB_Ingredient_Worm_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:dayz_inventory image:trapbait";
-	};
-	class Slot_TH_CB_Ingredient_Mushroom_1
-	{
-		name = "TH_CB_Ingredient_Mushroom_1";
-		displayName = "$STR_Slot_TH_CB_Ingredient";
-		ghostIcon = "set:th_cb_icons image:ing_mushroom";
-	};
-
+		name = "TH_CB_Ingredient_Vegetables_8";
+		displayName = "$STR_Slot_TH_CB_Ingredient_Vegetables";
+		ghostIcon = "set:th_cb_icons image:ing_produce";
+	};	
+	
 	// DEAD ANIMAL SLOTS
 	class Slot_TH_CB_Chicken_1
 	{
@@ -1234,6 +1576,19 @@ class Slot_TH_CB_WoodenCase
 		displayName = "$STR_Slot_TH_CB_Fox";
 		ghostIcon = "set:th_cb_icons image:dead_fox";
 	};
+	class Slot_TH_CB_Fish_1
+	{
+		name = "TH_CB_Fish_1";
+		displayName = "$STR_Slot_TH_CB_Fish";
+		ghostIcon = "set:th_cb_icons image:ing_fish";
+	};
+	class Slot_TH_CB_Fish_2
+	{
+		name = "TH_CB_Fish_2";
+		displayName = "$STR_Slot_TH_CB_Fish";
+		ghostIcon = "set:th_cb_icons image:ing_fish";
+};
+
 };
 
 class CfgNonAIVehicles
@@ -1246,7 +1601,7 @@ class CfgNonAIVehicles
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_WoodenCase_Proxy.p3d";
 	};
 
-	// STOVE PROXY
+	// COOKING POT PROXY VANILLA
 	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
 	{
 		scope = 2;
@@ -1378,29 +1733,29 @@ class CfgNonAIVehicles
 	};
 
 	// TH_CB_COOK_EQUIPMENT PROXY
-	class ProxyTH_CB_CookEquipment_Proxy_1: ProxyAttachment
+	class ProxyTH_CB_KnifeEquipment_Proxy_1: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_1.p3d";
+		inventorySlot = "TH_CB_KnifeEquipment_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_1.p3d";
 	};
-	class ProxyTH_CB_CookEquipment_Proxy_2: ProxyAttachment
+	class ProxyTH_CB_KnifeEquipment_Proxy_2: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_2.p3d";
+		inventorySlot = "TH_CB_KnifeEquipment_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_2.p3d";
 	};
-	class ProxyTH_CB_CookEquipment_Proxy_3: ProxyAttachment
+	class ProxyTH_CB_KnifeEquipment_Proxy_3: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_3.p3d";
+		inventorySlot = "TH_CB_KnifeEquipment_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_3.p3d";
 	};
-	class ProxyTH_CB_CookEquipment_Proxy_4: ProxyAttachment
+	class ProxyTH_CB_KnifeEquipment_Proxy_4: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_4.p3d";
+		inventorySlot = "TH_CB_KnifeEquipment_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_4.p3d";
 	};
 	class ProxyTH_CB_CookEquipment_Proxy_5: ProxyAttachment
 	{
@@ -1414,214 +1769,168 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_CookEquipment_6";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_6.p3d";
 	};
-	class ProxyTH_CB_CookEquipment_Proxy_7: ProxyAttachment
+	class ProxyTH_CB_BottleEquipment_Proxy_7: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_7";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_7.p3d";
+		inventorySlot = "TH_CB_BottleEquipment_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_7.p3d";
 	};
-	class ProxyTH_CB_CookEquipment_Proxy_8: ProxyAttachment
+	class ProxyTH_CB_BottleEquipment_Proxy_8: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_CookEquipment_8";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_8.p3d";
+		inventorySlot = "TH_CB_BottleEquipment_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_8.p3d";
 	};
 
-	// TH_CB_INGREDIENT PROXY - MATRIX 8x4
+	// TH_CB_INGREDIENT PROXY - MATRIX 8x3
 	// Physical P3D numbering is preserved; only inventorySlot changes.
-	class ProxyTH_CB_Ingredient_Proxy_1: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_1: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Ingredient_Can_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_1.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_1.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_2: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_2: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Ingredient_Can_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_2.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_2.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_3: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_3: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Ingredient_Can_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_3.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_3.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_4: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_4: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Ingredient_Can_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_4.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_4.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_5: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_5: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Ingredient_Can_5";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_5.p3d";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_5.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_6: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_6: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Produce_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_6.p3d";
+		inventorySlot = "TH_CB_Ingredient_Can_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_6.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_7: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_7: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Produce_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_7.p3d";
+		inventorySlot = "TH_CB_Ingredient_Can_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_7.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_8: ProxyAttachment
+	class ProxyTH_CB_Can_Proxy_8: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Produce_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_8.p3d";
+		inventorySlot = "TH_CB_Ingredient_Can_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_8.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_9: ProxyAttachment
+	
+	class ProxyTH_CB_Meat_Proxy_9: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Steak_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_9.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_9.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_10: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_10: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Steak_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_10.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_10.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_11: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_11: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Steak_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_11.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_11.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_12: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_12: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Steak_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_12.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_12.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_13: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_13: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Steak_5";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_13.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_5";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_13.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_14: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_14: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Bottle_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_14.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_14.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_15: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_15: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Dry_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_15.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_15.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_16: ProxyAttachment
+	class ProxyTH_CB_Meat_Proxy_16: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Jar_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_16.p3d";
+		inventorySlot = "TH_CB_Ingredient_Meat_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_16.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_17: ProxyAttachment
+	
+	class ProxyTH_CB_Vegetable_Proxy_17: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_SmallCan_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_17.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_17.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_18: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_18: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_SmallCan_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_18.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_18.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_19: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_19: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Fillet_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_19.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_3";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_19.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_20: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_20: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Fillet_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_20.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_4";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_20.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_21: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_21: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Fish_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_21.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_5";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_21.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_22: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_22: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Fish_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_22.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_6";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_22.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_23: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_23: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Snack_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_23.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_7";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_23.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_24: ProxyAttachment
+	class ProxyTH_CB_Vegetable_Proxy_24: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Guts_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_24.p3d";
+		inventorySlot = "TH_CB_Ingredient_Vegetables_8";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_24.p3d";
 	};
-	class ProxyTH_CB_Ingredient_Proxy_25: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_LongProduce_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_25.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_26: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Pumpkin_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_26.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_27: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Berry_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_27.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_28: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_SmallMeat_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_28.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_29: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Seafood_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_29.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_30: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Lard_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_30.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_31: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Worm_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_31.p3d";
-	};
-	class ProxyTH_CB_Ingredient_Proxy_32: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Mushroom_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Ingredient_Proxy_32.p3d";
-	};
-
+	
 	// TH_CB_CHICKEN PROXY
 	class ProxyTH_CB_ChickenF_Proxy_1: ProxyAttachment
 	{
@@ -1629,7 +1938,7 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_Chicken_1";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_ChickenF_Proxy_1.p3d";
 	};
-	class ProxyTH_CB_Chicken_Proxy_2: ProxyAttachment
+	class ProxyTH_CB_ChickenF_Proxy_2: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_Chicken_2";
@@ -1659,7 +1968,6 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_Chicken_3";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_ChickenM_Proxy_3.p3d";
 	};
-
 	// TH_CB_RABBIT PROXY
 	class ProxyTH_CB_Rabbit_Proxy_1: ProxyAttachment
 	{
@@ -1673,7 +1981,6 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_Rabbit_2";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Rabbit_Proxy_2.p3d";
 	};
-
 	// TH_CB_FOX PROXY
 	class ProxyTH_CB_Fox_Proxy_1: ProxyAttachment
 	{
@@ -1681,5 +1988,19 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_Fox_1";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Fox_Proxy_1.p3d";
 	};
+	// TH_CB_FISH PROXY
+	class ProxyTH_CB_Fish_Proxy_1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Fish_1";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Fish_Proxy_1.p3d";
+	};
+	class ProxyTH_CB_Fish_Proxy_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_CB_Fish_2";
+		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Fish_Proxy_2.p3d";
+	};
+
 
 };
