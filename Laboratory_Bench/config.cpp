@@ -344,6 +344,15 @@ class CfgVehicles
 		};
 	};
 
+	class Container_Base;
+	class FirstAidKit: Container_Base
+	{
+		inventorySlot[]+=
+		{
+			"TH_LB_FirstAidKit"
+		};
+	};
+
 };
 
 class CfgSlots
@@ -800,6 +809,14 @@ class CfgNonAIVehicles
 		inventorySlot = "condenser";
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Condenser_Proxy.p3d";
 		
+	};
+
+	//FIRST AID KIT
+	class ProxyTH_LB_FirstAidKit_Proxy: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "TH_LB_FirstAidKit";
+		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_FirstAidKit_Proxy.p3d";
 	};
 
 	// ATTACHMENTS
