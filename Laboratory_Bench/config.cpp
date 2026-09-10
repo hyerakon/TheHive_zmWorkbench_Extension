@@ -565,193 +565,193 @@ class CfgSlots
 	{
 		name = "TH_LB_Ampoules1";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules2	
 	{
 		name = "TH_LB_Ampoules2";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules3	
 	{
 		name = "TH_LB_Ampoules3";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules4	
 	{
 		name = "TH_LB_Ampoules4";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules5	
 	{
 		name = "TH_LB_Ampoules5";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules6	
 	{
 		name = "TH_LB_Ampoules6";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules7	
 	{
 		name = "TH_LB_Ampoules7";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules8	
 	{
 		name = "TH_LB_Ampoules8";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules9	
 	{
 		name = "TH_LB_Ampoules9";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules10	
 	{
 		name = "TH_LB_Ampoules10";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules11	
 	{
 		name = "TH_LB_Ampoules11";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules12	
 	{
 		name = "TH_LB_Ampoules12";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules13	
 	{
 		name = "TH_LB_Ampoules13";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules14	
 	{
 		name = "TH_LB_Ampoules14";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules15	
 	{
 		name = "TH_LB_Ampoules15";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};	
 	class Slot_TH_LB_Ampoules16	
 	{
 		name = "TH_LB_Ampoules16";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules17
 	{
 		name = "TH_LB_Ampoules17";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules18	
 	{
 		name = "TH_LB_Ampoules18";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules19	
 	{
 		name = "TH_LB_Ampoules19";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules20	
 	{
 		name = "TH_LB_Ampoules20";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules21	
 	{
 		name = "TH_LB_Ampoules21";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules22	
 	{
 		name = "TH_LB_Ampoules22";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules23	
 	{
 		name = "TH_LB_Ampoules23";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules24	
 	{
 		name = "TH_LB_Ampoules24";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules25	
 	{
 		name = "TH_LB_Ampoules25";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules26	
 	{
 		name = "TH_LB_Ampoules26";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules27	
 	{
 		name = "TH_LB_Ampoules27";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules28
 	{
 		name = "TH_LB_Ampoules28";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules29
 	{
 		name = "TH_LB_Ampoules29";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules30
 	{
 		name = "TH_LB_Ampoules30";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	class Slot_TH_LB_Ampoules31	
 	{
 		name = "TH_LB_Ampoules31";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};	
 	class Slot_TH_LB_Ampoules32	
 	{
 		name = "TH_LB_Ampoules32";
 		displayName = "$STR_Slot_TH_LB_Ampoules";
-		ghostIcon = "set:th_lb_icons image:lb_ampoules";
+		ghostIcon = "set:th_lb_icons image:lb_ampoule";
 	};
 	
 	class Slot_TH_LB_Syringe1
