@@ -266,7 +266,7 @@ class CfgVehicles
 					"TH_LB_Pills8"
 					
 				};
-				icon="set:workbench_icons image:cat_tools";
+				icon="set:th_lb_icons image:cat_medicines";
 			};
 			class bloodsupplies
 			{
@@ -283,7 +283,7 @@ class CfgVehicles
 					"TH_LB_BloodSupplies3",
 					"TH_LB_BloodSupplies4"
 				};
-				icon="set:workbench_icons image:icon_spraycan";
+				icon="set:th_lb_icons image:cat_bloodsupplies";
 			};
 			class modules
 			{
@@ -296,7 +296,7 @@ class CfgVehicles
 					"mortarpestle",
 					"condenser"
 				};
-				icon="set:workbench_icons image:cat_modules";
+				icon="set:th_lb_icons image:cat_labbench";
 			};
 			class medicines
 			{
@@ -337,7 +337,7 @@ class CfgVehicles
 					"TH_LB_Ampoules31",
 					"TH_LB_Ampoules32"
 				};
-				icon="set:dayz_inventory image:plates";
+				icon="set:th_lb_icons image:cat_ampoules";
 			};
 			class storage
 			{
@@ -367,7 +367,7 @@ class CfgVehicles
 				{
 					"TH_LB_FirstAidKit"
 				};
-				icon="set:dayz_inventory image:woodcrate";
+				icon="set:th_lb_icons image:lb_firstaidkit";
 			};
 			
 		};
@@ -652,7 +652,7 @@ class CfgVehicles
 					"TH_LB_Pills8"
 					
 				};
-				icon="set:workbench_icons image:cat_tools";
+				icon="set:th_lb_icons image:cat_medicines";
 			};
 			class bloodsupplies
 			{
@@ -669,7 +669,7 @@ class CfgVehicles
 					"TH_LB_BloodSupplies3",
 					"TH_LB_BloodSupplies4"
 				};
-				icon="set:workbench_icons image:icon_spraycan";
+				icon="set:th_lb_icons image:cat_bloodsupplies";
 			};
 			class modules
 			{
@@ -682,7 +682,7 @@ class CfgVehicles
 					"mortarpestle",
 					"condenser"
 				};
-				icon="set:workbench_icons image:cat_modules";
+				icon="set:th_lb_icons image:cat_labbench";
 			};
 			class medicines
 			{
@@ -723,7 +723,7 @@ class CfgVehicles
 					"TH_LB_Ampoules31",
 					"TH_LB_Ampoules32"
 				};
-				icon="set:dayz_inventory image:plates";
+				icon="set:th_lb_icons image:cat_ampoules";
 			};
 			class storage
 			{
@@ -753,7 +753,7 @@ class CfgVehicles
 				{
 					"TH_LB_FirstAidKit"
 				};
-				icon="set:dayz_inventory image:woodcrate";
+				icon="set:th_lb_icons image:lb_firstaidkit";
 			};
 			
 		};

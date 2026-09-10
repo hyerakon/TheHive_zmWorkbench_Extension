@@ -1,0 +1,164 @@
+ImageSetClass {
+ Name "th_lb_icons"
+ RefSize 1254 1254
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{121CC5475C2C054D}TheHive_zmWorkbench_Extension/Laboratory_Bench/gui/imagesets/iconset/TH_LB_Iconset.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass cat_medicines {
+   Name "cat_medicines"
+   Pos 0 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_labbench {
+   Name "cat_labbench"
+   Pos 251 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_terminal {
+   Name "lb_terminal"
+   Pos 502 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_microscope {
+   Name "lb_microscope"
+   Pos 753 0
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_mortarpestle {
+   Name "lb_mortarpestle"
+   Pos 1004 0
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass lb_condenser {
+   Name "lb_condenser"
+   Pos 0 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_pills {
+   Name "cat_pills"
+   Pos 251 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_disinfectants {
+   Name "cat_disinfectants"
+   Pos 502 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_injectors {
+   Name "lb_injectors"
+   Pos 753 251
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_bandages {
+   Name "lb_bandages"
+   Pos 1004 251
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass lb_bloodsupplies {
+   Name "lb_bloodsupplies"
+   Pos 0 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_vials {
+   Name "lb_vials"
+   Pos 251 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_syringes {
+   Name "lb_syringes"
+   Pos 502 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_firstaidkit {
+   Name "lb_firstaidkit"
+   Pos 753 502
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_ampoule {
+   Name "lb_ampoule"
+   Pos 1004 502
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass lb_pills {
+   Name "lb_pills"
+   Pos 0 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_disinfectants {
+   Name "lb_disinfectants"
+   Pos 251 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_med_supplies {
+   Name "lb_med_supplies"
+   Pos 502 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_bloodsupplies {
+   Name "cat_bloodsupplies"
+   Pos 753 753
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass cat_ampoules {
+   Name "cat_ampoules"
+   Pos 1004 753
+   Size 250 251
+   Flags 0
+  }
+  ImageSetDefClass cat_modules {
+   Name "cat_modules"
+   Pos 0 1004
+   Size 251 250
+   Flags 0
+  }
+  ImageSetDefClass cat_experimentals_med {
+   Name "cat_experimentals_med"
+   Pos 251 1004
+   Size 251 250
+   Flags 0
+  }
+  ImageSetDefClass cat_experimentals_vials {
+   Name "cat_experimentals_vials"
+   Pos 502 1004
+   Size 251 250
+   Flags 0
+  }
+  ImageSetDefClass cat_experimentals_pills {
+   Name "cat_experimentals_pills"
+   Pos 753 1004
+   Size 251 251
+   Flags 0
+  }
+  ImageSetDefClass lb_pestle {
+   Name "lb_pestle"
+   Pos 1004 1004
+   Size 251 251
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

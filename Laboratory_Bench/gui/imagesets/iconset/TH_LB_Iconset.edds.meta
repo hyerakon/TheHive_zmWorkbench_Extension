@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{121CC5475C2C054D}TheHive_zmWorkbench_Extension/Laboratory_Bench/gui/imagesets/iconset/TH_LB_Iconset.edds"
+ Author "leviathan"
+ ChangeDate 576402730
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "TH_LB_Iconset.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

@@ -283,7 +283,7 @@ class CfgSlots
 	{
 		name = "pestle";
 		displayName = "$STR_Slot_TH_LB_Pestle";
-		ghostIcon = "set:dayz_inventory image:woodcrate";
+		ghostIcon = "set:th_lb_icons image:lb_pestle";
 	};
 };
 
