@@ -294,6 +294,21 @@ class CfgVehicles
         };
     };
 
+	class TerjePillsBase : Edible_Base
+	{
+		inventorySlot[]+=
+		{
+			"TH_LB_Pills1",
+			"TH_LB_Pills2",
+			"TH_LB_Pills3",
+			"TH_LB_Pills4",
+			"TH_LB_Pills5",
+			"TH_LB_Pills6",
+			"TH_LB_Pills7",
+			"TH_LB_Pills8"
+		};
+	};
+
 	class TerjeAmpouleBase : Inventory_Base
 	{
 		inventorySlot[]+=
