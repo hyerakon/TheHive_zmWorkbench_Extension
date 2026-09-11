@@ -1,11 +1,12 @@
-class TH_CS_Supply_BASE: Inventory_Base {};
-class TH_CS_Supply_Food: TH_CS_Supply_BASE
+class TH_CS_Supply_BASE: Inventory_Base 
 {
-    void TH_CS_Supply_Food()
+    void TH_CS_Supply_BASE()
     {
         can_this_be_combined = true;
-    };
-    
+    };    
+};
+class TH_CS_Supply_Food: TH_CS_Supply_BASE
+{
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
         // allow combi with nm_Gunpowder & nm_Gunpowder_sock
@@ -54,11 +55,6 @@ class TH_CS_Supply_Food: TH_CS_Supply_BASE
 
 class TH_CS_Supply_Lab: TH_CS_Supply_BASE
 {
-    void TH_CS_Supply_Lab()
-    {
-        can_this_be_combined = true;
-    };
-    
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
         // allow combi with nm_Gunpowder & nm_Gunpowder_sock
@@ -107,11 +103,6 @@ class TH_CS_Supply_Lab: TH_CS_Supply_BASE
 
 class TH_CS_Supply_Tec: TH_CS_Supply_BASE
 {
-    void TH_CS_Supply_Tec()
-    {
-        can_this_be_combined = true;
-    };
-    
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
         // allow combi with nm_Gunpowder & nm_Gunpowder_sock

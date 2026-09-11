@@ -61,4 +61,10 @@ class cfgVehicles
 		displayName="$STR_TheHive_CS_Bench_BASE";
 		descriptionShort="$STR_TheHive_CS_Bench_BASE_desc";
     };
+
+	class Inventory_Base;
+	class zm_DrillBits: Inventory_Base {};
+	class zm_GrindingDisc: Inventory_Base {};
+	class zm_solderingtips: Inventory_Base {};
+	class zm_WeldingWire: Inventory_Base {};
 };

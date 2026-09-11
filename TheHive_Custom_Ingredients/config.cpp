@@ -499,6 +499,20 @@ class CfgVehicles
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Model1887";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
+	class TH_CS_WeaponPack_Type20: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponsPack_Type20";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Type20";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
+	class TH_CS_WeaponPack_PM9: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponsPack_PM9";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_PM9";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+    };
 
 	
 	
@@ -944,12 +958,13 @@ class CfgVehicles
 	};
 	
 	//! CIRCUITS BOARDS
-	class ExpansionCircuitBoardBase;
-	class TH_CS_Craft_Tool_BASE: ExpansionCircuitBoardBase
+	class Inventory_Base;
+	class TH_CS_Craft_Tool_BASE: Inventory_Base
 	{
 		scope=0;
 		displayName="#STR_TheHive_CS_BASE_DEVICE";
 		descriptionShort="#STR_TheHive_CS_BASE_DEVICE_DESCRIPTION";
+		model="DayZExpansion\Core\Objects\CircuitBoard\CircuitBoard.p3d";
 		stackedUnit="percentage";
 		quantityBar=1;
 		varQuantityInit=100;
