@@ -376,7 +376,7 @@ class CfgVehicles
 class CfgSlots
 {
 	// MODULE SLOTS
-	class Slot_TH_LB_Terminal
+	class Slot_terminal
 	{
 		name = "terminal";
 		displayName = "$STR_Slot_TH_LB_Terminal";
@@ -390,21 +390,21 @@ class CfgSlots
 		ghostIcon = "set:dayz_inventory image:woodcrate";
 	};*/
 
-	class Slot_TH_LB_Microscope
+	class Slot_microscope
 	{
 		name = "microscope";
 		displayName = "$STR_Slot_TH_LB_Microscope";
 		ghostIcon = "set:th_lb_icons image:lb_microscope";
 	};
 
-	class Slot_TH_LB_MortarPestle
+	class Slot_mortarpestle
 	{
 		name = "mortarpestle";
 		displayName = "$STR_Slot_TH_LB_MortarPestle";
 		ghostIcon = "set:th_lb_icons image:lb_mortarpestle";
 	};
 
-	class Slot_TH_LB_Condenser
+	class Slot_condenser
 	{
 		name = "condenser";
 		displayName = "$STR_Slot_TH_LB_Condenser";

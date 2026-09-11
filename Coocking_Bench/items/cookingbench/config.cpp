@@ -251,7 +251,7 @@ class CfgVehicles
 					"TH_CB_FoodSupply_4"
 					
 				};
-				icon="set:workbench_icons image:cat_tools";
+				icon="set:th_cb_icons2 image:TH_CB_Icon_FoodSupplies";
 			};
 			class cookingequipment
 			{
@@ -268,7 +268,7 @@ class CfgVehicles
 					"TH_CB_BottleEquipment_7",
 					"TH_CB_BottleEquipment_8"
 				};
-				icon="set:workbench_icons image:icon_spraycan";
+				icon="set:th_cb_icons2 image:TH_CB_Icon_CookingEquipment";
 			};
 			class modules
 			{
@@ -280,13 +280,13 @@ class CfgVehicles
 					"still",
 					"stove"
 				};
-				icon="set:workbench_icons image:cat_modules";
+				icon="set:th_cb_icons2 image:TH_CB_Icon_Modules";
 			};
 			class ingredient
 			{
 				name = "$STR_AttachmentsProps_Ingredients";
 				description = "STR_AttachmentsProps_Ingredients_desc";
-
+				icon="set:th_cb_icons2 image:TH_CB_Icon_Ingredients";
 				attachmentSlots[] =
 				{
 					// INGREDIENTS ROW 1
@@ -323,7 +323,7 @@ class CfgVehicles
 			{
 				name = "$STR_AttachmentsProps_DeadAnimals";
 				description = "STR_AttachmentsProps_DeadAnimals_desc";
-
+				icon="set:th_cb_icons2 image:TH_CB_Icon_Cacciagione";
 				attachmentSlots[] =
 				{
 					"TH_CB_Chicken_1",

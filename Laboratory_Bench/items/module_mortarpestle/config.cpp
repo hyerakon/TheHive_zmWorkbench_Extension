@@ -35,7 +35,7 @@ class CfgVehicles
 		};
 		attachments[] = 
 		{
-			"pestle"
+			"TH_LB_Pestle"
 		};
 		weight=2000;
 		itemSize[]={3,3};
@@ -156,7 +156,7 @@ class CfgVehicles
 		model="TheHive_zmWorkbench_Extension\Laboratory_Bench\items\module_mortarpestle\model\TH_CS_LB_Pestle.p3d";
 		inventorySlot[]=
 		{
-			"pestle"
+			"TH_LB_Pestle"
 		};
 		weight=500;
 		itemSize[]={1,3};
@@ -282,7 +282,7 @@ class CfgSlots
 	// MODULE SLOTS
 	class Slot_TH_LB_Pestle
 	{
-		name = "pestle";
+		name = "TH_LB_Pestle";
 		displayName = "$STR_Slot_TH_LB_Pestle";
 		ghostIcon = "set:th_lb_icons image:lb_pestle";
 	};
@@ -294,7 +294,7 @@ class CfgNonAIVehicles
 	class ProxyTH_LB_Pestle_Proxy: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "pestle";
+		inventorySlot = "TH_LB_Pestle";
 		model = "\TheHive_zmWorkbench_Extension\Laboratory_Bench\proxies\TH_LB_Pestle_Proxy.p3d";
 		
 	};

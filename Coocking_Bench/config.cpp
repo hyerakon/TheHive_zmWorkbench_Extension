@@ -51,7 +51,11 @@ class CfgMods
 		{
 			class imageSets
 			{
-				files[] = {"TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset.imageset"};
+				files[] = 
+				{
+					"TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset.imageset",
+					"TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset2.imageset"
+				};
 			};
 			class gameScriptModule
 			{
@@ -1294,25 +1298,25 @@ class CfgSlots
 	{
 		name = "TH_CB_FoodSupply_1";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:food";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_FoodSupplies";
 	};
 	class Slot_TH_CB_FoodSupply_2
 	{
 		name = "TH_CB_FoodSupply_2";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:food";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_FoodSupplies";
 	};
 	class Slot_TH_CB_FoodSupply_3
 	{
 		name = "TH_CB_FoodSupply_3";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:food";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_FoodSupplies";
 	};
 	class Slot_TH_CB_FoodSupply_4
 	{
 		name = "TH_CB_FoodSupply_4";
 		displayName = "$STR_Slot_TH_CB_FoodSupply";
-		ghostIcon = "set:dayz_inventory image:food";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_FoodSupplies";
 	};
 
 	// COOKING EQUIPMENT SLOTS
@@ -1369,23 +1373,23 @@ class CfgSlots
 	};
 
 	// MODULE SLOTS
-	class Slot_TH_CB_Scale
+	class Slot_scale
 	{
 		name = "scale";
 		displayName = "$STR_Slot_TH_CB_Scale";
-		ghostIcon = "set:dayz_inventory image:cookingequipment";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_Scale";
 	};
-	class Slot_TH_CB_Still
+	class Slot_still
 	{
 		name = "still";
 		displayName = "$STR_Slot_TH_CB_Still";
-		ghostIcon = "set:dayz_inventory image:cookingbase";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_Still";
 	};
-	class Slot_TH_CB_Stove
+	class Slot_stove
 	{
 		name = "stove";
 		displayName = "$STR_Slot_TH_CB_Stove";
-		ghostIcon = "set:dayz_inventory image:cookingbase";
+		ghostIcon = "set:th_cb_icons2 image:TH_CB_Icon_Stove";
 	};
 
 	// INGREDIENT SLOTS - MATRIX 8x3

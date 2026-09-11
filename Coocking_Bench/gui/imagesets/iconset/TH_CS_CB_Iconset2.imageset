@@ -1,0 +1,62 @@
+ImageSetClass {
+ Name "th_cb_icons2"
+ RefSize 1774 887
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{33B0FCA79585B0A8}TheHive_zmWorkbench_Extension/Coocking_Bench/gui/imagesets/iconset/TH_CS_CB_Iconset2.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass TH_CB_Icon_FoodSupplies {
+   Name "TH_CB_Icon_FoodSupplies"
+   Pos 0 0
+   Size 444 444
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Scale {
+   Name "TH_CB_Icon_Scale"
+   Pos 444 0
+   Size 443 444
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Still {
+   Name "TH_CB_Icon_Still"
+   Pos 887 0
+   Size 444 444
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Stove {
+   Name "TH_CB_Icon_Stove"
+   Pos 1331 0
+   Size 443 444
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_CookingEquipment {
+   Name "TH_CB_Icon_CookingEquipment"
+   Pos 0 444
+   Size 444 443
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Modules {
+   Name "TH_CB_Icon_Modules"
+   Pos 444 444
+   Size 443 443
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Ingredients {
+   Name "TH_CB_Icon_Ingredients"
+   Pos 887 444
+   Size 444 443
+   Flags 0
+  }
+  ImageSetDefClass TH_CB_Icon_Cacciagione {
+   Name "TH_CB_Icon_Cacciagione"
+   Pos 1331 444
+   Size 443 443
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

@@ -16,7 +16,8 @@ class CfgPatches
 			"DZ_Data",
 			"DZ_Scripts",
 			"WorkbenchMod",
-			"zm_Workbench"
+			"zm_Workbench",
+			"TheHive_zmWorkbench_Extension_LB_Script"
 		};
 	};
 };
