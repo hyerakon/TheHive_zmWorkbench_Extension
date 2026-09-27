@@ -4,23 +4,45 @@ class CfgPatches
     {
         units[] =
         {
-            "TH_RecipeBook_001","TH_RecipeBook_002","TH_RecipeBook_003","TH_RecipeBook_004","TH_RecipeBook_005",
-            "TH_RecipeBook_006","TH_RecipeBook_007","TH_RecipeBook_008","TH_RecipeBook_009","TH_RecipeBook_010",
-            "TH_RecipeBook_011","TH_RecipeBook_012","TH_RecipeBook_013","TH_RecipeBook_014","TH_RecipeBook_015",
-            "TH_RecipeBook_016","TH_RecipeBook_017","TH_RecipeBook_018","TH_RecipeBook_019","TH_RecipeBook_020",
-            "TH_RecipeBook_021","TH_RecipeBook_022","TH_RecipeBook_023","TH_RecipeBook_024","TH_RecipeBook_025"
+            "TH_RecipeBook_001",
+            "TH_RecipeBook_002",
+            "TH_RecipeBook_003",
+            "TH_RecipeBook_004",
+            "TH_RecipeBook_005",
+            "TH_RecipeBook_006",
+            "TH_RecipeBook_007",
+            "TH_RecipeBook_008",
+            "TH_RecipeBook_009",
+            "TH_RecipeBook_010",
+            "TH_RecipeBook_011",
+            "TH_RecipeBook_012",
+            "TH_RecipeBook_013",
+            "TH_RecipeBook_014",
+            "TH_RecipeBook_015",
+            "TH_RecipeBook_016",
+            "TH_RecipeBook_017",
+            "TH_RecipeBook_018",
+            "TH_RecipeBook_019",
+            "TH_RecipeBook_020",
+            "TH_RecipeBook_021",
+            "TH_RecipeBook_022",
+            "TH_RecipeBook_023",
+            "TH_RecipeBook_024",
+            "TH_RecipeBook_025"
         };
+
         weapons[] = {};
         requiredVersion = 0.1;
+
         requiredAddons[] =
         {
             "DZ_Data",
             "DZ_Scripts",
-            "DZ_Gear_Books",
             "DayZExpansion_Quests"
         };
     };
 };
+
 
 class CfgMods
 {
@@ -29,29 +51,40 @@ class CfgMods
         dir = "TheHive_Recipes_Book";
         picture = "";
         action = "";
-        hideName = 0;
+        hideName = 1;
         hidePicture = 1;
-        name = "The Hive - Recipes Book";
+        name = "TheHive Recipes Book";
         credits = "The Hive";
         author = "The Hive";
         authorID = "0";
-        version = "1.1";
+        version = "1.4";
         extra = 0;
         type = "mod";
-        dependencies[] = {"World","Mission"};
+
+        dependencies[] =
+        {
+            "World",
+            "Mission"
+        };
 
         class defs
         {
             class worldScriptModule
             {
                 value = "";
-                files[] = {"TheHive_zmWorkbench_Extension/TheHive_Recipes_Book/Scripts/4_World"};
+                files[] =
+                {
+                    "TheHive_zmWorkbench_Extension\TheHive_Recipes_Book\Scripts\4_World"
+                };
             };
 
             class missionScriptModule
             {
                 value = "";
-                files[] = {"TheHive_zmWorkbench_Extension/TheHive_Recipes_Book/Scripts/5_Mission"};
+                files[] =
+                {
+                    "TheHive_zmWorkbench_Extension\TheHive_Recipes_Book\Scripts\5_Mission"
+                };
             };
         };
     };
@@ -59,9 +92,9 @@ class CfgMods
 
 class CfgVehicles
 {
-    class Book_Base;
+    class ItemBook;
 
-    class TH_RecipeBook_Base: Book_Base
+    class TH_RecipeBook_Base: ItemBook
     {
         scope = 0;
         displayName = "Manuale di ricette";
@@ -70,7 +103,7 @@ class CfgVehicles
         itemSize[] = {2,2};
         hiddenSelectionsTextures[]=
 		{
-			"dz\gear\books\data\book_bible_CO.paa"
+			"dz/gear/books/data/book_bible_CO.paa"
 		};
     };
 

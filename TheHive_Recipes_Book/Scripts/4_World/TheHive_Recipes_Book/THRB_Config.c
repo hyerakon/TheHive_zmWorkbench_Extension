@@ -75,7 +75,7 @@ class THRB_ConfigManager
 
             string className = "TH_RecipeBook_" + suffix;
             string title = "Manuale di ricette " + i.ToString();
-            int questID = 5000 + i;
+            int questID = 80000 + i;
             s_Config.Books.Insert(new THRB_BookEntry(className, title, questID, 15.0, true));
         }
     }
