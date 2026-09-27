@@ -77,24 +77,9 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
             return;
         }
 
-        ExpansionQuestModule questModule = ExpansionQuestModule.GetModuleInstance();
-
-        if (!questModule)
+        if (THRB_QuestHelper.HasCompletedQuest(player, entry.QuestID))
         {
-            Print("[TheHive_Recipes_Book] ExpansionQuestModule unavailable");
-            return;
-        }
-
-        if (questModule.THRB_HasCompletedRecipeBookQuest(player, entry.QuestID))
-        {
-            book.THRB_UpdateCanLearn(player);
-            Print("[TheHive_Recipes_Book] Player already knows quest " + entry.QuestID);
-            return;
-        }
-
-        if (!questModule.THRB_CompleteRecipeBookQuest(player, entry.QuestID))
-        {
-            Print("[TheHive_Recipes_Book] Failed to complete quest " + entry.QuestID);
+            Print("[TheHive_Recipes_Book] Quest already completed: " + entry.QuestID);
             return;
         }
 
@@ -103,12 +88,12 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
 
         if (entry.DeleteOnSuccess)
         {
+            Print("[TheHive_Recipes_Book] Deleting book: " + book.GetType());
             GetGame().ObjectDelete(book);
+            return;
         }
-        else
-        {
-            book.THRB_UpdateCanLearn(player);
-            book.SetHealth("", "", 0);
-        }
+
+        Print("[TheHive_Recipes_Book] Ruining book: " + book.GetType());
+        book.SetHealth("", "", 0);
     }
 };

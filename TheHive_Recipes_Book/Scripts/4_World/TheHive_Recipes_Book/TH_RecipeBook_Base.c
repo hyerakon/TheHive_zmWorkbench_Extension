@@ -73,20 +73,15 @@ class TH_RecipeBook_Base: ItemBook
             return;
         }
 
-        ExpansionQuestModule questModule = ExpansionQuestModule.GetModuleInstance();
-
-        if (!questModule)
-        {
-            SetSynchDirty();
-            return;
-        }
-
-        if (questModule.THRB_HasCompletedRecipeBookQuest(player, entry.QuestID))
+        if (THRB_QuestHelper.HasCompletedQuest(player, entry.QuestID))
             m_THRB_CanLearn = false;
 
         SetSynchDirty();
-
-        Print("[TheHive_Recipes_Book] " + GetType() + " | QuestID=" + entry.QuestID + " | CanLearn=" + m_THRB_CanLearn);
+    }
+    
+    bool THRB_CanPlayerLearn()
+    {
+        return m_THRB_CanLearn;
     }
 
     float THRB_GetReadTime()
@@ -95,11 +90,6 @@ class TH_RecipeBook_Base: ItemBook
             return 5.0;
 
         return m_THRB_ReadTime;
-    }
-
-    bool THRB_CanPlayerLearn()
-    {
-        return m_THRB_CanLearn;
     }
 
     THRB_BookEntry THRB_GetEntry()
