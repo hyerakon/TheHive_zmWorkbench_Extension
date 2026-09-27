@@ -66,9 +66,12 @@ class CfgVehicles
         scope = 0;
         displayName = "Manuale di ricette";
         descriptionShort = "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.";
-        model = "\\dz\\gear\\books\\Book_kniga.p3d";
         weight = 300;
         itemSize[] = {2,2};
+        hiddenSelectionsTextures[]=
+		{
+			"dz\gear\books\data\book_bible_CO.paa"
+		};
     };
 
     class TH_RecipeBook_001: TH_RecipeBook_Base { scope = 2; displayName = "Manuale di ricette 01"; };

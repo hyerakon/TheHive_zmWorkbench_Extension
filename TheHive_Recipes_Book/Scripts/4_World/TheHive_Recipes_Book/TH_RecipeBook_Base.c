@@ -1,4 +1,4 @@
-class TH_RecipeBook_Base: Book_Base
+class TH_RecipeBook_Base: ItemBase
 {
     override void SetActions()
     {
