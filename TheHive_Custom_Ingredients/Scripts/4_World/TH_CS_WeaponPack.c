@@ -1839,7 +1839,7 @@ class TH_CS_WeaponPack_MP133: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_Gorza: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Gorza: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1848,7 +1848,7 @@ class TH_CS_WeaponsPack_Gorza: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_Gorza")
+        if (otherType != "TH_CS_WeaponPack_Gorza")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1886,7 +1886,7 @@ class TH_CS_WeaponsPack_Gorza: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_Groza762: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Groza762: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1895,7 +1895,7 @@ class TH_CS_WeaponsPack_Groza762: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_Groza762")
+        if (otherType != "TH_CS_WeaponPack_Groza762")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1933,7 +1933,7 @@ class TH_CS_WeaponsPack_Groza762: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_M249: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_M249: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1942,7 +1942,7 @@ class TH_CS_WeaponsPack_M249: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_M249")
+        if (otherType != "TH_CS_WeaponPack_M249")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -1980,7 +1980,7 @@ class TH_CS_WeaponsPack_M249: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_Model1887: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Model1887: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -1989,7 +1989,7 @@ class TH_CS_WeaponsPack_Model1887: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_Model1887")
+        if (otherType != "TH_CS_WeaponPack_Model1887")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -2027,7 +2027,7 @@ class TH_CS_WeaponsPack_Model1887: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_SuperShorty: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_SuperShorty: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -2036,7 +2036,7 @@ class TH_CS_WeaponsPack_SuperShorty: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_SuperShorty")
+        if (otherType != "TH_CS_WeaponPack_SuperShorty")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -2074,7 +2074,7 @@ class TH_CS_WeaponsPack_SuperShorty: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_EVO3A1: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_EVO3A1: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -2083,7 +2083,7 @@ class TH_CS_WeaponsPack_EVO3A1: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_EVO3A1")
+        if (otherType != "TH_CS_WeaponPack_EVO3A1")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -2121,7 +2121,7 @@ class TH_CS_WeaponsPack_EVO3A1: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_MP9: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_MP9: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -2130,7 +2130,7 @@ class TH_CS_WeaponsPack_MP9: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_MP9")
+        if (otherType != "TH_CS_WeaponPack_MP9")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -2168,7 +2168,7 @@ class TH_CS_WeaponsPack_MP9: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_P90: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_P90: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -2177,7 +2177,7 @@ class TH_CS_WeaponsPack_P90: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_P90")
+        if (otherType != "TH_CS_WeaponPack_P90")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)
@@ -2215,7 +2215,7 @@ class TH_CS_WeaponsPack_P90: TH_CS_WeaponPack_BASE
         return true;
     };
 };
-class TH_CS_WeaponsPack_Tec9: TH_CS_WeaponPack_BASE 
+class TH_CS_WeaponPack_Tec9: TH_CS_WeaponPack_BASE 
 {
     override bool CanBeCombined(EntityAI other_item, bool reservation_check = true, bool stack_max_limit = false)
     {
@@ -2224,7 +2224,7 @@ class TH_CS_WeaponsPack_Tec9: TH_CS_WeaponPack_BASE
             return false;
 
         string otherType = other_item.GetType();
-        if (otherType != "TH_CS_WeaponsPack_Tec9")
+        if (otherType != "TH_CS_WeaponPack_Tec9")
             return false;
 
         if ((IsFullQuantity() && other_item.GetQuantity() > 0) || other_item == this)

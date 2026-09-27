@@ -1,0 +1,254 @@
+1 - Ricicla componenti
+2 - Ricicla pistole
+3 - Ricicla radiatore
+4 - Ricicla caricabat.
+5 - Ricicla fornello
+6 - Ricicla ottiche
+7 - Ricicla generatore
+8 - Ricicla radio
+9 - Ricicla elettronica
+10 - Ricicla riflettore
+11 - Ricicla luminarie
+12 - Ricicla defibr.
+13 - Ricicla vetro
+14 - Ricicla vetro
+15 - Ricicla lattine
+16 - Ricicla avvolgicavo
+17 - Ricicla barile
+18 - Ricicla veicoli
+
+100 - Barile
+101 - Tubo metallico
+102 - Filo metallico
+103 - Filo spinato
+104 - Chiodi
+105 - Amo da pesca
+106 - Esca artificiale
+107 - Coltello
+108 - Coltello
+109 - Coltello
+110 - Pentola
+111 - Padella
+112 - Banco tecnico
+113 - Banco da laboratorio
+114 - Armadietto
+115 - Bidone
+116 - Carrello degli attrezzi
+
+200 - Banco da cucina
+201 - Cassa di legno
+202 - Cassa per armi
+203 - Armadio piccolo
+204 - Pila di legna
+205 - Asse di legno
+
+300 - Torcia elettrica
+301 - Torcia frontale
+302 - GPS tattico
+303 - Radio portatile
+304 - Avvolgicavo
+305 - PCB Medico
+
+400 - Uniforme migliorata
+401 - Uniforme migliorata
+402 - Zaino Coyote SSB
+403 - Zaino Tortilla SSB
+404 - Zaino Alice SSB
+405 - Borsa SSB
+406 - Zaino da caccia SSB
+407 - Zaino da viaggio SSB
+408 - Cintura civile
+409 - Cintura militare
+410 - Giubbotto SSB
+411 - Giubbotto SSB
+412 - Tessuto di juta
+413 - Tenda da campeggio
+414 - Tenda per auto
+
+1000 - BK-18
+1001 - Mosin 91/30
+1002 - Karabiner 98K
+1003 - M70 Tundra
+1004 - CR-550
+1005 - Pioneer
+1006 - SSG-82
+1007 - SKS
+1008 - VSS
+1009 - VSD
+1010 - VSD
+1011 - M14 DMR
+1012 - VS-89
+
+1100 - CR-61
+1101 - RAK-37
+1102 - KEDR
+1103 - USG-45
+1104 - SG5-K
+1105 - MP7
+1106 - MP9
+1107 - PP-19 Bizon
+1108 - EVO-3A1
+1109 - P90
+1110 - Tec9
+
+1200 - AUR A1
+1201 - AUR AX
+1202 - LE-MAS
+1203 - KA-M
+1204 - KA-74
+1205 - KAS-74U
+1206 - KA-101
+1207 - M16-A2
+1208 - M4-A1
+1209 - AS VAL
+1210 - Vikhr
+1211 - G36
+1212 - LAR
+1213 - SCAR-H
+
+1250 - BK-12
+1251 - BK-43
+1252 - BK-133
+1253 - R12
+1254 - Vaiga
+
+1300 - M79
+1301 - RPG-7
+1302 - M72 LAW
+
+1400 - Flare giallo
+1401 - Flare rosso
+1402 - Flare verde
+1403 - Flare blu
+1404 - 5,56x45 mm
+1405 - 5,56x45 mm TR
+1406 - .308 Win.
+1407 - .308 Win. TR
+1408 - 7,62x54 mm
+1409 - 7,62x54 mm TR
+1410 - 7,92x57 mm
+1411 - 4,6x30 mm
+1412 - 5,7x28 mm
+1413 - .338 Lapua
+1414 - 7,62x39 mm
+1415 - 7,62x39 mm TR
+1416 - 9x39 mm
+1417 - 9x39 mm AP
+1418 - 9x19 mm
+1419 - .22 LR
+1420 - .45 ACP
+1421 - .380 ACP
+1422 - .357
+1423 - 12 Gauge P.
+1424 - 12 Gauge S.
+1425 - 12 Gauge R.
+1426 - Dardo da caccia
+
+1500 - Fumogeno
+1501 - Lacrimogeno
+1502 - Stordente
+1503 - Accecante
+1504 - Frammentazione
+1505 - Satchel
+1506 - Bengala
+1507 - Razzo RPG
+1508 - Fuochi d'artificio
+
+2000 - Benda sterile
+2001 - Soluzione salina
+2002 - Kit IV
+2003 - Sacca per sangue
+2004 - Kit chirurgico
+2005 - Siringa
+2006 - Siringa
+2007 - Reagenti
+
+2100 - Finalgon
+2101 - Solfato di magnesio
+2102 - Venlafaxina
+2103 - Mesalazina
+2104 - Nimesulide
+2105 - Amoxiclav
+2106 - Vikasol
+2107 - Noopept
+2108 - Rombiopental
+2109 - Cloro
+2110 - Tetraciclina
+2111 - Codeina
+
+2200 - Actaparoxetine
+2201 - Metralindole
+2203 - Neirox
+2204 - Erythropoietin
+2205 - Sintetizza Ketarol
+2206 - Novacaine
+2207 - Metoclopramid
+2208 - Amoxivan
+2209 - Rabinoline
+2210 - Neirocetal
+2211 - Amitriptyline
+2212 - Flemoclav
+2213 - Imipenem
+2214 - Heptral
+2215 - Morfina
+2216 - Gexobarbital
+2217 - Rifampicin
+2218 - Adrenalina
+2219 - Pentacin
+2220 - Carboxyme
+2221 - Ketamina
+
+2300 - Vaxicam
+2301 - Rabivax
+2302 - Zerivax
+
+2400 - Amoxiclav
+2401 - Neirox
+2402 - Erythropoietin
+2403 - Propital
+2404 - Promidol
+2405 - Topoizomeraza
+2406 - Erytromixelin
+2407 - Stomaproxidal
+2408 - Rabinucoline
+2409 - Amfitalicyne
+
+2500 - Olio Motore
+2501 - Resina epossidica
+2502 - Antiparassitario
+2503 - Disinfettante
+
+2600 - Zivirol
+2601 - Zivirol
+2602 - Reanimatal
+
+3000 - Gallina
+3001 - Lepre
+3002 - Volpe
+3003 - Sgombro
+3004 - Carpa
+3005 - Salmone
+3006 - Trota
+
+3100 - Topo
+3101 - Vermi
+3102 - Pesce
+3103 - Carne bianca
+3104 - Carne rossa
+3105 - Frutta
+3106 - Spezzatino
+3107 - Stufato
+3108 - Rancio
+3109 - Unto
+3110 - Funghi
+3111 - Gamberi
+3112 - Mielotte
+3113 - Chimichine
+3114 - Cioccolose
+3115 - Sballole
+3116 - Verdure
+3117 - Fruttelli
+3118 - Mirtillotti
+3119 - Cubotte
+3120 - Tenerelli
+3121 - Kenny

@@ -436,80 +436,80 @@ class CfgVehicles
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP133";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_Gorza: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_Gorza: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_Gorza";
+        name = "TH_CS_WeaponPack_Gorza";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Gorza";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_Groza762: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_Groza762: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_Groza762";
+        name = "TH_CS_WeaponPack_Groza762";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Groza762";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_M249: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_M249: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_M249";
+        name = "TH_CS_WeaponPack_M249";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_M249";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_SuperShorty: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_SuperShorty: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_SuperShorty";
+        name = "TH_CS_WeaponPack_SuperShorty";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SuperShorty";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_EVO3A1: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_EVO3A1: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_EVO3A1";
+        name = "TH_CS_WeaponPack_EVO3A1";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_EVO3A1";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_MP9: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_MP9: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_MP9";
+        name = "TH_CS_WeaponPack_MP9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_P90: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_P90: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_P90";
+        name = "TH_CS_WeaponPack_P90";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_P90";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_Tec9: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_Tec9: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_Tec9";
+        name = "TH_CS_WeaponPack_Tec9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Tec9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
-	class TH_CS_WeaponsPack_Model1887: TH_CS_WeaponPack_BASE
+	class TH_CS_WeaponPack_Model1887: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_Model1887";
+        name = "TH_CS_WeaponPack_Model1887";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Model1887";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
 	class TH_CS_WeaponPack_Type20: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_Type20";
+        name = "TH_CS_WeaponPack_Type20";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Type20";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };
 	class TH_CS_WeaponPack_PM9: TH_CS_WeaponPack_BASE
     {
         scope = 2;
-        name = "TH_CS_WeaponsPack_PM9";
+        name = "TH_CS_WeaponPack_PM9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_PM9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
     };

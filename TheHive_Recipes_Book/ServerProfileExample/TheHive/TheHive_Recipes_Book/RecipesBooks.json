@@ -1,0 +1,180 @@
+{
+    "ConfigVersion": 1,
+    "Books": [
+        {
+            "ClassName": "TH_RecipeBook_001",
+            "Title": "Manuale di ricette 01",
+            "QuestID": 5001,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_002",
+            "Title": "Manuale di ricette 02",
+            "QuestID": 5002,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_003",
+            "Title": "Manuale di ricette 03",
+            "QuestID": 5003,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_004",
+            "Title": "Manuale di ricette 04",
+            "QuestID": 5004,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_005",
+            "Title": "Manuale di ricette 05",
+            "QuestID": 5005,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_006",
+            "Title": "Manuale di ricette 06",
+            "QuestID": 5006,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_007",
+            "Title": "Manuale di ricette 07",
+            "QuestID": 5007,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_008",
+            "Title": "Manuale di ricette 08",
+            "QuestID": 5008,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_009",
+            "Title": "Manuale di ricette 09",
+            "QuestID": 5009,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_010",
+            "Title": "Manuale di ricette 10",
+            "QuestID": 5010,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_011",
+            "Title": "Manuale di ricette 11",
+            "QuestID": 5011,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_012",
+            "Title": "Manuale di ricette 12",
+            "QuestID": 5012,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_013",
+            "Title": "Manuale di ricette 13",
+            "QuestID": 5013,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_014",
+            "Title": "Manuale di ricette 14",
+            "QuestID": 5014,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_015",
+            "Title": "Manuale di ricette 15",
+            "QuestID": 5015,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_016",
+            "Title": "Manuale di ricette 16",
+            "QuestID": 5016,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_017",
+            "Title": "Manuale di ricette 17",
+            "QuestID": 5017,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_018",
+            "Title": "Manuale di ricette 18",
+            "QuestID": 5018,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_019",
+            "Title": "Manuale di ricette 19",
+            "QuestID": 5019,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_020",
+            "Title": "Manuale di ricette 20",
+            "QuestID": 5020,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_021",
+            "Title": "Manuale di ricette 21",
+            "QuestID": 5021,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_022",
+            "Title": "Manuale di ricette 22",
+            "QuestID": 5022,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_023",
+            "Title": "Manuale di ricette 23",
+            "QuestID": 5023,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_024",
+            "Title": "Manuale di ricette 24",
+            "QuestID": 5024,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipeBook_025",
+            "Title": "Manuale di ricette 25",
+            "QuestID": 5025,
+            "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        }
+    ]
+}
