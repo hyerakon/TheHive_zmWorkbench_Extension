@@ -24,8 +24,6 @@ class TH_RecipeBook_Base: ItemBook
 
             m_THRB_CanLearn = true;
             SetSynchDirty();
-
-            Print("[TheHive_Recipes_Book] Initialized " + GetType() + " | ReadTime=" + m_THRB_ReadTime);
         }
     }
 
@@ -78,7 +76,7 @@ class TH_RecipeBook_Base: ItemBook
 
         SetSynchDirty();
     }
-    
+
     bool THRB_CanPlayerLearn()
     {
         return m_THRB_CanLearn;
@@ -97,12 +95,6 @@ class TH_RecipeBook_Base: ItemBook
         return THRB_ConfigManager.Find(GetType());
     }
 
-    override void SetActions()
-    {
-        super.SetActions();
-        AddAction(ActionTHRBReadRecipeBook);
-    }
-
     override string GetDisplayName()
     {
         THRB_BookEntry entry = THRB_GetEntry();
@@ -111,6 +103,22 @@ class TH_RecipeBook_Base: ItemBook
             return entry.Title;
 
         return super.GetDisplayName();
+    }
+
+    string GetDescriptionShort()
+    {
+        THRB_BookEntry entry = THRB_GetEntry();
+
+        if (entry && entry.Description != "")
+            return entry.Description;
+
+        return "";
+    }
+
+    override void SetActions()
+    {
+        super.SetActions();
+        AddAction(ActionTHRBReadRecipeBook);
     }
 };
 

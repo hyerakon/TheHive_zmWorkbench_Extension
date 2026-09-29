@@ -136,6 +136,158 @@ class CfgVehicles
 	// COOKING EQUIPMENTS ITEMS
 	// INGREDIENTS ITEMS
 	class Edible_Base;
+
+	// COLTELLI
+	class BoneKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class KitchenKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class SteakKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class StoneKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class CombatKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class HuntingKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class Machete: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class Sword: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class AK_Bayonet: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class M9A1_Bayonet: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class Mosin_Bayonet: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class SKS_Bayonet: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class KukriKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class FangeKnife: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
+	class Cleaver: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_KnifeEquipment_1",
+			"TH_CB_KnifeEquipment_2",
+			"TH_CB_KnifeEquipment_3",
+			"TH_CB_KnifeEquipment_4"
+		};
+	};
 	
 	// CONTENITORI BEVANDE / BOTTIGLIE
 	class Bottle_Base: Edible_Base
@@ -1591,7 +1743,7 @@ class CfgSlots
 		name = "TH_CB_Fish_2";
 		displayName = "$STR_Slot_TH_CB_Fish";
 		ghostIcon = "set:th_cb_icons image:ing_fish";
-};
+	};
 
 };
 
@@ -1765,14 +1917,41 @@ class CfgNonAIVehicles
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_CookEquipment_5";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_5.p3d";
+		model="\dz\gear\cooking\CookingPot.p3d";
+		inventorySlot[]=
+		{
+			"CookingEquipment"
+		};
+		class AnimationSources
+		{
+			class handleRotate
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
 	};
 	class ProxyTH_CB_CookEquipment_Proxy_6: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "TH_CB_CookEquipment_6";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookEquipment_Proxy_6.p3d";
+		model="\dz\gear\cooking\CookingPot.p3d";
+		inventorySlot[]=
+		{
+			"CookingEquipment"
+		};
+		class AnimationSources
+		{
+			class handleRotate
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
 	};
+
 	class ProxyTH_CB_BottleEquipment_Proxy_7: ProxyAttachment
 	{
 		scope = 2;

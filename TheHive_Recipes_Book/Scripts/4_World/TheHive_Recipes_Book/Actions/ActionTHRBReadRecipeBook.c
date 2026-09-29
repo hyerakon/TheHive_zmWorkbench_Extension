@@ -1,4 +1,4 @@
-class ActionTHRBReadRecipeBookCB : ActionContinuousBaseCB
+class ActionTHRBReadRecipeBookCB: ActionContinuousBaseCB
 {
     override void CreateActionComponent()
     {
@@ -7,13 +7,22 @@ class ActionTHRBReadRecipeBookCB : ActionContinuousBaseCB
         TH_RecipeBook_Base book = TH_RecipeBook_Base.Cast(m_ActionData.m_MainItem);
 
         if (book)
+        {
             readTime = book.THRB_GetReadTime();
+            m_ActionData.m_ActionComponent = new CAContinuousTime(readTime);
+            return;
+        }
+
+        TH_RecipePaper_Base paper = TH_RecipePaper_Base.Cast(m_ActionData.m_MainItem);
+
+        if (paper)
+            readTime = paper.THRB_GetReadTime();
 
         m_ActionData.m_ActionComponent = new CAContinuousTime(readTime);
     }
 };
 
-class ActionTHRBReadRecipeBook : ActionContinuousBase
+class ActionTHRBReadRecipeBook: ActionContinuousBase
 {
     void ActionTHRBReadRecipeBook()
     {
@@ -21,7 +30,7 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
         m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_VIEWNOTE;
         m_FullBody = true;
         m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT | DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_PRONE;
-        m_Text = "Leggi il Ricettario";
+        m_Text = "Leggi";
     }
 
     override void CreateConditionComponents()
@@ -37,18 +46,23 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
     {
+        if (!item)
+            return false;
+
+        if (item.IsRuined())
+            return false;
+
         TH_RecipeBook_Base book = TH_RecipeBook_Base.Cast(item);
 
-        if (!book)
-            return false;
+        if (book)
+            return book.THRB_CanPlayerLearn();
 
-        if (book.IsRuined())
-            return false;
+        TH_RecipePaper_Base paper = TH_RecipePaper_Base.Cast(item);
 
-        if (!book.THRB_CanPlayerLearn())
-            return false;
+        if (paper)
+            return paper.THRB_CanPlayerLearn();
 
-        return true;
+        return false;
     }
 
     override void OnFinishProgressServer(ActionData action_data)
@@ -58,22 +72,22 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
         if (!player)
             return;
 
-        TH_RecipeBook_Base book = TH_RecipeBook_Base.Cast(action_data.m_MainItem);
+        ItemBase recipeItem = action_data.m_MainItem;
 
-        if (!book)
+        if (!recipeItem)
             return;
 
-        THRB_BookEntry entry = book.THRB_GetEntry();
+        THRB_BookEntry entry = THRB_ConfigManager.Find(recipeItem.GetType());
 
         if (!entry)
         {
-            Print("[TheHive_Recipes_Book] Config entry not found for " + book.GetType());
+            Print("[TheHive_Recipes_Book] Config entry not found for " + recipeItem.GetType());
             return;
         }
 
         if (entry.QuestID <= 0)
         {
-            Print("[TheHive_Recipes_Book] Invalid QuestID for " + book.GetType());
+            Print("[TheHive_Recipes_Book] Invalid QuestID for " + recipeItem.GetType());
             return;
         }
 
@@ -83,17 +97,14 @@ class ActionTHRBReadRecipeBook : ActionContinuousBase
             return;
         }
 
-        if (player.GetIdentity())
-            Print("[TheHive_Recipes_Book] Player " + player.GetIdentity().GetId() + " learned quest " + entry.QuestID + " from " + book.GetType());
+        Print("[TheHive_Recipes_Book] Reading completed: " + recipeItem.GetType() + " | QuestID=" + entry.QuestID + " | Expansion handles quest progress.");
 
         if (entry.DeleteOnSuccess)
         {
-            Print("[TheHive_Recipes_Book] Deleting book: " + book.GetType());
-            GetGame().ObjectDelete(book);
+            GetGame().ObjectDelete(recipeItem);
             return;
         }
 
-        Print("[TheHive_Recipes_Book] Ruining book: " + book.GetType());
-        book.SetHealth("", "", 0);
+        recipeItem.SetHealth("", "", 0);
     }
 };

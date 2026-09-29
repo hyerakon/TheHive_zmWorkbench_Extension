@@ -2,96 +2,130 @@ class THRB_BookEntry
 {
     string ClassName;
     string Title;
+    string Description;
     int QuestID;
     float ReadTime;
     bool DeleteOnSuccess;
 
-    void THRB_BookEntry(string className = "", string title = "", int questID = 0, float readTime = 15.0, bool deleteOnSuccess = true)
+    void THRB_BookEntry()
     {
-        ClassName = className;
-        Title = title;
-        QuestID = questID;
-        ReadTime = readTime;
-        DeleteOnSuccess = deleteOnSuccess;
+        ClassName = "";
+        Title = "";
+        Description = "";
+        QuestID = -1;
+        ReadTime = 5.0;
+        DeleteOnSuccess = true;
     }
 };
 
 class THRB_Config
 {
-    int ConfigVersion = 1;
-    ref array<ref THRB_BookEntry> Books = new array<ref THRB_BookEntry>;
+    int ConfigVersion = 2;
+    ref array<ref THRB_BookEntry> Entries;
+
+    void THRB_Config()
+    {
+        Entries = new array<ref THRB_BookEntry>;
+    }
 };
 
 class THRB_ConfigManager
 {
-    static const string CONFIG_ROOT = "$profile:TheHive";
-    static const string CONFIG_DIR = CONFIG_ROOT + "\\TheHive_Recipes_Book";
-    static const string CONFIG_FILE = CONFIG_DIR + "\\RecipesBooks.json";
-    protected static ref THRB_Config s_Config;
+    static const string CONFIG_DIR = "$profile:TheHive/TheHive_Recipes_Book";
+    static const string CONFIG_FILE = "$profile:TheHive/TheHive_Recipes_Book/RecipesBooks.json";
 
-    static THRB_Config Get()
-    {
-        if (!s_Config)
-            Load();
-        return s_Config;
-    }
+    protected static ref THRB_Config m_Config;
 
     static void Load()
     {
-        s_Config = new THRB_Config();
+        if (!FileExist(CONFIG_DIR))
+            MakeDirectory(CONFIG_DIR);
 
-        EnsureDirectories();
+        m_Config = new THRB_Config;
 
         if (FileExist(CONFIG_FILE))
         {
-            JsonFileLoader<THRB_Config>.JsonLoadFile(CONFIG_FILE, s_Config);
+            JsonFileLoader<THRB_Config>.JsonLoadFile(CONFIG_FILE, m_Config);
+            Print("[TheHive_Recipes_Book] Loaded config: " + CONFIG_FILE);
+            return;
         }
-        else
-        {
-            CreateDefault();
-            JsonFileLoader<THRB_Config>.JsonSaveFile(CONFIG_FILE, s_Config);
-        }
+
+        GenerateDefaultConfig();
+        Save();
+
+        Print("[TheHive_Recipes_Book] Created default config: " + CONFIG_FILE);
     }
 
-
-    protected static void EnsureDirectories()
+    static void Save()
     {
-        if (!FileExist(CONFIG_ROOT))
-            MakeDirectory(CONFIG_ROOT);
+        if (!m_Config)
+            return;
 
-        if (!FileExist(CONFIG_DIR))
-            MakeDirectory(CONFIG_DIR);
+        JsonFileLoader<THRB_Config>.JsonSaveFile(CONFIG_FILE, m_Config);
     }
 
-    protected static void CreateDefault()
+    static THRB_Config Get()
     {
-        for (int i = 1; i <= 25; i++)
-        {
-            string suffix = i.ToString();
-            if (i < 10)
-                suffix = "00" + suffix;
-            else
-                suffix = "0" + suffix;
-
-            string className = "TH_RecipeBook_" + suffix;
-            string title = "Manuale di ricette " + i.ToString();
-            int questID = 80000 + i;
-            s_Config.Books.Insert(new THRB_BookEntry(className, title, questID, 15.0, true));
-        }
+        return m_Config;
     }
 
     static THRB_BookEntry Find(string className)
     {
-        THRB_Config cfg = Get();
-        if (!cfg || !cfg.Books)
+        if (!m_Config || !m_Config.Entries)
             return null;
 
-        foreach (THRB_BookEntry entry: cfg.Books)
+        foreach (THRB_BookEntry entry: m_Config.Entries)
         {
             if (entry && entry.ClassName == className)
                 return entry;
         }
 
         return null;
+    }
+
+    protected static void GenerateDefaultConfig()
+    {
+        m_Config = new THRB_Config;
+
+        int i;
+
+        for (i = 1; i <= 25; i++)
+        {
+            THRB_BookEntry bookEntry = new THRB_BookEntry;
+
+            bookEntry.ClassName = "TH_RecipeBook_" + THRB_FormatIndex(i);
+            bookEntry.Title = "Libro di Ricette " + THRB_FormatIndex(i);
+            bookEntry.Description = "Un vecchio volume contenente ricette, procedimenti e conoscenze ormai difficili da reperire.";
+            bookEntry.QuestID = 80000 + i;
+            bookEntry.ReadTime = 15.0;
+            bookEntry.DeleteOnSuccess = true;
+
+            m_Config.Entries.Insert(bookEntry);
+        }
+
+        for (i = 1; i <= 50; i++)
+        {
+            THRB_BookEntry paperEntry = new THRB_BookEntry;
+
+            paperEntry.ClassName = "TH_RecipePaper_" + THRB_FormatIndex(i);
+            paperEntry.Title = "Appunto di Ricetta " + THRB_FormatIndex(i);
+            paperEntry.Description = "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.";
+            paperEntry.QuestID = 80100 + i;
+            paperEntry.ReadTime = 8.0;
+            paperEntry.DeleteOnSuccess = true;
+
+            m_Config.Entries.Insert(paperEntry);
+        }
+    }
+
+    protected static string THRB_FormatIndex(int index)
+    {
+        if (index < 10)
+            return "00" + index.ToString();
+
+        if (index < 100)
+            return "0" + index.ToString();
+
+        return index.ToString();
     }
 };
