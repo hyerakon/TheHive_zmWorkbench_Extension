@@ -140,26 +140,3 @@ class CfgVehicles
 	};
 		
 };
-
-class CfgNonAIVehicles
-{
-	class ProxyAttachment;
-	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
-	{
-		scope=2;
-		model="\dz\gear\cooking\CookingPot.p3d";
-		inventorySlot[]=
-		{
-			"CookingEquipment"
-		};
-		class AnimationSources
-		{
-			class handleRotate
-			{
-				source="user";
-				animPeriod=0.0099999998;
-				initPhase=1;
-			};
-		};
-	};
-};

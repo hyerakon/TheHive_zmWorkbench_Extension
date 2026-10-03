@@ -9,6 +9,10 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Scripts",
+			"DZ_Gear_Consumables",
+			"DZ_Gear_Cooking",
+			"DZ_Weapons_Melee_Blade",
+			"DZ_Weapons_Muzzles",
 			"DZ_Gear_Camping",
 			"DZ_Gear_Tools",
 			"DZ_Gear_Food",
@@ -286,6 +290,32 @@ class CfgVehicles
 			"TH_CB_KnifeEquipment_2",
 			"TH_CB_KnifeEquipment_3",
 			"TH_CB_KnifeEquipment_4"
+		};
+	};
+
+	class Bottle_Base;
+	class Pot: Bottle_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_CookEquipment_5",
+			"TH_CB_CookEquipment_6"
+		};
+	};
+	class FryingPan: Inventory_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_CookEquipment_5",
+			"TH_CB_CookEquipment_6"
+		};
+	};
+	class Cauldron: Bottle_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_CookEquipment_5",
+			"TH_CB_CookEquipment_6"
 		};
 	};
 	
@@ -1760,9 +1790,21 @@ class CfgNonAIVehicles
 	// COOKING POT PROXY VANILLA
 	class ProxyTH_CB_CookingPot_Proxy: ProxyAttachment
 	{
-		scope = 2;
-		inventorySlot = "CookingEquipment";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_CookingPot_Proxy.p3d";
+		scope=2;
+		model="\dz\gear\cooking\CookingPot.p3d";
+		inventorySlot[]=
+		{
+			"CookingEquipment"
+		};
+		class AnimationSources
+		{
+			class handleRotate
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
 	};
 
 	// MODULE PROXY
@@ -1889,30 +1931,31 @@ class CfgNonAIVehicles
 	};
 
 	// TH_CB_COOK_EQUIPMENT PROXY
-	class ProxyTH_CB_KnifeEquipment_Proxy_1: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_KnifeEquipment_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_1.p3d";
-	};
-	class ProxyTH_CB_KnifeEquipment_Proxy_2: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_KnifeEquipment_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_2.p3d";
-	};
-	class ProxyTH_CB_KnifeEquipment_Proxy_3: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_KnifeEquipment_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_3.p3d";
-	};
-	class ProxyTH_CB_KnifeEquipment_Proxy_4: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_KnifeEquipment_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_4.p3d";
-	};
+	// Proxies without p3d and not referenced by TH_CS_CB_Cookingbench.p3d: disabled (checklist 29). Re-enable when the models exist.
+//	class ProxyTH_CB_KnifeEquipment_Proxy_1: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_KnifeEquipment_1";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_1.p3d";
+//	};
+//	class ProxyTH_CB_KnifeEquipment_Proxy_2: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_KnifeEquipment_2";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_2.p3d";
+//	};
+//	class ProxyTH_CB_KnifeEquipment_Proxy_3: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_KnifeEquipment_3";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_3.p3d";
+//	};
+//	class ProxyTH_CB_KnifeEquipment_Proxy_4: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_KnifeEquipment_4";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_KnifeEquipment_Proxy_4.p3d";
+//	};
 	class ProxyTH_CB_CookEquipment_Proxy_5: ProxyAttachment
 	{
 		scope = 2;
@@ -1952,18 +1995,18 @@ class CfgNonAIVehicles
 		};
 	};
 
-	class ProxyTH_CB_BottleEquipment_Proxy_7: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_BottleEquipment_7";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_7.p3d";
-	};
-	class ProxyTH_CB_BottleEquipment_Proxy_8: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_BottleEquipment_8";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_8.p3d";
-	};
+//	class ProxyTH_CB_BottleEquipment_Proxy_7: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_BottleEquipment_7";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_7.p3d";
+//	};
+//	class ProxyTH_CB_BottleEquipment_Proxy_8: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_BottleEquipment_8";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_BottleEquipment_Proxy_8.p3d";
+//	};
 
 	// TH_CB_INGREDIENT PROXY - MATRIX 8x3
 	// Physical P3D numbering is preserved; only inventorySlot changes.
@@ -2015,104 +2058,106 @@ class CfgNonAIVehicles
 		inventorySlot = "TH_CB_Ingredient_Can_8";
 		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Can_Proxy_8.p3d";
 	};
+
+// TO BE ADDED WHEN P3D MODELS ARE READY
 	
-	class ProxyTH_CB_Meat_Proxy_9: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_9.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_10: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_10.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_11: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_11.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_12: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_12.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_13: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_5";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_13.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_14: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_6";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_14.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_15: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_7";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_15.p3d";
-	};
-	class ProxyTH_CB_Meat_Proxy_16: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Meat_8";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_16.p3d";
-	};
+//	class ProxyTH_CB_Meat_Proxy_9: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_1";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_9.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_10: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_2";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_10.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_11: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_3";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_11.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_12: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_4";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_12.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_13: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_5";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_13.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_14: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_6";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_14.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_15: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_7";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_15.p3d";
+//	};
+//	class ProxyTH_CB_Meat_Proxy_16: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Meat_8";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Meat_Proxy_16.p3d";
+//	};
 	
-	class ProxyTH_CB_Vegetable_Proxy_17: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_1";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_17.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_18: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_2";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_18.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_19: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_3";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_19.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_20: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_4";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_20.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_21: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_5";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_21.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_22: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_6";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_22.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_23: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_7";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_23.p3d";
-	};
-	class ProxyTH_CB_Vegetable_Proxy_24: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "TH_CB_Ingredient_Vegetables_8";
-		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_24.p3d";
-	};
+//	class ProxyTH_CB_Vegetable_Proxy_17: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_1";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_17.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_18: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_2";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_18.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_19: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_3";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_19.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_20: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_4";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_20.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_21: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_5";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_21.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_22: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_6";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_22.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_23: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_7";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_23.p3d";
+//	};
+//	class ProxyTH_CB_Vegetable_Proxy_24: ProxyAttachment
+//	{
+//		scope = 2;
+//		inventorySlot = "TH_CB_Ingredient_Vegetables_8";
+//		model = "\TheHive_zmWorkbench_Extension\Coocking_Bench\proxies\TH_CB_Vegetable_Proxy_24.p3d";
+//	};
 	
 	// TH_CB_CHICKEN PROXY
 	class ProxyTH_CB_ChickenF_Proxy_1: ProxyAttachment

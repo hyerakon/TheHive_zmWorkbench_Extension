@@ -70,7 +70,7 @@ class TH_CS_CB_Bench_Modular_Pack : RecipeBase
 
     override void Do(ItemBase ingredients[], PlayerBase player, array<ItemBase> results, float specialty_weight)
 	{
-		Debug.Log("#STR_TH_CS_LB_DEBUG_DISMOUNT_MSG", "[THEHIVE - CRAFTING SYSTEM]: Modular Tecnicbench Dismount");
+		Debug.Log("Modular cooking bench dismounted", "[THEHIVE - CRAFTING SYSTEM]");
 	}
 
     bool IsTheHiveWorkbenchEmpty(zm_WorkbenchBase workbench)

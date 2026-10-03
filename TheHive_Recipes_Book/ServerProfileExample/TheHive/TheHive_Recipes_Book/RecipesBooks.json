@@ -1,179 +1,604 @@
 {
-    "ConfigVersion": 1,
-    "Books": [
+    "ConfigVersion": 2,
+    "Entries": [
         {
             "ClassName": "TH_RecipeBook_001",
             "Title": "Manuale di ricette 01",
-            "QuestID": 5001,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80001,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_002",
             "Title": "Manuale di ricette 02",
-            "QuestID": 5002,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80002,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_003",
             "Title": "Manuale di ricette 03",
-            "QuestID": 5003,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80003,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_004",
             "Title": "Manuale di ricette 04",
-            "QuestID": 5004,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80004,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_005",
             "Title": "Manuale di ricette 05",
-            "QuestID": 5005,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80005,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_006",
             "Title": "Manuale di ricette 06",
-            "QuestID": 5006,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80006,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_007",
             "Title": "Manuale di ricette 07",
-            "QuestID": 5007,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80007,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_008",
             "Title": "Manuale di ricette 08",
-            "QuestID": 5008,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80008,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_009",
             "Title": "Manuale di ricette 09",
-            "QuestID": 5009,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80009,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_010",
             "Title": "Manuale di ricette 10",
-            "QuestID": 5010,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80010,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_011",
             "Title": "Manuale di ricette 11",
-            "QuestID": 5011,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80011,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_012",
             "Title": "Manuale di ricette 12",
-            "QuestID": 5012,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80012,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_013",
             "Title": "Manuale di ricette 13",
-            "QuestID": 5013,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80013,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_014",
             "Title": "Manuale di ricette 14",
-            "QuestID": 5014,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80014,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_015",
             "Title": "Manuale di ricette 15",
-            "QuestID": 5015,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80015,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_016",
             "Title": "Manuale di ricette 16",
-            "QuestID": 5016,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80016,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_017",
             "Title": "Manuale di ricette 17",
-            "QuestID": 5017,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80017,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_018",
             "Title": "Manuale di ricette 18",
-            "QuestID": 5018,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80018,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_019",
             "Title": "Manuale di ricette 19",
-            "QuestID": 5019,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80019,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_020",
             "Title": "Manuale di ricette 20",
-            "QuestID": 5020,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80020,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_021",
             "Title": "Manuale di ricette 21",
-            "QuestID": 5021,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80021,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_022",
             "Title": "Manuale di ricette 22",
-            "QuestID": 5022,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80022,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_023",
             "Title": "Manuale di ricette 23",
-            "QuestID": 5023,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80023,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_024",
             "Title": "Manuale di ricette 24",
-            "QuestID": 5024,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80024,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
         {
             "ClassName": "TH_RecipeBook_025",
             "Title": "Manuale di ricette 25",
-            "QuestID": 5025,
+            "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
+            "QuestID": 80025,
             "ReadTime": 15.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_001",
+            "Title": "Appunto di ricetta 01",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80101,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_002",
+            "Title": "Appunto di ricetta 02",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80102,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_003",
+            "Title": "Appunto di ricetta 03",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80103,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_004",
+            "Title": "Appunto di ricetta 04",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80104,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_005",
+            "Title": "Appunto di ricetta 05",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80105,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_006",
+            "Title": "Appunto di ricetta 06",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80106,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_007",
+            "Title": "Appunto di ricetta 07",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80107,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_008",
+            "Title": "Appunto di ricetta 08",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80108,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_009",
+            "Title": "Appunto di ricetta 09",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80109,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_010",
+            "Title": "Appunto di ricetta 10",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80110,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_011",
+            "Title": "Appunto di ricetta 11",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80111,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_012",
+            "Title": "Appunto di ricetta 12",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80112,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_013",
+            "Title": "Appunto di ricetta 13",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80113,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_014",
+            "Title": "Appunto di ricetta 14",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80114,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_015",
+            "Title": "Appunto di ricetta 15",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80115,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_016",
+            "Title": "Appunto di ricetta 16",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80116,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_017",
+            "Title": "Appunto di ricetta 17",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80117,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_018",
+            "Title": "Appunto di ricetta 18",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80118,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_019",
+            "Title": "Appunto di ricetta 19",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80119,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_020",
+            "Title": "Appunto di ricetta 20",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80120,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_021",
+            "Title": "Appunto di ricetta 21",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80121,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_022",
+            "Title": "Appunto di ricetta 22",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80122,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_023",
+            "Title": "Appunto di ricetta 23",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80123,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_024",
+            "Title": "Appunto di ricetta 24",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80124,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_025",
+            "Title": "Appunto di ricetta 25",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80125,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_026",
+            "Title": "Appunto di ricetta 26",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80126,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_027",
+            "Title": "Appunto di ricetta 27",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80127,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_028",
+            "Title": "Appunto di ricetta 28",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80128,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_029",
+            "Title": "Appunto di ricetta 29",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80129,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_030",
+            "Title": "Appunto di ricetta 30",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80130,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_031",
+            "Title": "Appunto di ricetta 31",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80131,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_032",
+            "Title": "Appunto di ricetta 32",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80132,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_033",
+            "Title": "Appunto di ricetta 33",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80133,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_034",
+            "Title": "Appunto di ricetta 34",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80134,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_035",
+            "Title": "Appunto di ricetta 35",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80135,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_036",
+            "Title": "Appunto di ricetta 36",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80136,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_037",
+            "Title": "Appunto di ricetta 37",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80137,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_038",
+            "Title": "Appunto di ricetta 38",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80138,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_039",
+            "Title": "Appunto di ricetta 39",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80139,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_040",
+            "Title": "Appunto di ricetta 40",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80140,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_041",
+            "Title": "Appunto di ricetta 41",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80141,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_042",
+            "Title": "Appunto di ricetta 42",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80142,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_043",
+            "Title": "Appunto di ricetta 43",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80143,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_044",
+            "Title": "Appunto di ricetta 44",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80144,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_045",
+            "Title": "Appunto di ricetta 45",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80145,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_046",
+            "Title": "Appunto di ricetta 46",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80146,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_047",
+            "Title": "Appunto di ricetta 47",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80147,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_048",
+            "Title": "Appunto di ricetta 48",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80148,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_049",
+            "Title": "Appunto di ricetta 49",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80149,
+            "ReadTime": 8.0,
+            "DeleteOnSuccess": true
+        },
+        {
+            "ClassName": "TH_RecipePaper_050",
+            "Title": "Appunto di ricetta 50",
+            "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
+            "QuestID": 80150,
+            "ReadTime": 8.0,
             "DeleteOnSuccess": true
         }
     ]

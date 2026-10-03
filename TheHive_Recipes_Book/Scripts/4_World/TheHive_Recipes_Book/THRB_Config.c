@@ -69,6 +69,16 @@ class THRB_ConfigManager
         return m_Config;
     }
 
+    // Client: receives the server config via RPC (names/descriptions sync)
+    static void SetFromServer(THRB_Config config)
+    {
+        if (!config)
+            return;
+
+        m_Config = config;
+        Print("[TheHive_Recipes_Book] Config received from server: " + m_Config.Entries.Count().ToString() + " entries");
+    }
+
     static THRB_BookEntry Find(string className)
     {
         if (!m_Config || !m_Config.Entries)

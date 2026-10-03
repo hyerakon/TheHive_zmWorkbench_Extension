@@ -38,7 +38,8 @@ class CfgPatches
         {
             "DZ_Data",
             "DZ_Scripts",
-            "DayZExpansion_Quests"
+            "JM_CF_Scripts",
+            "DayZExpansion_Quests_Scripts"
         };
     };
 };

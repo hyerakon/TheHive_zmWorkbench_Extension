@@ -105,14 +105,17 @@ class TH_RecipePaper_Base: Paper
         return super.GetDisplayName();
     }
 
-    string GetDescriptionShort()
+    override bool DescriptionOverride(out string output)
     {
         THRB_BookEntry entry = THRB_GetEntry();
 
         if (entry && entry.Description != "")
-            return entry.Description;
+        {
+            output = entry.Description;
+            return true;
+        }
 
-        return "";
+        return super.DescriptionOverride(output);
     }
 
     override void SetActions()

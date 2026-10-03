@@ -26,7 +26,6 @@ class CfgVehicles
     class zm_WorkbenchPublic;
 	class TH_CS_Bench_BASE;
 
-
 	class TH_CS_TB_Bench_BASE: TH_CS_Bench_BASE
 	{
 		scope=0;

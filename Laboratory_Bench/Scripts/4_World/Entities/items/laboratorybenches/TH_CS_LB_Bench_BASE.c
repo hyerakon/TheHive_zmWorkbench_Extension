@@ -10,7 +10,7 @@ class TH_CS_LB_Bench_BASE extends TH_CS_Bench_BASE
     override void SetActions()
     {
         
-        AddAction(TH_CS_LB_ActionOpenCraftingWorkbench)
+        AddAction(TH_CS_LB_ActionOpenCraftingWorkbench);
         AddAction(ActionToggleTerminalMonitor);
         
         super.SetActions();

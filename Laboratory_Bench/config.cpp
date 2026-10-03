@@ -9,6 +9,8 @@ class CfgPatches
 		{
 			"DZ_Data",
 			"DZ_Scripts",
+			"DZ_Gear_Containers",
+			"DZ_Gear_Medical",
 			"DZ_Gear_Camping",
 			"DZ_Gear_Tools",
 			"WorkbenchMod",
