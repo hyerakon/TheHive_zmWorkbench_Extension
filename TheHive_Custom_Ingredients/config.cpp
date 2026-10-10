@@ -55,7 +55,7 @@ class CfgVehicles
 		model="\dz\gear\containers\Protector_Case.p3d";
 		rotationFlags=17;
 		weight=980;
-		itemSize[]={3,4};
+		itemSize[]={2,2};
 		itemsCargoSize[]={};
 		canBeDigged=1;
 		isMeleeWeapon=1;
@@ -169,6 +169,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_SKS";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SKS";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Pioneer: TH_CS_WeaponPack_BASE
     {
@@ -176,6 +177,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Pioneer";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SCOUT";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Aura1: TH_CS_WeaponPack_BASE
     {
@@ -183,6 +185,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Aura1";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AUG";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Aurax: TH_CS_WeaponPack_BASE
     {
@@ -190,6 +193,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Aurax";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AUGX";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Lemas: TH_CS_WeaponPack_BASE
     {
@@ -197,6 +201,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Lemas";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_FAMAS";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Lar: TH_CS_WeaponPack_BASE
     {
@@ -204,6 +209,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Lar";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_FAL0";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Kam: TH_CS_WeaponPack_BASE
     {
@@ -211,6 +217,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Kam";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AKM";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Ka101: TH_CS_WeaponPack_BASE
     {
@@ -218,6 +225,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Ka101";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AK101";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Ka74: TH_CS_WeaponPack_BASE
     {
@@ -225,6 +233,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Ka74";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AK74";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Ka74u: TH_CS_WeaponPack_BASE
     {
@@ -232,6 +241,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Ka74u";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_AK74U";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_M16: TH_CS_WeaponPack_BASE
     {
@@ -239,6 +249,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_M16";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_M16A2";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_M4a1: TH_CS_WeaponPack_BASE
     {
@@ -246,6 +257,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_M4a1";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_M4A1";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Sv98: TH_CS_WeaponPack_BASE
     {
@@ -253,6 +265,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Sv98";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SV98";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Asval: TH_CS_WeaponPack_BASE
     {
@@ -260,6 +273,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Asval";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_ASVAL";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Dmr: TH_CS_WeaponPack_BASE
     {
@@ -267,6 +281,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_TH_CS_WeaponPack_Dmr";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_M14";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_M70: TH_CS_WeaponPack_BASE
     {
@@ -274,6 +289,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_M70";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_WIN70";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Vsd: TH_CS_WeaponPack_BASE
     {
@@ -281,6 +297,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Vsd";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SVD";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Vss: TH_CS_WeaponPack_BASE
     {
@@ -288,6 +305,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Vss";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_VSS";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Cr550: TH_CS_WeaponPack_BASE
     {
@@ -295,6 +313,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Cr550";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_CZ550";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_G36: TH_CS_WeaponPack_BASE
     {
@@ -302,6 +321,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_G36";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_G36";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_Mosin9130: TH_CS_WeaponPack_BASE
     {
@@ -309,6 +329,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Mosin9130";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MOSIN";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
     class TH_CS_WeaponPack_Bizon: TH_CS_WeaponPack_BASE
     {
@@ -316,6 +337,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Bizon";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_PP19";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
     class TH_CS_WeaponPack_Vaiga: TH_CS_WeaponPack_BASE
     {
@@ -323,6 +345,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Vaiga";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SAIGA";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_shotgun_co.paa"};
     };
     class TH_CS_WeaponPack_Vikhr: TH_CS_WeaponPack_BASE
     {
@@ -330,6 +353,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Vikhr";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_VIKHR";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
     class TH_CS_WeaponPack_M79: TH_CS_WeaponPack_BASE
     {
@@ -337,6 +361,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_M79";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_M79";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rpg_co.paa"};
     };
     class TH_CS_WeaponPack_RPG: TH_CS_WeaponPack_BASE
     {
@@ -344,6 +369,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_RPG";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_RPG7";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rpg_co.paa"};
     };
     class TH_CS_WeaponPack_Law: TH_CS_WeaponPack_BASE
     {
@@ -351,6 +377,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Law";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_LAW";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rpg_co.paa"};
     };
 	class TH_CS_WeaponPack_SSG82: TH_CS_WeaponPack_BASE
     {
@@ -358,6 +385,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_SSG82";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SSG82";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
 	class TH_CS_WeaponPack_SCARH: TH_CS_WeaponPack_BASE
     {
@@ -365,6 +393,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_SCARH";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SCARH";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
 	class TH_CS_WeaponPack_CZ61: TH_CS_WeaponPack_BASE
     {
@@ -372,6 +401,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_CZ61";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_CZ61";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Rak37: TH_CS_WeaponPack_BASE
     {
@@ -379,6 +409,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Rak37";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Rak37";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Kedr: TH_CS_WeaponPack_BASE
     {
@@ -386,6 +417,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Kedr";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Kedr";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_USG45: TH_CS_WeaponPack_BASE
     {
@@ -393,6 +425,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_USG45";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_USG45";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_SG5: TH_CS_WeaponPack_BASE
     {
@@ -400,6 +433,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_SG5";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SG5";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_MP7: TH_CS_WeaponPack_BASE
     {
@@ -407,6 +441,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_MP7";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP7";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Kar98: TH_CS_WeaponPack_BASE
     {
@@ -414,6 +449,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Kar98";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Kar98";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
     };
 	class TH_CS_WeaponPack_ZenTaser: TH_CS_WeaponPack_BASE
     {
@@ -428,6 +464,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_R12";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_R12";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_shotgun_co.paa"};
     };
 	class TH_CS_WeaponPack_MP133: TH_CS_WeaponPack_BASE
     {
@@ -435,6 +472,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_MP133";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP133";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_shotgun_co.paa"};
     };
 	class TH_CS_WeaponPack_Gorza: TH_CS_WeaponPack_BASE
     {
@@ -442,6 +480,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Gorza";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Gorza";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Groza762: TH_CS_WeaponPack_BASE
     {
@@ -449,6 +488,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Groza762";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Groza762";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
 	class TH_CS_WeaponPack_M249: TH_CS_WeaponPack_BASE
     {
@@ -463,6 +503,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_SuperShorty";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SuperShorty";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_shotgun_co.paa"};
     };
 	class TH_CS_WeaponPack_EVO3A1: TH_CS_WeaponPack_BASE
     {
@@ -470,6 +511,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_EVO3A1";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_EVO3A1";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_MP9: TH_CS_WeaponPack_BASE
     {
@@ -477,6 +519,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_MP9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_P90: TH_CS_WeaponPack_BASE
     {
@@ -484,6 +527,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_P90";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_P90";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Tec9: TH_CS_WeaponPack_BASE
     {
@@ -491,6 +535,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Tec9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Tec9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 	class TH_CS_WeaponPack_Model1887: TH_CS_WeaponPack_BASE
     {
@@ -498,6 +543,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Model1887";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Model1887";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_shotgun_co.paa"};
     };
 	class TH_CS_WeaponPack_Type20: TH_CS_WeaponPack_BASE
     {
@@ -505,6 +551,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_Type20";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_Type20";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
     };
 	class TH_CS_WeaponPack_PM9: TH_CS_WeaponPack_BASE
     {
@@ -512,6 +559,7 @@ class CfgVehicles
         name = "TH_CS_WeaponPack_PM9";
         displayName = "$STR_THEHIVE_WEAPON_PACKAGE_PM9";
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
 
 	
@@ -542,7 +590,7 @@ class CfgVehicles
 		varQuantityMax=100;
 		hiddenSelections[]={"zbytek"};
         hiddenSelectionsMaterials[]={"DZ\gear\containers\data\Protector_Case.rvmat"};
-        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\supply_food_co.paa"};
+        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\th_consumable_supply_food_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -650,7 +698,7 @@ class CfgVehicles
 		attachments[]={};
 		hiddenSelections[]={"zbytek"};
         hiddenSelectionsMaterials[]={"DZ\gear\containers\data\Protector_Case.rvmat"};
-        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\supply_food_co.paa"};
+        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\th_consumable_supply_food_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -758,7 +806,7 @@ class CfgVehicles
 		attachments[]={};
 		hiddenSelections[]={"zbytek"};
         hiddenSelectionsMaterials[]={"DZ\gear\containers\data\Protector_Case.rvmat"};
-        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\supply_lab_co.paa"};
+        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\th_consumable_supply_lab_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -866,7 +914,7 @@ class CfgVehicles
 		attachments[]={};
 		hiddenSelections[]={"zbytek"};
         hiddenSelectionsMaterials[]={"DZ\gear\containers\data\Protector_Case.rvmat"};
-        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\supply_tec_co.paa"};
+        hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\supplies\data\th_consumable_supply_tec_co.paa"};
 		class DamageSystem
 		{
 			class GlobalHealth
