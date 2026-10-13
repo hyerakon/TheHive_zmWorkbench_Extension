@@ -1,0 +1,10 @@
+<!-- Incolla questo blocco in /mpmissions/<MISSIONE>/cfgeconomycore.xml, dentro <economycore> -->
+<!-- e copia la cartella "thehive_xmls" (con il suo contenuto) in /mpmissions/<MISSIONE>/ -->
+
+<ce folder="thehive_xmls/zmWorkbenchExtension">
+    <file name="TheHive_zmWorkbench_Extension_Coocking_Bench_types.xml" type="types" />
+    <file name="TheHive_zmWorkbench_Extension_Laboratory_Bench_types.xml" type="types" />
+    <file name="TheHive_zmWorkbench_Extension_Tecnic_Bench_types.xml" type="types" />
+    <file name="TheHive_zmWorkbench_Extension_TheHive_Custom_Ingredients_types.xml" type="types" />
+    <file name="TheHive_zmWorkbench_Extension_TheHive_Recipes_Book_types.xml" type="types" />
+</ce>
