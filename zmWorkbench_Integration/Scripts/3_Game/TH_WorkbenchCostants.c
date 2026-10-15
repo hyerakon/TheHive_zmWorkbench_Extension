@@ -13,6 +13,7 @@ modded class WorkbenchConstants
 
 
 
-    static const string TH_LAYOUT_ADMIN_RECIPE_EDITOR = "TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/5_Mission/GUI/Layouts/TH_AdminRecipeEditorMenu.layout";
+    // Checkbox dei moduli TH inserite nell'editor admin (AdminRecipeEditor_v7 della WorkbenchMod)
+    static const string TH_LAYOUT_ADMIN_MODULE_CHECKS = "TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/5_Mission/GUI/Layouts/TH_AdminModuleChecks.layout";
     static const string TH_LAYOUT_MAIN = "TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/5_Mission/GUI/Layouts/TH_WorkbenchMenu.layout";
 };

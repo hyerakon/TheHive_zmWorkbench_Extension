@@ -1,3 +1,7 @@
+// FILE GENERATO da tools/sync_th_workbenchmenu.py - non modificare a mano.
+// Metodi copiati dalla WorkbenchMenu.c della WorkbenchMod con le sole aggiunte TH
+// (layout TH_LAYOUT_MAIN e moduli da TH_WB_Modules). Dopo un aggiornamento della
+// WorkbenchMod rilanciare lo script.
 modded class WorkbenchMenu extends UIScriptedMenu
 {
     override Widget Init() {
@@ -104,6 +108,19 @@ modded class WorkbenchMenu extends UIScriptedMenu
         }
         
         m_LargeItemPreview = ItemPreviewWidget.Cast(m_Root.FindAnyWidget("LargeItemPreview"));
+        if (!m_LargeItemPreview) {
+            // Loaded as its own nested layout (like RecipeSlot.layout) instead of being
+            // defined inline in WorkbenchMenu.layout, to test whether that affects its
+            // draw-order relative to other overlays (it did not fix the dropdown overlap,
+            // but the nested-layout structure is kept since it works identically otherwise).
+            Widget previewContainer = m_Root.FindAnyWidget("PreviewContainer");
+            if (previewContainer) {
+                Widget previewRoot = GetGame().GetWorkspace().CreateWidgets(WorkbenchConstants.LAYOUT_LARGE_ITEM_PREVIEW, previewContainer);
+                if (previewRoot) {
+                    m_LargeItemPreview = ItemPreviewWidget.Cast(previewRoot.FindAnyWidget("LargeItemPreview"));
+                }
+            }
+        }
         m_MultiResultScroll = m_Root.FindAnyWidget("MultiResultScroll");
         m_MultiResultGrid = WrapSpacerWidget.Cast(m_Root.FindAnyWidget("MultiResultGrid"));
         
@@ -314,9 +331,9 @@ modded class WorkbenchMenu extends UIScriptedMenu
         WBDebug("[WorkbenchMod] QueuedItems found: " + (m_QueuedItems != null).ToString());
         WBDebug("[WorkbenchMod] StopCraftButton found: " + (m_StopCraftButton != null).ToString());
         
-        // Hide queue panel initially
+        // Queue panel is always visible in the new design
         if (m_QueuePanel) {
-            m_QueuePanel.Show(false);
+            m_QueuePanel.Show(true);
         }
         
         // Hide progress bar initially
@@ -343,15 +360,21 @@ modded class WorkbenchMenu extends UIScriptedMenu
             string logoPath = WorkbenchSettings.GetLogoPath();
             if (logoPath != "") {
                 m_LogoImage.LoadImageFile(0, logoPath);
+
+                // DayZ 1.29 workaround: UI renderer draws image textures brighter
+                // than pre-1.29 (engine-side gamma/sRGB change), washing out the logo.
+                // Tint the widget to ~73% (186/255) to compensate.
+                // Remove when Bohemia fixes UI texture rendering.
+                m_LogoImage.SetColor(ARGB(255, 186, 186, 186));
+
                 WBDebug("[WorkbenchMod] Logo loaded: " + logoPath);
             }
         }
         
         return m_Root;
     }
-    
-    override void ShowModuleTooltip(int moduleIndex) 
-    {
+
+    override void ShowModuleTooltip(int moduleIndex) {
         if (!m_IsMenuOpen) return;
         
         // Create module tooltip if it doesn't exist
@@ -371,7 +394,9 @@ modded class WorkbenchMenu extends UIScriptedMenu
         if (!m_ModuleTooltipWidget) return;
         
         // Module class names
-        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing", "TH_CS_LB_Terminal", "TH_CS_LB_Mortar", "TH_CS_LB_Microscope", "TH_CS_LB_Condenser", "TH_CS_CB_Scale", "TH_CS_CB_Still", "TH_CS_CB_Stove"};
+        array<string> moduleClassNames = {"zm_DrillPress", "zm_Grinder", "zm_Vice", "zm_Soldering", "zm_Welding", "zm_Sewing"};
+        // TH: moduli dell'estensione (stesso ordine di UpdateModuleDisplay)
+        moduleClassNames.InsertAll(TH_WB_Modules.GetClassnames());
         
         if (moduleIndex < 0 || moduleIndex >= moduleClassNames.Count()) return;
         
@@ -434,7 +459,7 @@ modded class WorkbenchMenu extends UIScriptedMenu
         m_ModuleTooltipWidget.SetPos(mouseX - offsetX, mouseY - 60);
         m_ModuleTooltipWidget.Show(true);
         m_ModuleTooltipWidget.Update();
-    };
+    }
 
     override void UpdateModuleDisplay() {
         if (!m_Workbench || !m_ModuleDisplay) return;
@@ -460,19 +485,6 @@ modded class WorkbenchMenu extends UIScriptedMenu
         allModuleTypes.Insert(WorkbenchConstants.MODULE_SOLDERING);
         allModuleTypes.Insert(WorkbenchConstants.MODULE_WELDING);
         allModuleTypes.Insert(WorkbenchConstants.MODULE_SEWING);
-
-        // TH modules LB
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_TERMINAL);
-        //allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_WAVEGENERATOR);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_MORTARPESTLE);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_MICROSCOPE);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_CONDENSER);
-
-        // TH modules CB
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_SCALE);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_STILL);
-        allModuleTypes.Insert(WorkbenchConstants.MODULE_TH_STOVE);
-
         
         // Slot names (lowercase) for comparison with GetAttachedModules()
         array<string> moduleSlotNames = new array<string>();
@@ -482,17 +494,6 @@ modded class WorkbenchMenu extends UIScriptedMenu
         moduleSlotNames.Insert("soldering");
         moduleSlotNames.Insert("welding");
         moduleSlotNames.Insert("sewing");
-
-        // TH_CS_LB Slots
-        moduleSlotNames.Insert("terminal");
-        moduleSlotNames.Insert("mortarpestle");
-        moduleSlotNames.Insert("microscope");
-        moduleSlotNames.Insert("condenser");
-
-        // TH_CS_CB Slots
-        moduleSlotNames.Insert("scale");
-        moduleSlotNames.Insert("still");
-        moduleSlotNames.Insert("stove");
         
         array<string> moduleDisplayNames = new array<string>();
         moduleDisplayNames.Insert("Drill Press");
@@ -502,18 +503,10 @@ modded class WorkbenchMenu extends UIScriptedMenu
         moduleDisplayNames.Insert("Welding");
         moduleDisplayNames.Insert("Sewing");
 
-        // TH_CS_CB Module DisplayNames
-        moduleDisplayNames.Insert("Terminal");
-        moduleDisplayNames.Insert("Mortar Pestle");
-        moduleDisplayNames.Insert("Microscope");
-        moduleDisplayNames.Insert("Condenser");
-
-        // TH_CS_CB Module DisplayNames
-        moduleDisplayNames.Insert("Scale");
-        moduleDisplayNames.Insert("Still");
-        moduleDisplayNames.Insert("Stove");
-
-
+        // TH: moduli dell'estensione (stesso ordine nei tre elenchi)
+        allModuleTypes.InsertAll(TH_WB_Modules.GetClassnames());
+        moduleSlotNames.InsertAll(TH_WB_Modules.GetSlots());
+        moduleDisplayNames.InsertAll(TH_WB_Modules.GetDisplayNames());
         
         // Create icon for each module type (always show all)
         for (int i = 0; i < allModuleTypes.Count(); i++) {
@@ -559,7 +552,7 @@ modded class WorkbenchMenu extends UIScriptedMenu
                 }
             }
         }
-    };
+    }
 
     override void UpdateRequirements(WorkbenchRecipe recipe)
     {
@@ -626,17 +619,12 @@ modded class WorkbenchMenu extends UIScriptedMenu
             moduleClasses.Insert("welding", "zm_Welding");
             moduleClasses.Insert("sewing", "zm_Sewing");
 
-            // TH_CS_LB Modules mapping
-            moduleClasses.Insert("terminal", "TH_CS_LB_Terminal");
-            //moduleClasses.Insert("wavegenerator", "TH_CS_LB_WaveGenerator");
-            moduleClasses.Insert("mortarpestle", "TH_CS_LB_Mortar");
-            moduleClasses.Insert("microscope", "TH_CS_LB_Microscope");
-            moduleClasses.Insert("condenser", "TH_CS_LB_Condenser");
-
-            // TH_CS_CB Modules mapping
-            moduleClasses.Insert("scale", "TH_CS_CB_Scale");
-            moduleClasses.Insert("still", "TH_CS_CB_Still");
-            moduleClasses.Insert("stove", "TH_CS_CB_Stove");
+            // TH: mappatura slot -> classe dei moduli dell'estensione
+            array<string> thModSlots = TH_WB_Modules.GetSlots();
+            array<string> thModClasses = TH_WB_Modules.GetClassnames();
+            for (int thModIdx = 0; thModIdx < thModSlots.Count(); thModIdx++) {
+                moduleClasses.Insert(thModSlots.Get(thModIdx), thModClasses.Get(thModIdx));
+            }
             
             foreach (string reqModule : recipe.required_attachments) {
                 string reqModuleLower = reqModule;
@@ -1091,5 +1079,5 @@ modded class WorkbenchMenu extends UIScriptedMenu
         m_LastBuiltRecipeID = recipe.GetID();
         m_LastBuiltVariantIndex = m_SelectedVariantIndex;
         m_LastBuiltCraftQuantity = m_CraftQuantity;
-    };
+    }
 };

@@ -1,0 +1,88 @@
+FrameWidgetClass TH_ModuleChecks {
+ ignorepointer 1
+ position 95 184
+ size 440 48
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  CheckBoxWidgetClass TH_CheckTerminal {
+   position 0 0
+   size 90 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Terminal"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckMortarPestle {
+   position 95 0
+   size 110 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Mortar Pestle"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckMicroscope {
+   position 210 0
+   size 100 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Microscope"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckCondenser {
+   position 315 0
+   size 100 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Condenser"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckScale {
+   position 0 26
+   size 90 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Scale"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckStill {
+   position 95 26
+   size 90 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Still"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+  CheckBoxWidgetClass TH_CheckStove {
+   position 210 26
+   size 90 22
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text " Stove"
+   font "WorkbenchMod/GUI/fonts/Coolvetica2"
+   "text color" 1 1 1 1
+  }
+ }
+}

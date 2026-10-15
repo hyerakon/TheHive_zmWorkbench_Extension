@@ -565,7 +565,6 @@ class CfgVehicles
 	
 	
 	//! PACK OGGETTI
-	class SmallProtectorCase;
 	class TH_CS_Supply_BASE: SmallProtectorCase
 	{
 		scope=1;

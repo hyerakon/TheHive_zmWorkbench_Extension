@@ -141,6 +141,24 @@ class CfgVehicles
 	// INGREDIENTS ITEMS
 	class Edible_Base;
 
+	// CONTENITORI BEVANDE / BOTTIGLIE
+	class Bottle_Base: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_BottleEquipment_7",
+    		"TH_CB_BottleEquipment_8"
+		};
+	};
+	class SodaCan_ColorBase: Edible_Base
+	{
+		inventorySlot[] += 
+		{
+			"TH_CB_BottleEquipment_7",
+    		"TH_CB_BottleEquipment_8"
+		};
+	};
+
 	// COLTELLI
 	class BoneKnife: Inventory_Base
 	{
@@ -293,7 +311,6 @@ class CfgVehicles
 		};
 	};
 
-	class Bottle_Base;
 	class Pot: Bottle_Base
 	{
 		inventorySlot[] += 
@@ -316,24 +333,6 @@ class CfgVehicles
 		{
 			"TH_CB_CookEquipment_5",
 			"TH_CB_CookEquipment_6"
-		};
-	};
-	
-	// CONTENITORI BEVANDE / BOTTIGLIE
-	class Bottle_Base: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_BottleEquipment_7",
-    		"TH_CB_BottleEquipment_8"
-		};
-	};
-	class SodaCan_ColorBase: Edible_Base
-	{
-		inventorySlot[] += 
-		{
-			"TH_CB_BottleEquipment_7",
-    		"TH_CB_BottleEquipment_8"
 		};
 	};
 	
@@ -1961,10 +1960,6 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "TH_CB_CookEquipment_5";
 		model="\dz\gear\cooking\CookingPot.p3d";
-		inventorySlot[]=
-		{
-			"CookingEquipment"
-		};
 		class AnimationSources
 		{
 			class handleRotate
@@ -1980,10 +1975,6 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "TH_CB_CookEquipment_6";
 		model="\dz\gear\cooking\CookingPot.p3d";
-		inventorySlot[]=
-		{
-			"CookingEquipment"
-		};
 		class AnimationSources
 		{
 			class handleRotate
