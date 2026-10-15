@@ -35,7 +35,7 @@ class CfgMods
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\Scripts\4_World"};
+				files[] = {"TheHive_zmWorkbench_Extension/TheHive_Custom_Ingredients/Scripts/4_World"};
 			};
 		};
 	};

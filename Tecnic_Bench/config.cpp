@@ -29,7 +29,7 @@ class CfgMods
 {
 	class TheHive_zmWorkbench_Extension_TB
 	{
-		dir = "TheHive_zmWorkbench_Extension\Tecnic_Bench";
+		dir = "TheHive_zmWorkbench_Extension/Tecnic_Bench";
 		picture = "";
 		action = "";
 		hideName = 1;

@@ -35,17 +35,17 @@ class CfgMods
 			class gameScriptModule
 			{
 				value = "";
-				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\3_Game"};
+				files[] = {"TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/3_Game"};
 			};			
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\4_World"};
+				files[] = {"TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/4_World"};
 			};
 			class missionScriptModule
 			{
 				value = "";
-				files[] = {"TheHive_zmWorkbench_Extension\zmWorkbench_Integration\Scripts\5_Mission"};
+				files[] = {"TheHive_zmWorkbench_Extension/zmWorkbench_Integration/Scripts/5_Mission"};
 			};
 		};
 	};

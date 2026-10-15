@@ -36,7 +36,7 @@ class CfgMods
 {
 	class TheHive_zmWorkbench_Extension_CB
 	{
-		dir = "TheHive_zmWorkbench_Extension\Coocking_Bench";
+		dir = "TheHive_zmWorkbench_Extension/Coocking_Bench";
 		picture = "";
 		action = "";
 		hideName = 1;
