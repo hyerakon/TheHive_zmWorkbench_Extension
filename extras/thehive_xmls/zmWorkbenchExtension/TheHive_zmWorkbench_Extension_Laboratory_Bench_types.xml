@@ -24,14 +24,14 @@
         <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>0</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Medic"/>
+        <tag name="TH_Lab" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_LB_Kit_Locked">
         <nominal>0</nominal>
@@ -57,14 +57,14 @@
         <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>0</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Medic"/>
+        <tag name="TH_Lab" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_LB_Mortar">
         <nominal>1</nominal>
@@ -93,7 +93,7 @@
         <usage name="Medic"/>
     </type>
     <type name="TH_CS_LB_Terminal">
-        <nominal>0</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>0</min>
@@ -102,8 +102,8 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Medic"/>
+        <tag name="TH_Lab" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_LB_WaveGenerator">
         <nominal>0</nominal>

@@ -50,8 +50,8 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Village"/>
+        <tag name="TH_Food"/>
+        <usage name="TH_Container"/>
     </type>
     <type name="TH_CS_CB_Still">
         <nominal>1</nominal>
@@ -63,8 +63,8 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Village"/>
+        <tag name="TH_Food"/>
+        <usage name="TH_Container"/>
     </type>
     <type name="TH_CS_CB_Stove">
         <nominal>1</nominal>
@@ -76,16 +76,16 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Village"/>
+        <tag name="TH_Food"/>
+        <usage name="TH_Container"/>
     </type>
     <type name="TH_CS_Supply_Food">
         <nominal>8</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>3</min>
-        <quantmin>35</quantmin>
-        <quantmax>65</quantmax>
+        <quantmin>5</quantmin>
+        <quantmax>30</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="tools" />
@@ -93,7 +93,5 @@
         <usage name="Village" />
         <usage name="Town" />
         <usage name="Farm" />
-        <tag name="THBlue_Food" />
-        <usage name="THBlueContainer" />
     </type>
 </types>

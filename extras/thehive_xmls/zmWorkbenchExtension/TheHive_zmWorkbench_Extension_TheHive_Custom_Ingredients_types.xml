@@ -35,8 +35,8 @@
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>3</min>
-        <quantmin>35</quantmin>
-        <quantmax>65</quantmax>
+        <quantmin>5</quantmin>
+        <quantmax>30</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="tools" />
@@ -44,39 +44,33 @@
         <usage name="Medic" />
         <usage name="Office" />
         <usage name="School" />
-        <tag name="THBlue_Lab" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_Supply_Tec">
-        <nominal>8</nominal>
+        <nominal>5</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>3</min>
-        <quantmin>35</quantmin>
-        <quantmax>65</quantmax>
+        <quantmin>1</quantmin>
+        <quantmax>10</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="tools" />
         <tag name="shelves" />
         <usage name="Industrial" />
-        <usage name="Military" />
         <usage name="Firefighter" />
-        <tag name="THBlue_Tec" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Asval">
         <nominal>5</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>2</min>
-        <quantmin>25</quantmin>
-        <quantmax>50</quantmax>
+        <quantmin>30</quantmin>
+        <quantmax>60</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
-        <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Aura1">
         <nominal>5</nominal>
@@ -90,8 +84,6 @@
         <category name="weapons" />
         <usage name="Underground" />
         <usage name="Military" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Aurax">
         <nominal>5</nominal>
@@ -104,8 +96,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Bizon">
         <nominal>5</nominal>
@@ -159,8 +149,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_EVO3A1">
         <nominal>5</nominal>
@@ -187,8 +175,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Gorza">
         <nominal>5</nominal>
@@ -209,13 +195,13 @@
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <quantmin>30</quantmin>
+        <quantmax>60</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <usage name="Underground" />
+        <category name="weapons"/>
+        <tag name="TH_Weapons"/>
+        <usage name="TH_Container"/>
     </type>
     <type name="TH_CS_WeaponPack_Ka101">
         <nominal>5</nominal>
@@ -226,10 +212,9 @@
         <quantmax>50</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
-        <category name="weapons" />
-        <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
+        <category name="weapons"/>
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Ka74">
         <nominal>5</nominal>
@@ -266,8 +251,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Kar98">
         <nominal>5</nominal>
@@ -308,20 +291,19 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Law">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <min>0</min>
+        <quantmin>100</quantmin>
+        <quantmax>100</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Underground" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Lemas">
         <nominal>5</nominal>
@@ -348,17 +330,17 @@
         <usage name="Underground" />
     </type>
     <type name="TH_CS_WeaponPack_M249">
-        <nominal>5</nominal>
+        <nominal>3</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <min>1</min>
+        <quantmin>10</quantmin>
+        <quantmax>25</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Military" />
-        <usage name="Underground" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_M4a1">
         <nominal>5</nominal>
@@ -371,8 +353,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="ContaminatedArea" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_M70">
         <nominal>5</nominal>
@@ -389,16 +369,17 @@
         <usage name="Coast" />
     </type>
     <type name="TH_CS_WeaponPack_M79">
-        <nominal>5</nominal>
+        <nominal>3</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <min>1</min>
+        <quantmin>10</quantmin>
+        <quantmax>30</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Underground" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Model1887">
         <nominal>5</nominal>
@@ -473,12 +454,13 @@
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <quantmin>30</quantmin>
+        <quantmax>60</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Underground" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Pioneer">
         <nominal>5</nominal>
@@ -535,30 +517,30 @@
         <usage name="Office" />
     </type>
     <type name="TH_CS_WeaponPack_RPG">
-        <nominal>5</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <min>1</min>
+        <quantmin>20</quantmin>
+        <quantmax>40</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Underground" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_SCARH">
         <nominal>5</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>2</min>
-        <quantmin>25</quantmin>
+        <quantmin>20</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
-        <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_SG5">
         <nominal>5</nominal>
@@ -626,8 +608,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Coast" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Tec9">
         <nominal>5</nominal>
@@ -654,8 +634,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="Underground" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_USG45">
         <nominal>5</nominal>
@@ -674,12 +652,13 @@
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <quantmin>25</quantmin>
+        <quantmax>50</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="Prison" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_Vikhr">
         <nominal>5</nominal>
@@ -705,8 +684,6 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
         <category name="weapons" />
         <usage name="ContaminatedArea" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_Vss">
         <nominal>5</nominal>
@@ -720,20 +697,18 @@
         <category name="weapons" />
         <usage name="Underground" />
         <usage name="Military" />
-        <tag name="THBlue_Armi" />
-        <usage name="THBlueContainer" />
     </type>
     <type name="TH_CS_WeaponPack_ZenTaser">
-        <nominal>5</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>2</min>
-        <quantmin>5</quantmin>
-        <quantmax>10</quantmax>
+        <min>1</min>
+        <quantmin>30</quantmin>
+        <quantmax>60</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
-        <usage name="School" />
-        <usage name="Prison" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
     </type>
 </types>
