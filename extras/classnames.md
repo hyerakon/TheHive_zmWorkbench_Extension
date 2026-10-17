@@ -339,6 +339,7 @@ Generato da `Tools/make_extras.py` dai `config.cpp` della mod.
 - `TH_CS_WeaponPack_Kedr`
 - `TH_CS_WeaponPack_Lar`
 - `TH_CS_WeaponPack_Law`
+- `TH_CS_WeaponPack_LeeEnfield`
 - `TH_CS_WeaponPack_Lemas`
 - `TH_CS_WeaponPack_M16`
 - `TH_CS_WeaponPack_M249`
@@ -348,6 +349,7 @@ Generato da `Tools/make_extras.py` dai `config.cpp` della mod.
 - `TH_CS_WeaponPack_Model1887`
 - `TH_CS_WeaponPack_Mosin9130`
 - `TH_CS_WeaponPack_MP133`
+- `TH_CS_WeaponPack_MP18`
 - `TH_CS_WeaponPack_MP7`
 - `TH_CS_WeaponPack_MP9`
 - `TH_CS_WeaponPack_P90`
@@ -357,6 +359,7 @@ Generato da `Tools/make_extras.py` dai `config.cpp` della mod.
 - `TH_CS_WeaponPack_Rak37`
 - `TH_CS_WeaponPack_RPG`
 - `TH_CS_WeaponPack_SCARH`
+- `TH_CS_WeaponPack_SCARL`
 - `TH_CS_WeaponPack_SG5`
 - `TH_CS_WeaponPack_SKS`
 - `TH_CS_WeaponPack_SSG82`

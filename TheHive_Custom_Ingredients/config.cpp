@@ -561,6 +561,30 @@ class CfgVehicles
         descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
 		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
     };
+	class TH_CS_WeaponPack_SCARL: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_SCARL";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_SCARL";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_ar_co.paa"};
+    };
+	class TH_CS_WeaponPack_LeeEnfield: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_LeeEnfield";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_LeeEnfield";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_rifle_co.paa"};
+    };
+	class TH_CS_WeaponPack_MP18: TH_CS_WeaponPack_BASE
+    {
+        scope = 2;
+        name = "TH_CS_WeaponPack_MP18";
+        displayName = "$STR_THEHIVE_WEAPON_PACKAGE_MP18";
+        descriptionShort ="$STR_THEHIVE_WEAPON_PACKAGE_DESCRIPTION";
+		hiddenSelectionsTextures[]={"TheHive_zmWorkbench_Extension\TheHive_Custom_Ingredients\textures\thehive_cs\th_cs_weapon_smg_co.paa"};
+    };
 
 	
 	

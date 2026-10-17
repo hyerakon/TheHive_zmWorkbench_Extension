@@ -305,6 +305,20 @@
         <tag name="TH_Weapons" />
         <usage name="TH_Container" />
     </type>
+    <type name="TH_CS_WeaponPack_LeeEnfield">
+        <nominal>5</nominal>
+        <lifetime>7200</lifetime>
+        <restock>1800</restock>
+        <min>2</min>
+        <quantmin>5</quantmin>
+        <quantmax>10</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
+        <category name="weapons" />
+        <usage name="Village" />
+        <usage name="Hunting" />
+        <usage name="Town" />
+    </type>
     <type name="TH_CS_WeaponPack_Lemas">
         <nominal>5</nominal>
         <lifetime>7200</lifetime>
@@ -422,6 +436,20 @@
         <usage name="Town" />
         <usage name="Police" />
     </type>
+    <type name="TH_CS_WeaponPack_MP18">
+        <nominal>5</nominal>
+        <lifetime>7200</lifetime>
+        <restock>1800</restock>
+        <min>2</min>
+        <quantmin>5</quantmin>
+        <quantmax>10</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="0" />
+        <category name="weapons" />
+        <usage name="Coast" />
+        <usage name="Town" />
+        <usage name="Office" />
+    </type>
     <type name="TH_CS_WeaponPack_MP7">
         <nominal>5</nominal>
         <lifetime>7200</lifetime>
@@ -530,6 +558,19 @@
         <usage name="TH_Container" />
     </type>
     <type name="TH_CS_WeaponPack_SCARH">
+        <nominal>5</nominal>
+        <lifetime>7200</lifetime>
+        <restock>1800</restock>
+        <min>2</min>
+        <quantmin>20</quantmin>
+        <quantmax>50</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="0" count_in_player="0" crafted="0" deloot="1" />
+        <category name="weapons" />
+        <tag name="TH_Weapons" />
+        <usage name="TH_Container" />
+    </type>
+    <type name="TH_CS_WeaponPack_SCARL">
         <nominal>5</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
