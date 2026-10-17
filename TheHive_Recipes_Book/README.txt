@@ -26,6 +26,7 @@ Puoi modificare per ogni libro:
 - ClassName
 - Title (usato anche come nome visualizzato in gioco)
 - QuestID
+- RequiredQuestID (quest da completare prima di poter leggere; -1 = nessun requisito)
 - ReadTime
 - DeleteOnSuccess
 
@@ -40,7 +41,9 @@ FLUSSO
 1. Il player prende il libro in mano.
 2. Azione "Leggi".
 3. Tempo di lettura definito dal JSON.
-4. Il server verifica che la quest non sia gia completata.
+4. Il server verifica che la quest non sia gia completata e, se RequiredQuestID > 0,
+   che la quest richiesta sia gia completata. Se uno dei due controlli fallisce
+   l'azione "Leggi" non compare.
 5. Il server completa la quest Achievement tramite Expansion.
 6. Se DeleteOnSuccess=true il libro viene eliminato.
 7. Se DeleteOnSuccess=false il libro viene portato a Ruined.
@@ -53,6 +56,17 @@ Esempio:
 
 Tutte le ricette con Quest ID 5001 vengono sbloccate leggendo TH_RecipeBook_001.
 
+
+REQUISITO DI QUEST (RequiredQuestID)
+------------------------------------
+Serve a far imparare delle ricette solo a chi ha completato una missione preventiva.
+Esempio: "QuestID": 80003, "RequiredQuestID": 70001
+-> il libro si puo leggere solo dopo aver completato la quest 70001; leggendolo si
+   completa la 80003 e si sbloccano le ricette con "required_quest_id": 80003.
+Valore normale: -1 (nessun requisito). I file JSON con ConfigVersion 2 vengono
+aggiornati automaticamente alla versione 3 all'avvio del server (RequiredQuestID = -1).
+Il controllo e' fatto sul server; sul client l'azione si aggiorna quando il libro
+viene preso in mano.
 
 NOTE
 ----

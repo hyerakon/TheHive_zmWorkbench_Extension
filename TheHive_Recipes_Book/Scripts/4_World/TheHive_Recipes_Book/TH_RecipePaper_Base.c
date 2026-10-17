@@ -55,25 +55,12 @@ class TH_RecipePaper_Base: Paper
 
     void THRB_UpdateCanLearn(PlayerBase player)
     {
-        m_THRB_CanLearn = true;
+        bool canLearn = THRB_QuestHelper.CanLearn(player, THRB_GetEntry());
 
-        if (!player)
-        {
-            SetSynchDirty();
+        if (canLearn == m_THRB_CanLearn)
             return;
-        }
 
-        THRB_BookEntry entry = THRB_GetEntry();
-
-        if (!entry || entry.QuestID <= 0)
-        {
-            SetSynchDirty();
-            return;
-        }
-
-        if (THRB_QuestHelper.HasCompletedQuest(player, entry.QuestID))
-            m_THRB_CanLearn = false;
-
+        m_THRB_CanLearn = canLearn;
         SetSynchDirty();
     }
 

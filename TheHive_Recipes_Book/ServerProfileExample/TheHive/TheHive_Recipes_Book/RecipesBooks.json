@@ -1,11 +1,12 @@
 {
-    "ConfigVersion": 2,
+    "ConfigVersion": 3,
     "Entries": [
         {
             "ClassName": "TH_RecipeBook_001",
             "Title": "Manuale di ricette 01",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80001,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -14,6 +15,7 @@
             "Title": "Manuale di ricette 02",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80002,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -22,6 +24,7 @@
             "Title": "Manuale di ricette 03",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80003,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -30,6 +33,7 @@
             "Title": "Manuale di ricette 04",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80004,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -38,6 +42,7 @@
             "Title": "Manuale di ricette 05",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80005,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -46,6 +51,7 @@
             "Title": "Manuale di ricette 06",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80006,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -54,6 +60,7 @@
             "Title": "Manuale di ricette 07",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80007,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -62,6 +69,7 @@
             "Title": "Manuale di ricette 08",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80008,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -70,6 +78,7 @@
             "Title": "Manuale di ricette 09",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80009,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -78,6 +87,7 @@
             "Title": "Manuale di ricette 10",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80010,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -86,6 +96,7 @@
             "Title": "Manuale di ricette 11",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80011,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -94,6 +105,7 @@
             "Title": "Manuale di ricette 12",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80012,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -102,6 +114,7 @@
             "Title": "Manuale di ricette 13",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80013,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -110,6 +123,7 @@
             "Title": "Manuale di ricette 14",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80014,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -118,6 +132,7 @@
             "Title": "Manuale di ricette 15",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80015,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -126,6 +141,7 @@
             "Title": "Manuale di ricette 16",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80016,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -134,6 +150,7 @@
             "Title": "Manuale di ricette 17",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80017,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -142,6 +159,7 @@
             "Title": "Manuale di ricette 18",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80018,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -150,6 +168,7 @@
             "Title": "Manuale di ricette 19",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80019,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -158,6 +177,7 @@
             "Title": "Manuale di ricette 20",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80020,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -166,6 +186,7 @@
             "Title": "Manuale di ricette 21",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80021,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -174,6 +195,7 @@
             "Title": "Manuale di ricette 22",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80022,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -182,6 +204,7 @@
             "Title": "Manuale di ricette 23",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80023,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -190,6 +213,7 @@
             "Title": "Manuale di ricette 24",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80024,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -198,6 +222,7 @@
             "Title": "Manuale di ricette 25",
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80025,
+            "RequiredQuestID": -1,
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -206,6 +231,7 @@
             "Title": "Appunto di ricetta 01",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80101,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -214,6 +240,7 @@
             "Title": "Appunto di ricetta 02",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80102,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -222,6 +249,7 @@
             "Title": "Appunto di ricetta 03",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80103,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -230,6 +258,7 @@
             "Title": "Appunto di ricetta 04",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80104,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -238,6 +267,7 @@
             "Title": "Appunto di ricetta 05",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80105,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -246,6 +276,7 @@
             "Title": "Appunto di ricetta 06",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80106,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -254,6 +285,7 @@
             "Title": "Appunto di ricetta 07",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80107,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -262,6 +294,7 @@
             "Title": "Appunto di ricetta 08",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80108,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -270,6 +303,7 @@
             "Title": "Appunto di ricetta 09",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80109,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -278,6 +312,7 @@
             "Title": "Appunto di ricetta 10",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80110,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -286,6 +321,7 @@
             "Title": "Appunto di ricetta 11",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80111,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -294,6 +330,7 @@
             "Title": "Appunto di ricetta 12",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80112,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -302,6 +339,7 @@
             "Title": "Appunto di ricetta 13",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80113,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -310,6 +348,7 @@
             "Title": "Appunto di ricetta 14",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80114,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -318,6 +357,7 @@
             "Title": "Appunto di ricetta 15",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80115,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -326,6 +366,7 @@
             "Title": "Appunto di ricetta 16",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80116,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -334,6 +375,7 @@
             "Title": "Appunto di ricetta 17",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80117,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -342,6 +384,7 @@
             "Title": "Appunto di ricetta 18",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80118,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -350,6 +393,7 @@
             "Title": "Appunto di ricetta 19",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80119,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -358,6 +402,7 @@
             "Title": "Appunto di ricetta 20",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80120,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -366,6 +411,7 @@
             "Title": "Appunto di ricetta 21",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80121,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -374,6 +420,7 @@
             "Title": "Appunto di ricetta 22",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80122,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -382,6 +429,7 @@
             "Title": "Appunto di ricetta 23",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80123,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -390,6 +438,7 @@
             "Title": "Appunto di ricetta 24",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80124,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -398,6 +447,7 @@
             "Title": "Appunto di ricetta 25",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80125,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -406,6 +456,7 @@
             "Title": "Appunto di ricetta 26",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80126,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -414,6 +465,7 @@
             "Title": "Appunto di ricetta 27",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80127,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -422,6 +474,7 @@
             "Title": "Appunto di ricetta 28",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80128,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -430,6 +483,7 @@
             "Title": "Appunto di ricetta 29",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80129,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -438,6 +492,7 @@
             "Title": "Appunto di ricetta 30",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80130,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -446,6 +501,7 @@
             "Title": "Appunto di ricetta 31",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80131,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -454,6 +510,7 @@
             "Title": "Appunto di ricetta 32",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80132,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -462,6 +519,7 @@
             "Title": "Appunto di ricetta 33",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80133,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -470,6 +528,7 @@
             "Title": "Appunto di ricetta 34",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80134,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -478,6 +537,7 @@
             "Title": "Appunto di ricetta 35",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80135,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -486,6 +546,7 @@
             "Title": "Appunto di ricetta 36",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80136,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -494,6 +555,7 @@
             "Title": "Appunto di ricetta 37",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80137,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -502,6 +564,7 @@
             "Title": "Appunto di ricetta 38",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80138,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -510,6 +573,7 @@
             "Title": "Appunto di ricetta 39",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80139,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -518,6 +582,7 @@
             "Title": "Appunto di ricetta 40",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80140,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -526,6 +591,7 @@
             "Title": "Appunto di ricetta 41",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80141,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -534,6 +600,7 @@
             "Title": "Appunto di ricetta 42",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80142,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -542,6 +609,7 @@
             "Title": "Appunto di ricetta 43",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80143,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -550,6 +618,7 @@
             "Title": "Appunto di ricetta 44",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80144,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -558,6 +627,7 @@
             "Title": "Appunto di ricetta 45",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80145,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -566,6 +636,7 @@
             "Title": "Appunto di ricetta 46",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80146,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -574,6 +645,7 @@
             "Title": "Appunto di ricetta 47",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80147,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -582,6 +654,7 @@
             "Title": "Appunto di ricetta 48",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80148,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -590,6 +663,7 @@
             "Title": "Appunto di ricetta 49",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80149,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -598,6 +672,7 @@
             "Title": "Appunto di ricetta 50",
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80150,
+            "RequiredQuestID": -1,
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         }

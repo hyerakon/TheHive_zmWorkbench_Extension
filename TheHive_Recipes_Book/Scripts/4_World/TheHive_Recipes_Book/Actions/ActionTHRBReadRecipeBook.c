@@ -52,15 +52,29 @@ class ActionTHRBReadRecipeBook: ActionContinuousBase
         if (item.IsRuined())
             return false;
 
+        // Sul server lo stato viene ricalcolato: vale anche se la quest richiesta
+        // e' stata completata mentre il libro era gia' in mano.
+        bool isServer = GetGame().IsDedicatedServer();
+
         TH_RecipeBook_Base book = TH_RecipeBook_Base.Cast(item);
 
         if (book)
+        {
+            if (isServer)
+                book.THRB_UpdateCanLearn(player);
+
             return book.THRB_CanPlayerLearn();
+        }
 
         TH_RecipePaper_Base paper = TH_RecipePaper_Base.Cast(item);
 
         if (paper)
+        {
+            if (isServer)
+                paper.THRB_UpdateCanLearn(player);
+
             return paper.THRB_CanPlayerLearn();
+        }
 
         return false;
     }
@@ -88,6 +102,12 @@ class ActionTHRBReadRecipeBook: ActionContinuousBase
         if (entry.QuestID <= 0)
         {
             Print("[TheHive_Recipes_Book] Invalid QuestID for " + recipeItem.GetType());
+            return;
+        }
+
+        if (entry.RequiredQuestID > 0 && !THRB_QuestHelper.HasCompletedQuest(player, entry.RequiredQuestID))
+        {
+            Print("[TheHive_Recipes_Book] Required quest not completed: " + entry.RequiredQuestID + " | " + recipeItem.GetType());
             return;
         }
 

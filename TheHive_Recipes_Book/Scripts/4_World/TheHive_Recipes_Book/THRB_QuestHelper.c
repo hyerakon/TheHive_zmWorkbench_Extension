@@ -17,4 +17,21 @@ class THRB_QuestHelper
 
         return playerData.GetQuestCompletionCountByQuestID(questID) > 0;
     }
+
+    // Server: il player puo' leggere questo libro/foglio?
+    // - RequiredQuestID > 0: la quest richiesta deve essere gia' completata
+    // - QuestID > 0: la quest del libro non deve essere gia' completata
+    static bool CanLearn(PlayerBase player, THRB_BookEntry entry)
+    {
+        if (!player || !entry)
+            return true;
+
+        if (entry.RequiredQuestID > 0 && !HasCompletedQuest(player, entry.RequiredQuestID))
+            return false;
+
+        if (entry.QuestID > 0 && HasCompletedQuest(player, entry.QuestID))
+            return false;
+
+        return true;
+    }
 };

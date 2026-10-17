@@ -4,6 +4,7 @@ class THRB_BookEntry
     string Title;
     string Description;
     int QuestID;
+    int RequiredQuestID; // quest da completare prima di poter leggere (-1 = nessun requisito)
     float ReadTime;
     bool DeleteOnSuccess;
 
@@ -13,6 +14,7 @@ class THRB_BookEntry
         Title = "";
         Description = "";
         QuestID = -1;
+        RequiredQuestID = -1;
         ReadTime = 5.0;
         DeleteOnSuccess = true;
     }
@@ -20,7 +22,9 @@ class THRB_BookEntry
 
 class THRB_Config
 {
-    int ConfigVersion = 2;
+    static const int CURRENT_VERSION = 3;
+
+    int ConfigVersion = 3;
     ref array<ref THRB_BookEntry> Entries;
 
     void THRB_Config()
@@ -47,6 +51,15 @@ class THRB_ConfigManager
         {
             JsonFileLoader<THRB_Config>.JsonLoadFile(CONFIG_FILE, m_Config);
             Print("[TheHive_Recipes_Book] Loaded config: " + CONFIG_FILE);
+
+            // v3: aggiunto RequiredQuestID (le voci vecchie ricevono -1 dal costruttore)
+            if (m_Config.ConfigVersion < THRB_Config.CURRENT_VERSION)
+            {
+                m_Config.ConfigVersion = THRB_Config.CURRENT_VERSION;
+                Save();
+                Print("[TheHive_Recipes_Book] Config updated to version " + THRB_Config.CURRENT_VERSION);
+            }
+
             return;
         }
 
@@ -107,6 +120,7 @@ class THRB_ConfigManager
             bookEntry.Title = "Libro di Ricette " + THRB_FormatIndex(i);
             bookEntry.Description = "Un vecchio volume contenente ricette, procedimenti e conoscenze ormai difficili da reperire.";
             bookEntry.QuestID = 80000 + i;
+            bookEntry.RequiredQuestID = -1;
             bookEntry.ReadTime = 15.0;
             bookEntry.DeleteOnSuccess = true;
 
@@ -121,6 +135,7 @@ class THRB_ConfigManager
             paperEntry.Title = "Appunto di Ricetta " + THRB_FormatIndex(i);
             paperEntry.Description = "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.";
             paperEntry.QuestID = 80100 + i;
+            paperEntry.RequiredQuestID = -1;
             paperEntry.ReadTime = 8.0;
             paperEntry.DeleteOnSuccess = true;
 
