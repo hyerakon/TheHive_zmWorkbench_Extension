@@ -27,6 +27,7 @@ Puoi modificare per ogni libro:
 - Title (usato anche come nome visualizzato in gioco)
 - QuestID
 - RequiredQuestID (quest da completare prima di poter leggere; -1 = nessun requisito)
+- RequestedJobs (lavori Job & Rewards che possono imparare dal libro; [] = tutti)
 - ReadTime
 - DeleteOnSuccess
 
@@ -67,6 +68,20 @@ Valore normale: -1 (nessun requisito). I file JSON con ConfigVersion 2 vengono
 aggiornati automaticamente alla versione 3 all'avvio del server (RequiredQuestID = -1).
 Il controllo e' fatto sul server; sul client l'azione si aggiorna quando il libro
 viene preso in mano.
+
+LAVORO RICHIESTO (RequestedJobs)
+--------------------------------
+Funziona SOLO se e' caricata la mod Job & Rewards (CfgPatches
+TheHive_SSBrena_TH_Job_And_Rewards_Scripts, define TheHive_SSBrena_TH_Job_And_Rewards).
+Senza quella mod il campo resta nel JSON ma viene ignorato.
+Esempio: "RequestedJobs": ["Medico", "Infermiere"]
+- Lista vuota [] (o solo "" / "none") = nessun requisito.
+- I nomi sono quelli di "Lavori" in TH_JOBS_AND_REWARDS.json (maiuscole indifferenti).
+- Il lavoro del player e' quello della lista Whitelisted (SteamID); i lavori con
+  Enabled=false non contano. La config dei lavori viene riletta al massimo ogni 5 minuti.
+- Chi non ha il lavoro puo' comunque provare a leggere: alla fine della lettura riceve
+  la notifica "Ci hai provato, ma non ci hai capito niente", non completa la quest e il
+  libro resta intatto.
 
 NOTE
 ----

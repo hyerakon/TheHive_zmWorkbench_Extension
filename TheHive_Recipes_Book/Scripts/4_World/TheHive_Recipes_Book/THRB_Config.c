@@ -5,6 +5,9 @@ class THRB_BookEntry
     string Description;
     int QuestID;
     int RequiredQuestID; // quest da completare prima di poter leggere (-1 = nessun requisito)
+    // Lavori (Job & Rewards) che possono leggere il libro. Vuota = tutti.
+    // Usata solo se e' caricata la mod TheHive_SSBrena_TH_Job_And_Rewards.
+    ref array<string> RequestedJobs;
     float ReadTime;
     bool DeleteOnSuccess;
 
@@ -15,6 +18,7 @@ class THRB_BookEntry
         Description = "";
         QuestID = -1;
         RequiredQuestID = -1;
+        RequestedJobs = new array<string>;
         ReadTime = 5.0;
         DeleteOnSuccess = true;
     }
@@ -22,9 +26,9 @@ class THRB_BookEntry
 
 class THRB_Config
 {
-    static const int CURRENT_VERSION = 3;
+    static const int CURRENT_VERSION = 4;
 
-    int ConfigVersion = 3;
+    int ConfigVersion = 4;
     ref array<ref THRB_BookEntry> Entries;
 
     void THRB_Config()
@@ -52,7 +56,7 @@ class THRB_ConfigManager
             JsonFileLoader<THRB_Config>.JsonLoadFile(CONFIG_FILE, m_Config);
             Print("[TheHive_Recipes_Book] Loaded config: " + CONFIG_FILE);
 
-            // v3: aggiunto RequiredQuestID (le voci vecchie ricevono -1 dal costruttore)
+            // v3: RequiredQuestID (-1), v4: RequestedJobs (lista vuota). Le voci vecchie ricevono i valori del costruttore
             if (m_Config.ConfigVersion < THRB_Config.CURRENT_VERSION)
             {
                 m_Config.ConfigVersion = THRB_Config.CURRENT_VERSION;

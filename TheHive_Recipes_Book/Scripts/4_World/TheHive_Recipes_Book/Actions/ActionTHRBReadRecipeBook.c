@@ -111,6 +111,21 @@ class ActionTHRBReadRecipeBook: ActionContinuousBase
             return;
         }
 
+        // RequestedJobs: chi non ha il lavoro giusto legge ma non impara (il libro resta intatto)
+        if (!THRB_JobHelper.HasRequestedJob(player, entry))
+        {
+            string title = entry.Title;
+
+            if (title == "")
+                title = recipeItem.GetDisplayName();
+
+            if (player.GetIdentity())
+                ExpansionNotification(title, THRB_JobHelper.NOT_UNDERSTOOD_TEXT).Info(player.GetIdentity());
+
+            Print("[TheHive_Recipes_Book] Player job not in RequestedJobs | " + recipeItem.GetType());
+            return;
+        }
+
         if (THRB_QuestHelper.HasCompletedQuest(player, entry.QuestID))
         {
             Print("[TheHive_Recipes_Book] Quest already completed: " + entry.QuestID);
@@ -126,5 +141,27 @@ class ActionTHRBReadRecipeBook: ActionContinuousBase
         }
 
         recipeItem.SetHealth("", "", 0);
+    }
+
+    // Expansion conta l'obiettivo Action della quest dopo OnFinishProgressServer:
+    // qui si blocca il completamento quando la lettura non e' valida.
+    override bool Expansion_CheckSuccess(ActionData action_data)
+    {
+        if (!super.Expansion_CheckSuccess(action_data))
+            return false;
+
+        // Libro gia' eliminato dopo una lettura riuscita: nessun blocco
+        if (!action_data || !action_data.m_Player || !action_data.m_MainItem)
+            return true;
+
+        THRB_BookEntry entry = THRB_ConfigManager.Find(action_data.m_MainItem.GetType());
+
+        if (!entry)
+            return true;
+
+        if (entry.RequiredQuestID > 0 && !THRB_QuestHelper.HasCompletedQuest(action_data.m_Player, entry.RequiredQuestID))
+            return false;
+
+        return THRB_JobHelper.HasRequestedJob(action_data.m_Player, entry);
     }
 };

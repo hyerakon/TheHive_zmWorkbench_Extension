@@ -1,5 +1,5 @@
 {
-    "ConfigVersion": 3,
+    "ConfigVersion": 4,
     "Entries": [
         {
             "ClassName": "TH_RecipeBook_001",
@@ -7,6 +7,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80001,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -16,6 +17,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80002,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -25,6 +27,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80003,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -34,6 +37,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80004,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -43,6 +47,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80005,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -52,6 +57,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80006,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -61,6 +67,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80007,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -70,6 +77,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80008,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -79,6 +87,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80009,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -88,6 +97,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80010,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -97,6 +107,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80011,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -106,6 +117,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80012,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -115,6 +127,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80013,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -124,6 +137,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80014,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -133,6 +147,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80015,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -142,6 +157,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80016,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -151,6 +167,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80017,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -160,6 +177,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80018,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -169,6 +187,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80019,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -178,6 +197,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80020,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -187,6 +207,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80021,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -196,6 +217,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80022,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -205,6 +227,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80023,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -214,6 +237,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80024,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -223,6 +247,7 @@
             "Description": "Un manuale tecnico. Leggendolo si acquisiscono nuove conoscenze.",
             "QuestID": 80025,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 15.0,
             "DeleteOnSuccess": true
         },
@@ -232,6 +257,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80101,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -241,6 +267,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80102,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -250,6 +277,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80103,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -259,6 +287,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80104,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -268,6 +297,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80105,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -277,6 +307,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80106,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -286,6 +317,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80107,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -295,6 +327,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80108,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -304,6 +337,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80109,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -313,6 +347,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80110,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -322,6 +357,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80111,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -331,6 +367,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80112,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -340,6 +377,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80113,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -349,6 +387,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80114,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -358,6 +397,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80115,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -367,6 +407,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80116,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -376,6 +417,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80117,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -385,6 +427,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80118,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -394,6 +437,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80119,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -403,6 +447,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80120,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -412,6 +457,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80121,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -421,6 +467,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80122,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -430,6 +477,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80123,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -439,6 +487,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80124,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -448,6 +497,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80125,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -457,6 +507,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80126,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -466,6 +517,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80127,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -475,6 +527,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80128,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -484,6 +537,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80129,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -493,6 +547,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80130,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -502,6 +557,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80131,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -511,6 +567,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80132,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -520,6 +577,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80133,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -529,6 +587,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80134,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -538,6 +597,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80135,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -547,6 +607,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80136,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -556,6 +617,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80137,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -565,6 +627,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80138,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -574,6 +637,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80139,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -583,6 +647,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80140,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -592,6 +657,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80141,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -601,6 +667,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80142,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -610,6 +677,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80143,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -619,6 +687,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80144,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -628,6 +697,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80145,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -637,6 +707,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80146,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -646,6 +717,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80147,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -655,6 +727,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80148,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -664,6 +737,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80149,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         },
@@ -673,6 +747,7 @@
             "Description": "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.",
             "QuestID": 80150,
             "RequiredQuestID": -1,
+            "RequestedJobs": [],
             "ReadTime": 8.0,
             "DeleteOnSuccess": true
         }

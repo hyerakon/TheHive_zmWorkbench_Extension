@@ -5,6 +5,13 @@ modded class MissionServer
         super.OnInit();
 
         THRB_ConfigManager.Load();
+
+#ifdef TheHive_SSBrena_TH_Job_And_Rewards
+        THRB_JobHelper.SetProvider(new THRB_JobProviderTHJobs());
+        Print("[TheHive_Recipes_Book] Job & Rewards loaded: RequestedJobs active");
+#else
+        Print("[TheHive_Recipes_Book] Job & Rewards not loaded: RequestedJobs ignored");
+#endif
         Print("[TheHive_Recipes_Book] Config loaded: " + THRB_ConfigManager.CONFIG_FILE);
     }
 
