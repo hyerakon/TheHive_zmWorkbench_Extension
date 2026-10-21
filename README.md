@@ -1060,3 +1060,7 @@ Do not copy, extract, repack, redistribute, reupload or integrate original The H
 **Original zmWorkbench content belongs to its respective creator.**
 
 **Original The Hive extension content © The Hive Project — All Rights Reserved.**
+
+## Convenzione ID quest
+
+Quest, obiettivi e NPC di Expansion usano la convenzione comune a tutti i repository di The Hive: vedi `CONVENZIONE_ID.md`.
