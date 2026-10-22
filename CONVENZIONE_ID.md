@@ -36,8 +36,8 @@ Esempi
 - In una serie a Z progressivo **non si mettono quest con più obiettivi**: vanno in una nuova Y con la regola generale.
 
 ### Attività — `60NN` / `61NN`
-- **60NN = Qualifica** di professione: segna la professione e sblocca le ricette uniche (`required_quest_id` in `WorkbenchMod/recipes.json`). Si ottiene leggendo `TH_Qualifica_<Nome>`.
-- **61NN = Permesso** di attività: assegna l'attività commerciale (vetrina Market Tweaks, `RequiredCompletedQuestIDs`). Si ottiene leggendo `TH_Permesso_<Nome>`.
+- **60NN = Qualifica** di professione: segna la professione e sblocca le ricette uniche (`required_quest_id` in `WorkbenchMod/recipes.json`). Si ottiene leggendo `TH_Quest_Qualifica_<Nome>`.
+- **61NN = Permesso** di attività: assegna l'attività commerciale (vetrina Market Tweaks, `RequiredCompletedQuestIDs`). Si ottiene leggendo `TH_Quest_Permesso_<Nome>`.
 - **NN** è lo stesso per qualifica e permesso della stessa professione: `01` Cuoco, `02` Armaiolo, `03` Farmacista (fino a 99).
 - **Il permesso non richiede la qualifica:** si può aprire un ristorante senza essere cuoco.
 - `62XX`–`79XX`: premi delle attività (vendite, guadagni) – da progettare.
