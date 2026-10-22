@@ -123,7 +123,7 @@ class THRB_ConfigManager
             bookEntry.ClassName = "TH_RecipeBook_" + THRB_FormatIndex(i);
             bookEntry.Title = "Libro di Ricette " + THRB_FormatIndex(i);
             bookEntry.Description = "Un vecchio volume contenente ricette, procedimenti e conoscenze ormai difficili da reperire.";
-            bookEntry.QuestID = 6000 + i * 10;   // Convenzione ID The Hive: W=6 Recipe Book (6010-6250)
+            bookEntry.QuestID = 8000 + i;        // Convenzione ID The Hive v2: W=8 Recipe Book 80NN (8001-8025)
             bookEntry.RequiredQuestID = -1;
             bookEntry.ReadTime = 15.0;
             bookEntry.DeleteOnSuccess = true;
@@ -138,7 +138,7 @@ class THRB_ConfigManager
             paperEntry.ClassName = "TH_RecipePaper_" + THRB_FormatIndex(i);
             paperEntry.Title = "Appunto di Ricetta " + THRB_FormatIndex(i);
             paperEntry.Description = "Un foglietto contenente appunti, istruzioni e annotazioni scritte a mano.";
-            paperEntry.QuestID = 7000 + i * 10;  // Convenzione ID The Hive: W=7 Recipe Paper (7010-7500)
+            paperEntry.QuestID = 8500 + i;       // Convenzione ID The Hive v2: W=8 Recipe Paper 85NN (8501-8550)
             paperEntry.RequiredQuestID = -1;
             paperEntry.ReadTime = 8.0;
             paperEntry.DeleteOnSuccess = true;
