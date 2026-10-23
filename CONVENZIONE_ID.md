@@ -51,7 +51,8 @@ Esempi
 | `512Z` | Medicina – Sanitario (ricompensa Infermiere + Medico) |
 | `513Z` | Medicina – Chirurgo (ricompensa solo Medico) |
 | `514Z`–`519Z` | riservati a Medicina |
-| `52`–`59` (e W 2, 4) | achievement di altre aree; proposta X = area/skill: 52 Caccia, 53 Pesca, 54 Agricoltura, 55 Sopravvivenza, 56 Forza, 57 Atletica, 58 Furtività, 59 Metabolismo/cucina |
+| `520Z` | Perk riservati delle skill normali: achievement che regalano un perk "solo certificato/lavoro" a chiunque li completi |
+| `521Z`–`529Z`, `53`–`59`, W 2 e 4 | liberi per altri achievement JOB & REWARD |
 | `60NN` | Qualifiche |
 | `61NN` | Permessi |
 | `80NN` | Recipe Book NNN (8000 + NNN) |
@@ -109,6 +110,7 @@ Esempi
 | 5110–5117 | Medicina – Soccorritore (8 achievement) |
 | 5120–5126 | Medicina – Sanitario (7 achievement) |
 | 5130–5132 | Medicina – Chirurgo (3 achievement) |
+| 5200–5205 | Perk riservati: Pathfinder, FishermanLuck, MushroomPremonition, MasterStroke, SilentKiller, Ninja |
 | 6001 / 6002 / 6003 | Qualifica Cuoco / Armaiolo / Farmacista (`TH_Qualifica_*`) |
 | 6101 / 6102 / 6103 | Permesso Cuoco / Armaiolo / Farmacista (`TH_Permesso_*`, TH_MarketTweaks) |
 | 8001–8025 | Recipe Book 001–025 (8000 + NNN) |
